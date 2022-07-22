@@ -1,10 +1,13 @@
 module.exports = {
-  title: "个人技术博客",
-  description: "办法总比问题多",
+  title: "renhou's blog",
   base: "/blog/",
-  locales: {
-    "/": {
-      lang: "zh-CN",
-    },
+  head: [["link", { rel: "icon", href: "/favicon.png" }]],
+  // plugins: ["@vuepress/back-to-top"],
+  themeConfig: {
+    logo: "/logo.png",
+    nav: [
+      { text: "Home", link: "/" },
+      { text: "GitHub", link: "https://google.com" },
+    ],
   },
 };
