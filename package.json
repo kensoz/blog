@@ -1,0 +1,14 @@
+{
+  "name": "document",
+  "version": "1.0.0",
+  "author": "renhou",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.49"
+  }
+}
