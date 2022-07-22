@@ -6,12 +6,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-
-      - name: vuepress-deploy
-        uses: jenkey2011/vuepress-deploy@master
+      - name: install Dependencies
+        run: npm install
+      - name: run Test
+        run: npm run bild
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
+        # 环境变量
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: kensoz/blog
-          TARGET_BRANCH: gh-pages
-          BUILD_SCRIPT: npm install && npm run build
-          BUILD_DIR: docs/.vuepress/dist/
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        with:
+          # 部署到 gh-pages 分支
+          target_branch: gh-pages
+          # 部署目录为 VuePress 的默认输出目录
+          build_dir: docs/.vuepress/dist
