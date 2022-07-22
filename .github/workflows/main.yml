@@ -9,7 +9,7 @@ jobs:
       - name: install Dependencies
         run: npm install
       - name: run Test
-        run: npm run bild
+        run: npm run build
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v2
         # 环境变量
