@@ -15,6 +15,7 @@
 - ⚙️ JavaScript
 - 🔩 GitHub Actions
 - 📦 Yarn
+- 🉑 日本語&简体中文
 
 
 
