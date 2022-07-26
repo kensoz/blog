@@ -36,7 +36,7 @@ yarn install
 
 ##### 開発
 
-[http://localhost:8080](http://localhost:8080)で起動
+[http://localhost:8080/blog](http://localhost:8080/blog)で起動
 
 ```bash
 yarn dev
