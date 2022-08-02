@@ -12,7 +12,7 @@ module.exports = {
   locales: {
     "/": {
       lang: "ja-JP",
-      title: "れんのブログ",
+      title: "れんほうのブログ",
     },
     "/zh/": {
       lang: "zh-CN",

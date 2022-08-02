@@ -31,9 +31,19 @@ module.exports = {
   sidebar: [
     { text: "首页", link: "/zh/" },
     {
-      text: "测试",
-      link: "/zh/guide/test.md",
-      children: ["/zh/guide/test.md"],
+      text: "学习整理",
+      link: "/zh/study/test.md",
+      children: ["/zh/study/test.md"],
+    },
+    {
+      text: "业务代码",
+      link: "/zh/job/test.md",
+      children: ["/zh/job/syllabary.md"],
+    },
+    {
+      text: "教程",
+      link: "/zh/note/docker.md",
+      children: ["/zh/note/docker.md"],
     },
   ],
 };

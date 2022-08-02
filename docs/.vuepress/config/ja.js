@@ -31,9 +31,19 @@ module.exports = {
   sidebar: [
     { text: "ホームページ", link: "/" },
     {
-      text: "テスト",
-      link: "/guide/test.md",
-      children: ["/guide/test.md"],
+      text: "学習と整理",
+      link: "/study/test.md",
+      children: ["/study/test.md"],
+    },
+    {
+      text: "業務運用",
+      link: "/job/test.md",
+      children: ["/job/syllabary.md"],
+    },
+    {
+      text: "記事",
+      link: "/note/docker.md",
+      children: ["/note/docker.md"],
     },
   ],
 };
