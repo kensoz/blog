@@ -28,8 +28,8 @@
 
 ## ブログ以外の発信
 
-- 日本語説明：[Qiita](https://qiita.com/kensoz)
-- 中文说明：[SegmentFault ](https://segmentfault.com/u/kensoz/articles)・ [掘金](https://juejin.cn/user/1029616691882653)
+- 日本語：[Qiita](https://qiita.com/kensoz)
+- 中文：[SegmentFault ](https://segmentfault.com/u/kensoz/articles)・ [掘金](https://juejin.cn/user/1029616691882653)
 
 
 
