@@ -32,18 +32,18 @@ module.exports = {
     { text: "首页", link: "/zh/" },
     {
       text: "学习整理",
-      link: "/zh/study/test.md",
-      children: ["/zh/study/test.md"],
+      link: "/zh/knowledge/crud.md",
+      children: ["/zh/knowledge/crud.md"],
     },
     {
       text: "业务代码",
-      link: "/zh/job/test.md",
-      children: ["/zh/job/syllabary.md"],
+      link: "/zh/business/syllabary.md",
+      children: ["/zh/business/syllabary.md", "/zh/business/haveornot.md"],
     },
     {
       text: "教程",
-      link: "/zh/note/docker.md",
-      children: ["/zh/note/docker.md"],
+      link: "/zh/article/docker.md",
+      children: ["/zh/article/docker.md"],
     },
   ],
 };

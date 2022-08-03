@@ -32,18 +32,18 @@ module.exports = {
     { text: "ホームページ", link: "/" },
     {
       text: "学習と整理",
-      link: "/study/test.md",
-      children: ["/study/test.md"],
+      link: "/knowledge/crud.md",
+      children: ["/knowledge/crud.md"],
     },
     {
-      text: "業務運用",
-      link: "/job/test.md",
-      children: ["/job/syllabary.md"],
+      text: "実戦運用",
+      link: "/business/syllabary.md",
+      children: ["/business/syllabary.md", "/business/haveornot.md"],
     },
     {
       text: "記事",
-      link: "/note/docker.md",
-      children: ["/note/docker.md"],
+      link: "/article/docker.md",
+      children: ["/article/docker.md"],
     },
   ],
 };

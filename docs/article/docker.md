@@ -3,13 +3,25 @@ lang: ja-JP
 title: Dockerデプロイ
 ---
 
-# DockerでVue+Node(Koa)+Nginx+MongoDB環境を作る
----
 
-##### この文章のアピールポイント
 
-- 初心者に最適
-- フロントエンド開発者に最適
+# DockerでVue+Node(Koa)+Nginx+MongoDBデプロイ環境を作る
+
+![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)  ![](https://img.shields.io/badge/-Node.js-9ca3af.svg?logo=node.js&style=popout-square)  ![](https://img.shields.io/badge/-Docker-9ca3af.svg?logo=docker&style=popout-square)
+
+
+
+::: tip
+FEに向けてフルスタックのWeb AppをDockerコンテンツ化にするやり方についての記事です。  
+[Qiita](https://qiita.com/kensoz/items/2fc0b707e91e6ec8920e)にも投稿しました。
+:::
+
+
+
+##### この記事のアピールポイント
+
+- 😀 初心者に最適
+- 💪 フロントエンド開発者に最適
 
 
 
@@ -28,7 +40,7 @@ title: Dockerデプロイ
 
 ##### 知識
 
-Dockerコンテンツの説明と構築がメインとなりますので  
+Dockerコンテンツの説明と構築がメインとなりますので、  
 フロントエンドとバックエンド開発の説明は特にしません。  
 なので、以下の知識はあった方がいいです
 
@@ -50,29 +62,29 @@ Dockerコンテンツの説明と構築がメインとなりますので
 
 ##### demo
 
-文章で作成したdemoは[GitHub](https://github.com/kensoz/depoly-demo)にアップロードしましたので、ご参照ください  
-ちなみに、OSSとして[Rrea](https://github.com/kensoz/Rrea-admin)というwebアプリを作りましたので、ご参照、starをもらえれば幸せです
+文章で作成したdemoは[GitHub](https://github.com/kensoz/depoly-demo)にアップロードしましたので、ご参照ください。  
+ちなみに、OSSとして[Rrea](https://github.com/kensoz/Rrea-admin)というwebアプリを作りましたので、ご参照、starをもらえれば幸せです。
 
 
 
 ## 1.フロントエンドの準備
-ここはviteでvue3を作りますが、好きなJSフレームワークを使ってください  
+ここはviteでvue3を作りますが、好きなJSフレームワークを使ってください。  
 [フロントエンドフォルダ参照](https://github.com/kensoz/depoly-demo/tree/master/frontend)
 
-rootフォルダでfrontendフォルダを新規作成、viteを初期化
+rootフォルダでfrontendフォルダを新規作成、viteを初期化。
 
 ```bash
 yarn create vite
 ```
-好きなJSフレームワークを選択して、インストールしてください  
-いらないコンポーネントを削除して、Axiosをインストール
+好きなJSフレームワークを選択して、インストールしてください。  
+いらないコンポーネントを削除して、Axiosをインストール。
 
 ```bash
 yarn add -D axios
 ```
-`App.vue`で以下のコードを使ってください（ここでTSをつかいましたが、JSでも構いません）  
-フロントエンドを起動すると、Axiosを使うメソッド`api()`はAPIをリクエストして、レスを画面にプリントします  
-`/test`はバックエンドが提供しているAPIアドレス（後で説明）
+`App.vue`で以下のコードを使ってください（ここでTSをつかいましたが、JSでも構いません）。  
+フロントエンドを起動すると、Axiosを使うメソッド`api()`はAPIをリクエストして、レスを画面にプリントします。  
+`/test`はバックエンドが提供しているAPIアドレス（後で説明）。
 
 ```vue
 <template>
@@ -122,20 +134,20 @@ package.json
 
 ## 2.バックエンドの準備
 
-ここでNode.jsのフレームワークKoa.jsとTSで構築しますが、好きなNode.jsフレームワークを使ってください  
+ここでNode.jsのフレームワークKoa.jsとTSで構築しますが、好きなNode.jsフレームワークを使ってください。  
 [バックエンドフォルダ参照](https://github.com/kensoz/depoly-demo/tree/master/backend)
 
-rootフォルダでbackendフォルダを新規作成  
-Koa.js + TSの構築方法は[この記事](https://qiita.com/notakaos/items/85fd2f5c549f247585b1)に参照して作成しました
+rootフォルダでbackendフォルダを新規作成。  
+Koa.js + TSの構築方法は[この記事](https://qiita.com/notakaos/items/85fd2f5c549f247585b1)に参照して作成しました。
 
 koaルートをインストール
 ```bash
 yarn add koa-router
 ```
 
-`index.ts`で以下のコードを使ってください  
-バックエンドを起動すると，testというAPIのルートを作成します  
-testがリクエストされたら，データベースからデータを取得して、レスとして返します
+`index.ts`で以下のコードを使ってください。  
+バックエンドを起動すると，testというAPIのルートを作成します。  
+testがリクエストされたら，データベースからデータを取得して、レスとして返します。
 
 ```ts
 import Koa from "koa";
@@ -196,7 +208,7 @@ app.listen(host, async (): Promise<void> => {
 
 ##### ご注意
 
-定数`url`のはデータベースのdockeコンテンツ内アドレスです（後で説明）
+定数`url`のはデータベースのdockeコンテンツ内アドレスです（後で説明）。
 
 
 
@@ -206,17 +218,17 @@ app.listen(host, async (): Promise<void> => {
 
 ## 3.データの準備
 
-ここでMongodbとそのGUIのMongoDBCompassを使います  
+ここでMongodbとそのGUIのMongoDBCompassを使います。  
 [データフォルダを参照](https://github.com/kensoz/depoly-demo/tree/master/database)
 
-rootフォルダでdatabaseフォルダを新規作成して、databaseフォルダでjsファイルmongo-init.jsを新規作成  
+rootフォルダでdatabaseフォルダを新規作成して、databaseフォルダでjsファイルmongo-init.jsを新規作成  。
 
 ##### mongo-init.jsとは
 
-データベースへのアクセスは管理者IDとパスワードが必要です  
-本来はターミナルでコマンドでデータをinsertして、管理者IDとパスワードを追加しますが  
-このmongo-init.jsは、dockerコンテンツ起動の時に自動で必要なデータをinsert、管理員を追加する便利なスクリプトです  
-rootの管理員はDockerfile指定されましたので、ここで作ったのはCRUD管理員です  
+データベースへのアクセスは管理者IDとパスワードが必要です。  
+本来はターミナルでコマンドでデータをinsertして、管理者IDとパスワードを追加しますが、  
+このmongo-init.jsは、dockerコンテンツ起動の時に自動で必要なデータをinsert、管理員を追加する便利なスクリプトです。  
+rootの管理員はDockerfile指定されましたので、ここで作ったのはCRUD管理員です 。 
 
 以下のコードを使ってください、dockerコレクションのtestsテーブルに`[{ id: 1 }, { id: 2 }]`をinsertします。
 
@@ -249,8 +261,8 @@ db.tests.insertMany([{ id: 1 }, { id: 2 }]);
 
 ##### まとめ
 
-ここまでのフォルダ構造  
-これからは以下のフォルダをコンテンツ化します
+ここまでのフォルダ構造。  
+これからは以下のフォルダをコンテンツ化します。
 
 ```bash
 backend
@@ -280,13 +292,13 @@ database
 
 ##### 考え方
 
-必要なフロントエンドファイルをコンテンツにコピー，コンテンツで必要な環境を用意，コピーした後でファイルをビルド、Nginxでビルドしたファイルをデプロイ
+必要なフロントエンドファイルをコンテンツにコピー，コンテンツで必要な環境を用意，コピーした後でファイルをビルド、Nginxでビルドしたファイルをデプロイ。
 
 
 
 ##### Step1 imageインストール
-nodeとnginxのdocker imageをpull
-pcで既にnodeとnginxのdocker imageがインストールされたらこのStepを無視
+nodeとnginxのdocker imageをpullします。
+pcで既にnodeとnginxのdocker imageがインストールされたらこのStepを無視しても構いません。
 
 ```shell
 docker pull node
@@ -297,8 +309,8 @@ docker pull nginx
 
 ##### Step2 Nginx設定
 
-frontendフォルダでnginxの設定ファイルdefault.confを新規作成  
-フロントエンドはport`7021`を使います  
+frontendフォルダでnginxの設定ファイルdefault.confを新規作成します。  
+フロントエンドはport`7021`を使います 。
 
 ```json
 server {
@@ -320,13 +332,13 @@ server {
 
 ##### ご注意
 
-`proxy_pass`のはバックエンドのdockeコンテンツ内アドレスです（後で説明）  
+`proxy_pass`のはバックエンドのdockeコンテンツ内アドレスです（後で説明）。  
 
 
 
 ##### Step3 Dockerfile作成
 
-frontendフォルダでDockerfileを新規作成、以下のコードを使ってください  
+frontendフォルダでDockerfileを新規作成、以下のコードを使ってください  。
 
 
 ```yaml
@@ -362,15 +374,15 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 ```
 
 簡単に説明：  
-`FROM node:16.3.0`コンテンツで使うnode環境とそのバージョン指定  
-`WORKDIR /usr/src/frontend`コンテンツ内のフロントエンドのフォルダ（ワークスペース）  
-`COPY ["package.json", "yarn.lock", "./"]`ローカルのpackage.jsonやソースコードをコンテンツ内にコピー  
-`RUN yarn`コンテンツ内でフロントエンドをインストール  
-`COPY . .`インストールしたものを全部コンテンツ内にコピー  
-`RUN yarn build`コンテンツ内でビルド  
-`FROM nginx:latest`コンテンツで使うnginx環境とそのバージョン指定  
-`COPY --from=0 /usr/src/frontend/dist/ /usr/share/nginx/html/`コンテンツ内で先ビルドしたdistファイルをコンテンツ内のnginxフォルダの中のhtmlフォルダにコピー（nginxの使い方はローカルと同じ）  
-`COPY default.conf /etc/nginx/conf.d/default.conf`ローカルのnginx設定ファイルをコンテンツ内にコピー  
+`FROM node:16.3.0`コンテンツで使うnode環境とそのバージョン指定。  
+`WORKDIR /usr/src/frontend`コンテンツ内のフロントエンドのフォルダ（ワークスペース）。  
+`COPY ["package.json", "yarn.lock", "./"]`ローカルのpackage.jsonやソースコードをコンテンツ内にコピー。  
+`RUN yarn`コンテンツ内でフロントエンドをインストール。  
+`COPY . .`インストールしたものを全部コンテンツ内にコピー。  
+`RUN yarn build`コンテンツ内でビルド。  
+`FROM nginx:latest`コンテンツで使うnginx環境とそのバージョン指定。  
+`COPY --from=0 /usr/src/frontend/dist/ /usr/share/nginx/html/`コンテンツ内で先ビルドしたdistファイルをコンテンツ内のnginxフォルダの中のhtmlフォルダにコピー（nginxの使い方はローカルと同じ）。  
+`COPY default.conf /etc/nginx/conf.d/default.conf`ローカルのnginx設定ファイルをコンテンツ内にコピー。  
 
 フロントエンドDockerfile設定完了
 
@@ -380,15 +392,15 @@ COPY default.conf /etc/nginx/conf.d/default.conf
 
 ##### 考え方
 
-必要なフロントエンドファイルをコンテンツにコピー，コンテンツで必要な環境を用意，コピーした後でファイルをビルド、その後サーバーを起動
+必要なフロントエンドファイルをコンテンツにコピー，コンテンツで必要な環境を用意，コピーした後でファイルをビルド、その後サーバーを起動します。
 
 
 
 ##### Step1 Dockerfile
 
-バックエンドはport`7022`を使います  
-すでにnodeのimageをインストールしましたので、imageのpullはいらないです  
-backendフォルダでDockerfileを新規作成、以下のコードを使ってください  
+バックエンドはport`7022`を使います。  
+すでにnodeのimageをインストールしましたので、imageのpullはいらないです。  
+backendフォルダでDockerfileを新規作成、以下のコードを使ってください。  
 
 
 ```yaml
@@ -420,14 +432,14 @@ EXPOSE 7022
 ENTRYPOINT [ "yarn", "start" ]
 ```
 簡単に説明：  
-`FROM node:16.3.0`コンテンツで使うnode環境とそのバージョン指定  
-`WORKDIR /usr/src/backend`コンテンツ内のバックエンドのフォルダ（ワークスペース）  
-`COPY ["package.json", "yarn.lock", "./"]`ローカルのpackage.jsonやソースコードをコンテンツ内にコピー  
-`RUN yarn`コンテンツ内でフロントエンドをインストール  
-`COPY . .`インストールしたものを全部コンテンツ内にコピー  
-`RUN yarn build`コンテンツ内でビルド  
-`EXPOSE 7022`port7022を公開  
-`ENTRYPOINT [ "yarn", "start" ]`サーバーを起動
+`FROM node:16.3.0`コンテンツで使うnode環境とそのバージョン指定。  
+`WORKDIR /usr/src/backend`コンテンツ内のバックエンドのフォルダ（ワークスペース）。  
+`COPY ["package.json", "yarn.lock", "./"]`ローカルのpackage.jsonやソースコードをコンテンツ内にコピー。  
+`RUN yarn`コンテンツ内でフロントエンドをインストール。  
+`COPY . .`インストールしたものを全部コンテンツ内にコピー。  
+`RUN yarn build`コンテンツ内でビルド。  
+`EXPOSE 7022`port7022を公開。  
+`ENTRYPOINT [ "yarn", "start" ]`サーバーを起動。
 
 バックエンドDockerfile設定完了
 
@@ -435,9 +447,9 @@ ENTRYPOINT [ "yarn", "start" ]
 
 ## 6.データのDockerfile
 ##### Step1 imageインストール
-データはport`27017`を使います  
-MongoDBのdocker imageをpull
-pcで既にMongoDBのdocker imageがインストールされたらこのStepを無視
+データはport`27017`を使います。  
+MongoDBのdocker imageをpullします。
+pcで既にMongoDBのdocker imageがインストールされたらこのStepを無視しても構いません。
 
 ```shell
 docker pull mongo
@@ -447,7 +459,7 @@ docker pull mongo
 
 ##### Step2 Dockerfile
 
-databaseフォルダでDockerfileを新規作成、以下のコードを使ってください
+databaseフォルダでDockerfileを新規作成、以下のコードを使ってください。
 
 ```yaml
 # イメージ指定
@@ -469,9 +481,9 @@ ENV MONGO_INITDB_DATABASE docker
 ADD mongo-init.js /docker-entrypoint-initdb.d/
 ```
 簡単に説明：  
-`FROM mongo:latest`コンテンツで使うMongoDB環境とそのバージョン指定  
-`ENV MONGO_INITDB_ROOT_USERNAM`和`ENV MONGO_INITDB_ROOT_PASSWORD`コンテンツを起動すると、root管理員のIDとパスワードを指定  
-`ADD mongo-init.js /docker-entrypoint-initdb.d/`コンテンツを起動すると、先作ったスクリプトを自動で実行
+`FROM mongo:latest`コンテンツで使うMongoDB環境とそのバージョン指定。  
+`ENV MONGO_INITDB_ROOT_USERNAM`和`ENV MONGO_INITDB_ROOT_PASSWORD`コンテンツを起動すると、root管理員のIDとパスワードを指定。  
+`ADD mongo-init.js /docker-entrypoint-initdb.d/`コンテンツを起動すると、先作ったスクリプトを自動で実行。
 
 
 
@@ -481,7 +493,7 @@ ADD mongo-init.js /docker-entrypoint-initdb.d/
 
 ##### Tip
 
-それぞれのフォルダで`.dockerignore`ファイルを作成して、不要なファイルとフォルダを無視にしましょう
+それぞれのフォルダで`.dockerignore`ファイルを作成して、不要なファイルとフォルダを無視にしましょう。
 
 ```yaml
 node_modules;
@@ -566,7 +578,7 @@ rootフォルダで実行
 ```bash
 docker-compose up -d
 ```
-問題がなければ、dockerのGUIで以下のものが確認できます
+問題がなければ、dockerのGUIで以下のものが確認できます。
 
 ![スクリーンショット 2022-08-01 153410.jpg](https://s2.loli.net/2022/08/02/ohbnW238VRsXaNr.jpg)
 
@@ -575,7 +587,7 @@ docker-compose up -d
 ## 9.検証
 ##### フロントエンド検証
 
-`http://localhost:7021/`を起動すると、データが確認できます
+`http://localhost:7021/`を起動すると、データが確認できます。
 
 ![スクリーンショット 2022-08-01 153444.jpg](https://s2.loli.net/2022/08/02/37OzX6jSpKaFr1v.jpg)
 
@@ -583,14 +595,14 @@ docker-compose up -d
 
 ##### バックエンド検証
 
-dockerのGUIで，バックエンドのlogが確認できます
+dockerのGUIで，バックエンドのlogが確認できます。
 ![スクリーンショット 2022-08-01 153513.jpg](https://s2.loli.net/2022/08/02/4oqDxOQCAXe7KMi.jpg)
 
 
 
 ##### データ検証
 
-MongoDBのGUIで，dockerデータベースなどが確認できます
+MongoDBのGUIで，dockerデータベースなどが確認できます。
 
 ![スクリーンショット 2022-08-01 153553.jpg](https://s2.loli.net/2022/08/02/9ms8jSLBATtZrUN.jpg)
 

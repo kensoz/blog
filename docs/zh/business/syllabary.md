@@ -1,12 +1,20 @@
 ---
-lang: ja-JP
-title: 五十音順判定
+lang: zh-CN
+title: 日语50音判定
 ---
 
-# TypeScript(JavaScript)によるカタカナ五十音順の行を判定
----
+# TypeScript(JavaScript)判定日语片假名在50音的哪一行
+![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
-### コード
+
+
+::: tip
+判定日语片假名在50音的哪一行。 在[掘金](https://juejin.cn/post/7127153730104852517)也投了稿。
+:::
+
+
+
+### 代码
 
 ```typescript
   const handleNameCode = (str: string): string => {
@@ -24,11 +32,11 @@ title: 五十音順判定
     ])
 
     for (let i = 1; i < 11; i++) {
-      // パラメータカタカナの行を返す
+      // 返回所在行数
       if (kana.get(i)?.indexOf(str) !== -1) return i.toString()
     }
 
-    // 数字、ひらがなの場合
+    // 数字英文平假名的情况
     return '11'
   }
 ```
@@ -37,5 +45,5 @@ title: 五十音順判定
 
 ```typescript
 handleNameCode('ア')
-// 出力： '1'
+// 结果： '1'
 ```
