@@ -6,7 +6,7 @@ const { backToTopPlugin } = require("@vuepress/plugin-back-to-top");
 
 module.exports = {
   base: "/blog/",
-  head: [["link", { rel: "icon", href: "/logo.png" }]],
+  head: [["link", { rel: "shortcut icon", href: "/logo.png?" }]],
   plugins: [backToTopPlugin({}), searchPlugin({})],
 
   locales: {
