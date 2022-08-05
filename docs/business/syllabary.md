@@ -16,6 +16,8 @@ title: 五十音順判定
 
 ### コード
 
+🌐 [live demo](https://codepen.io/kensoz/pen/eYMMqbY)
+
 ```typescript
   const handleNameCode = (str: string): string => {
     const kana: Map<number, string> = new Map([

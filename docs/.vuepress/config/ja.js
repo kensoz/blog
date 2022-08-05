@@ -33,12 +33,22 @@ module.exports = {
     {
       text: "学習と整理",
       link: "/knowledge/crud.md",
-      children: ["/knowledge/crud.md"],
+      children: [
+        "/knowledge/crud.md",
+        "/knowledge/find.md",
+        "/knowledge/currying.md",
+        "/knowledge/async.md",
+        "/knowledge/bind.md",
+      ],
     },
     {
       text: "実戦運用",
       link: "/business/syllabary.md",
-      children: ["/business/syllabary.md", "/business/haveornot.md"],
+      children: [
+        "/business/syllabary.md",
+        "/business/haveornot.md",
+        "/business/component.md",
+      ],
     },
     {
       text: "記事",

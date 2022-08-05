@@ -16,6 +16,8 @@ title: 日语50音判定
 
 ### 代码
 
+🌐 [live demo](https://codepen.io/kensoz/pen/eYMMqbY)
+
 ```typescript
   const handleNameCode = (str: string): string => {
     const kana: Map<number, string> = new Map([

@@ -2,6 +2,12 @@
 lang: zh-CN
 title: 首页
 ---
+
+
+<img src="/logo.png" width=60 height=60 style="margin-top:40px;margin-bottom:20px;" />
+
+
+
 ### 📒 关于本博客
 
 ---

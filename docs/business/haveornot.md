@@ -16,6 +16,8 @@ title: 配列値の有無
 
 ### コード
 
+🌐 [live demo](https://codepen.io/kensoz/pen/BawgZGr)
+
 ```typescript
 const arr = [1,2,3,4]
 const x = 5

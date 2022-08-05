@@ -16,6 +16,8 @@ title: 数组值有无
 
 ### 代码
 
+🌐 [live demo](https://codepen.io/kensoz/pen/BawgZGr)
+
 ```typescript
 const arr = [1,2,3,4]
 const x = 5

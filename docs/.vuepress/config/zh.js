@@ -33,12 +33,22 @@ module.exports = {
     {
       text: "学习整理",
       link: "/zh/knowledge/crud.md",
-      children: ["/zh/knowledge/crud.md"],
+      children: [
+        "/zh/knowledge/crud.md",
+        "/zh/knowledge/find.md",
+        "/zh/knowledge/currying.md",
+        "/zh/knowledge/async.md",
+        "/zh/knowledge/bind.md",
+      ],
     },
     {
       text: "业务代码",
       link: "/zh/business/syllabary.md",
-      children: ["/zh/business/syllabary.md", "/zh/business/haveornot.md"],
+      children: [
+        "/zh/business/syllabary.md",
+        "/zh/business/haveornot.md",
+        "/zh/business/component.md",
+      ],
     },
     {
       text: "教程",

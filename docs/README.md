@@ -3,6 +3,12 @@ lang: ja-JP
 title: ホームページ
 ---
 
+
+
+<img src="/logo.png" width=60 height=60 style="margin-top:40px;margin-bottom:20px;" />
+
+
+
 ### 📒 ブログについて
 
 ---
