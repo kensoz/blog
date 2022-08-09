@@ -35,8 +35,9 @@ Object.keys(components).forEach(key => {
 
 ### 使用
 
+コンポーネント内でそのまま使えば大丈夫です！
+
 ```vue
-// コンポーネント内でそのまま使えば大丈夫です！
 <base-title />
 ```
 

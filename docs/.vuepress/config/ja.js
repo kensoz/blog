@@ -42,18 +42,29 @@ module.exports = {
       ],
     },
     {
-      text: "実戦運用",
+      text: "スニペット",
       link: "/business/syllabary.md",
       children: [
         "/business/syllabary.md",
         "/business/haveornot.md",
         "/business/component.md",
+        "/business/common.md",
       ],
     },
     {
       text: "記事",
-      link: "/article/docker.md",
-      children: ["/article/docker.md"],
+      link: "/article/vite.md",
+      children: [
+        "/article/vite.md",
+        "/article/docker.md",
+        "/article/compare.md",
+        "/article/pinia.md",
+      ],
+    },
+    {
+      text: "アルゴリズム",
+      link: "/algorithm/twosum.md",
+      children: ["/algorithm/twosum.md", "/algorithm/palindromenumber.md"],
     },
   ],
 };

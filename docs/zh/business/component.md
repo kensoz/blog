@@ -36,8 +36,9 @@ Object.keys(components).forEach(key => {
 
 ### 使用
 
+在想要用的组件内只用写通用组件标签即可
+
 ```vue
-// 在想要用的组件内只用写通用组件标签即可
 <base-title />
 ```
 

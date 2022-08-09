@@ -31,7 +31,7 @@ module.exports = {
   sidebar: [
     { text: "首页", link: "/zh/" },
     {
-      text: "学习整理",
+      text: "学习与整理",
       link: "/zh/knowledge/crud.md",
       children: [
         "/zh/knowledge/crud.md",
@@ -48,12 +48,26 @@ module.exports = {
         "/zh/business/syllabary.md",
         "/zh/business/haveornot.md",
         "/zh/business/component.md",
+        "/zh/business/common.md",
       ],
     },
     {
       text: "教程",
-      link: "/zh/article/docker.md",
-      children: ["/zh/article/docker.md"],
+      link: "/zh/article/vite.md",
+      children: [
+        "/zh/article/vite.md",
+        "/zh/article/docker.md",
+        "/zh/article/compare.md",
+        "/zh/article/pinia.md",
+      ],
+    },
+    {
+      text: "算法",
+      link: "/zh/algorithm/twosum.md",
+      children: [
+        "/zh/algorithm/twosum.md",
+        "/zh/algorithm/palindromenumber.md",
+      ],
     },
   ],
 };
