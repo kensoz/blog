@@ -1,5 +1,6 @@
 module.exports = {
   selectLanguageName: "日本語",
+
   navbar: [
     {
       text: "GitHub",
