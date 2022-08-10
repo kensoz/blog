@@ -1,6 +1,5 @@
 module.exports = {
   selectLanguageName: "简体中文",
-
   navbar: [
     {
       text: "GitHub",
