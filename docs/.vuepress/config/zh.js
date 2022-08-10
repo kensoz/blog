@@ -59,6 +59,8 @@ module.exports = {
         "/zh/article/docker.md",
         "/zh/article/compare.md",
         "/zh/article/pinia.md",
+        "/zh/article/rollup.md",
+        "/zh/article/vitest.md",
       ],
     },
     {
