@@ -39,6 +39,8 @@ module.exports = {
         "/zh/knowledge/currying.md",
         "/zh/knowledge/async.md",
         "/zh/knowledge/bind.md",
+        "/zh/knowledge/compare.md",
+        "/zh/knowledge/nginx.md",
       ],
     },
     {
@@ -57,19 +59,20 @@ module.exports = {
       children: [
         "/zh/article/vite.md",
         "/zh/article/docker.md",
-        "/zh/article/compare.md",
         "/zh/article/pinia.md",
         "/zh/article/rollup.md",
         "/zh/article/vitest.md",
+        "/zh/article/ui.md",
       ],
     },
-    {
-      text: "算法",
-      link: "/zh/algorithm/twosum.md",
-      children: [
-        "/zh/algorithm/twosum.md",
-        "/zh/algorithm/palindromenumber.md",
-      ],
-    },
+    // {
+    //   text: "算法",
+    //   link: "/zh/algorithm/leetcode.md",
+    //   children: [
+    //     "/zh/algorithm/leetcode.md",
+    //     "/zh/algorithm/paiza.md",
+    //     "/zh/algorithm/atcoder.md",
+    //   ],
+    // },
   ],
 };

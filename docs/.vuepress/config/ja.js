@@ -39,6 +39,8 @@ module.exports = {
         "/knowledge/currying.md",
         "/knowledge/async.md",
         "/knowledge/bind.md",
+        "/knowledge/compare.md",
+        "/knowledge/nginx.md",
       ],
     },
     {
@@ -57,16 +59,20 @@ module.exports = {
       children: [
         "/article/vite.md",
         "/article/docker.md",
-        "/article/compare.md",
         "/article/pinia.md",
         "/article/rollup.md",
         "/article/vitest.md",
+        "/article/ui.md",
       ],
     },
-    {
-      text: "アルゴリズム",
-      link: "/algorithm/twosum.md",
-      children: ["/algorithm/twosum.md", "/algorithm/palindromenumber.md"],
-    },
+    // {
+    //   text: "アルゴリズム",
+    //   link: "/algorithm/leetcode.md",
+    //   children: [
+    //     "/algorithm/leetcode.md",
+    //     "/algorithm/paiza.md",
+    //     "/algorithm/atcoder.md",
+    //   ],
+    // },
   ],
 };

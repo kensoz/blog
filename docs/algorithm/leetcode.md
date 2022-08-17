@@ -1,21 +1,45 @@
 ---
 lang: ja-JP
-title: LeetCode-09
+title: LeetCode
 ---
 
-# Palindrome Number
+# LeetCode回答
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
 
 
-::: tip
-LeetCode-09：2022-08-08
-:::
+## 回答
+
+メモとして自分の回答を収集します。
 
 
 
-## 1.私の解法
+### 01 Two Sum
+
+```js
+/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
+
+var twoSum = function(nums, target) {
+    
+var len = nums.length;
+    for (var i = 0; i < len - 1; i++) {
+      for (var j = i + 1; j < len; j++) {
+        if (nums[i] + nums[j] === target) {
+          return [i, j];
+        }
+      }
+    };
+};
+```
+
+
+
+### 09 Palindrome Number
 
 ```js
 /**
@@ -45,27 +69,3 @@ var isPalindrome = function (x) {
   }
 };
 ```
-
-
-
-## 2.回答を見た後の改善
-
-+ 自分の解決で長すぎて、いらないステップがたくさんあります
-
-```js
-/**
- * @param {number} x
- * @return {boolean}
- */
-
-var isPalindrome = function(x) {
-    let str = x.toString()
-    const pre = Math.floor(str.length / 2)
-    // 負の数、0～10は自動で判断
-    for(let i = 0; i < pre; i++){
-        if(str[i] != str[str.length-i-1]) return false
-    }
-    return true
-};
-```
-
