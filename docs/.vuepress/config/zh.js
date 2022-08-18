@@ -67,7 +67,7 @@ module.exports = {
       ],
     },
     {
-      text: "算法答案（日语）",
+      text: "算法（日语）",
       link: "/algorithm/leetcode.md",
       children: [
         "/algorithm/leetcode.md",
