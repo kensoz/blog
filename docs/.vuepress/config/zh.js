@@ -63,16 +63,17 @@ module.exports = {
         "/zh/article/rollup.md",
         "/zh/article/vitest.md",
         "/zh/article/ui.md",
+        "/zh/article/github.md",
       ],
     },
-    // {
-    //   text: "算法",
-    //   link: "/zh/algorithm/leetcode.md",
-    //   children: [
-    //     "/zh/algorithm/leetcode.md",
-    //     "/zh/algorithm/paiza.md",
-    //     "/zh/algorithm/atcoder.md",
-    //   ],
-    // },
+    {
+      text: "算法答案（日语）",
+      link: "/algorithm/leetcode.md",
+      children: [
+        "/algorithm/leetcode.md",
+        "/algorithm/paiza.md",
+        "/algorithm/atcoder.md",
+      ],
+    },
   ],
 };

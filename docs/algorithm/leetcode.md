@@ -3,17 +3,19 @@ lang: ja-JP
 title: LeetCode
 ---
 
-# LeetCode回答
+# LeetCode
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
 
 
-## 回答
+::: tip
+メモとして自分の回答（JavaScript）を整理します。難易度の順番です。
+:::
 
-メモとして自分の回答を収集します。
 
 
+## EASY
 
 ### 01 Two Sum
 

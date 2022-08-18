@@ -63,16 +63,17 @@ module.exports = {
         "/article/rollup.md",
         "/article/vitest.md",
         "/article/ui.md",
+        "/article/github.md",
       ],
     },
-    // {
-    //   text: "アルゴリズム",
-    //   link: "/algorithm/leetcode.md",
-    //   children: [
-    //     "/algorithm/leetcode.md",
-    //     "/algorithm/paiza.md",
-    //     "/algorithm/atcoder.md",
-    //   ],
-    // },
+    {
+      text: "アルゴリズム",
+      link: "/algorithm/leetcode.md",
+      children: [
+        "/algorithm/leetcode.md",
+        "/algorithm/paiza.md",
+        "/algorithm/atcoder.md",
+      ],
+    },
   ],
 };
