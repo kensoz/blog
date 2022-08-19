@@ -30,8 +30,6 @@ for (let i = 1; i <= lai; i++) {
 arr.length > 0 ? console.log(arr.join("\n")) : console.log("none");
 ```
 
-
-
 ### C016
 
 ```js
@@ -53,7 +51,32 @@ arr.forEach((e, index, arr) => {
 console.log(arr.join(""));
 ```
 
-### 
+### C030
+
+```js
+let arr = [];
+let lai = lines[0].split(" ")[0] - 0;
+
+for (let i = 0; i < lai; i++) {
+  let roopArr = lines[i + 1].split(" ");
+  for (let j in roopArr) {
+    roopArr[j] = roopArr[j] - 0;
+  }
+  arr[i] = roopArr;
+}
+
+for (let e in arr) {
+  for (let c in arr[e]) {
+    arr[e][c] >= 128 ? (arr[e][c] = 1) : (arr[e][c] = 0);
+  }
+}
+
+for (let a in arr) {
+  console.log(arr[a].join(" "));
+}
+```
+
+
 
 ## D 回答
 
@@ -140,5 +163,26 @@ for (let i = 1; i <= 2; i++) {
   if (lines[i] !== lines[i - 1]) flg = false;
 }
 console.log(flg ? "YES" : "NO");
+```
+
+### D048
+
+```js
+const arr = lines.map((e) => {
+  return e - 0;
+});
+
+for (let i = 0; i <= arr.length - 2; i++) {
+  console.log(arr[i + 1] - arr[i]);
+}
+```
+
+### D047
+
+```js
+const arr = ["Gold", "Silver", "Bronze"];
+for (let i in arr) {
+  console.log(arr[i] + " " + lines[i]);
+}
 ```
 
