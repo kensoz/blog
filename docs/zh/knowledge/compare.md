@@ -10,9 +10,15 @@ title: 三大框架比较
 
 
 ::: warning
-三大框架的api速查，速度对比表。在[掘金](https://juejin.cn/post/7129684578406989837/)和[思否](https://segmentfault.com/a/1190000042288970)也投了稿。  
+三大框架的api速查，速度对比表。  
 但是注意，在一些情况并不是完全对应。
 :::
+
+
+
+📡  [掘金](https://juejin.cn/post/7129684578406989837/) · [思否](https://segmentfault.com/a/1190000042288970)
+
+
 
 ## API比较
 

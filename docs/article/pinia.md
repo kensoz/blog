@@ -1,15 +1,21 @@
 ---
 lang: ja-JP
-title: setupでpinia
+title: setupで🍍Piniaを使う
 ---
 
 # Setupで🍍Pinia.jsを使う
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)  ![](https://img.shields.io/badge/-Vue.js-9ca3af.svg?logo=vue.js&style=popout-square)
 
+
+
 ::: tip
-よくOptions APIでPinia.jsを使っていますが、本記事はVue3 Composition APIに合わせて、Pinia.jsのSetup書き方を紹介します。[Qiita](https://qiita.com/kensoz/items/f1d4204f218651d2b6f9)にも投稿しました。
+よくOptions APIでPinia.jsを使っていますが、本記事はVue3 Composition APIに合わせて、🍍Pinia.jsのSetup書き方を紹介します。
 :::
+
+
+
+📡  [Qiita](https://qiita.com/kensoz/items/f1d4204f218651d2b6f9)
 
 
 

@@ -1,6 +1,6 @@
 ---
 lang: ja-JP
-title: JSの検索
+title: JSの検索整理
 ---
 
 # JSの検索整理
@@ -10,7 +10,7 @@ title: JSの検索
 
 
 ::: tip
-常用Javascript，Typescriptの検索メソッド整理
+常用JavaScript検索メソッドの整理
 :::
 
 

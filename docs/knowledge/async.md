@@ -1,6 +1,6 @@
 ---
 lang: ja-JP
-title: 非同期
+title: 非同期整理
 ---
 
 # 非同期整理
@@ -10,12 +10,12 @@ title: 非同期
 
 
 ::: tip
-常用Javascript，Typescripの非同期整理。async，await，promiseなど含めています
+常用JavaScript非同期メソッドの整理。Async，Await，Promiseなど含めています
 :::
 
 
 
-## promise
+## Promise
 
 🌐 [live demo](https://codepen.io/kensoz/pen/QWgMMJN)
 
@@ -66,7 +66,7 @@ timeout(100).then((value) => {
 
 
 
-## async await
+## Async&Await
 
 🌐 [live demo](https://codepen.io/kensoz/pen/GREvONv)
 
@@ -109,7 +109,7 @@ console.log(2);
 
 
 
-## async実行の順番
+## Async実行の順番
 
 🌐 [live demo](https://codepen.io/kensoz/pen/QWqMzZP)
 

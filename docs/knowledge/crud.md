@@ -1,6 +1,6 @@
 ---
 lang: ja-JP
-title: JSのCRUD
+title: JSのCRUD整理
 ---
 
 # JSのCRUD整理
@@ -10,7 +10,7 @@ title: JSのCRUD
 
 
 ::: tip
-常用Javascript，TypescriptのCRUDメソッド整理
+常用JavaScriptCRUDメソッドと処理の整理
 :::
 
 

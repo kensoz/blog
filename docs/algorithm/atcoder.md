@@ -1,6 +1,6 @@
 ---
 lang: ja-JP
-title: atcoder
+title: AtCoder
 ---
 
 # AtCoder
@@ -10,7 +10,7 @@ title: atcoder
 
 
 ::: tip
-メモとして自分の回答（JavaScript）を整理します。
+メモとして自分の回答を整理します。
 :::
 
 

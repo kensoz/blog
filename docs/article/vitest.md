@@ -5,13 +5,11 @@ title: VitestでAxiosテスト
 
 # VitestによってVueコンポーネント中のAxiosをテスト
 
-![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Vue.js-9ca3af.svg?logo=vue.js&style=popout-square)
+![](https://img.shields.io/badge/-Vite-9ca3af.svg?logo=vite&style=popout-square)  ![](https://img.shields.io/badge/-Vue.js-9ca3af.svg?logo=vue.js&style=popout-square)
 
 
 
-::: tip
-VitestによってVueコンポーネント中のAxiosをテスト、[Qiita](https://qiita.com/kensoz/items/cd5bcd644d8ac3fd6774)にも投稿しました。
-:::
+📡  [Qiita](https://qiita.com/kensoz/items/cd5bcd644d8ac3fd6774)
 
 
 

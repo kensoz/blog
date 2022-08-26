@@ -50,7 +50,7 @@ module.exports = {
         "/business/syllabary.md",
         "/business/haveornot.md",
         "/business/component.md",
-        "/business/common.md",
+        // "/business/common.md",
       ],
     },
     {
@@ -72,7 +72,7 @@ module.exports = {
       children: [
         "/algorithm/leetcode.md",
         "/algorithm/paiza.md",
-        "/algorithm/atcoder.md",
+        // "/algorithm/atcoder.md",
       ],
     },
   ],

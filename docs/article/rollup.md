@@ -1,6 +1,6 @@
 ---
 lang: ja-JP
-title: nodeバンドルと圧縮
+title: Node.jsのバンドルと圧縮
 ---
 
 # Rollup.jsによってNode.js/TSプロジェクトをバンドルと圧縮
@@ -9,9 +9,7 @@ title: nodeバンドルと圧縮
 
 
 
-::: tip
-Rollup.jsによってNode.jsプロジェクトをバンドルと圧縮、[Qiita](https://qiita.com/kensoz/items/441c1f12eb61d137ee2c)にも投稿しました。
-:::
+📡  [Qiita](https://qiita.com/kensoz/items/441c1f12eb61d137ee2c)
 
 
 

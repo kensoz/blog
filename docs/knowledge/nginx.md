@@ -5,14 +5,17 @@ title: Nginx学習
 
 # Nginx学習と整理
 
-![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)![](https://img.shields.io/badge/-Nginx-9ca3af.svg?logo=nginx&style=popout-square)
+![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square) ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square) ![](https://img.shields.io/badge/-Nginx-9ca3af.svg?logo=nginx&style=popout-square)
 
 
 
 ::: tip
-Nginxについての学習と整理です。  [Qiita](https://qiita.com/kensoz/items/99bd417c12e824f1495c)にも投稿しました。
-
+Nginxについての学習と整理メモです。 
 :::
+
+
+
+📡  [Qiita](https://qiita.com/kensoz/items/99bd417c12e824f1495c)
 
 
 

@@ -1,9 +1,9 @@
 ---
 lang: zh-CN
-title: 函数柯里化
+title: 函数柯里化整理
 ---
 
-# 函数柯里化
+# 函数柯里化学习与整理
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
@@ -63,5 +63,4 @@ delayAsyncThunk(callback);
 const delayAsyncThunk = thunk(1000, 1, 2, 3)(callback);
 // 1 2 3
 ```
-
 

@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: Nginx学习
+title: Nginx学习与整理
 ---
 
 # Nginx学习与整理
@@ -9,9 +9,7 @@ title: Nginx学习
 
 
 
-::: tip
-Nginx学习与整理。在[思否](https://segmentfault.com/a/1190000042334985)也投了稿。
-:::
+📡  [思否](https://segmentfault.com/a/1190000042334985)
 
 
 

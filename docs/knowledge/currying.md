@@ -1,16 +1,16 @@
 ---
 lang: ja-JP
-title: カリー化
+title: 関数カリー化学習
 ---
 
-# 関数カリー化
+# 関数カリー化学習
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
 
 
 ::: tip
-Javascript，Typescriptの関数カリー化学習と整理
+JavaScript関数カリー化学習と整理
 :::
 
 

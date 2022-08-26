@@ -8,13 +8,9 @@ title: 五十音順判定
 
 
 
-::: tip
-カタカナの五十音順を判定する関数です。  [Qiita](https://qiita.com/kensoz/items/87d28cf13b8d59abf052)にも投稿しました。
-:::
+📡  [Qiita](https://qiita.com/kensoz/items/87d28cf13b8d59abf052)
 
-
-
-### コード
+## コード
 
 🌐 [live demo](https://codepen.io/kensoz/pen/eYMMqbY)
 
@@ -43,7 +39,7 @@ title: 五十音順判定
   }
 ```
 
-### 使用
+## 使用
 
 ```typescript
 handleNameCode('ア')

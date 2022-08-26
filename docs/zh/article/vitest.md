@@ -1,17 +1,15 @@
 ---
 lang: zh-CN
-title: vitest测试axios
+title: Vitest测试Axios
 ---
 
-# 使用vitest测试vue中的axios
+# 使用Vitest测试Vue中的Axios
 
-![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Vue.js-9ca3af.svg?logo=vue.js&style=popout-square)
+![](https://img.shields.io/badge/-Vite-9ca3af.svg?logo=vite&style=popout-square)  ![](https://img.shields.io/badge/-Vue.js-9ca3af.svg?logo=vue.js&style=popout-square)
 
 
 
-::: tip
-使用vitest测试来axios，在[思否](https://segmentfault.com/a/1190000042295748)和[掘金](https://juejin.cn/post/7130069579182637087/)也有投稿。
-:::
+📡 [思否](https://segmentfault.com/a/1190000042295748) · [掘金](https://juejin.cn/post/7130069579182637087/)
 
 
 

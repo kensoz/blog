@@ -1,20 +1,18 @@
 ---
 lang: ja-JP
-title: コンポーネント登録
+title: Vueコンポーネント登録
 ---
 
-# 基底コンポーネントを一括登録する
+# Vue2基底コンポーネントを一括登録する
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)  ![](https://img.shields.io/badge/-Vue.js-9ca3af.svg?logo=Vue.js&style=popout-square)
 
 
 
-::: tip
-Vue.js 2のコンポーネント一括登録です。 [Qiita](https://qiita.com/kensoz/items/8a5278d0e7b5c5c97c26)にも投稿しました。
-:::
+📡  [Qiita](https://qiita.com/kensoz/items/8a5278d0e7b5c5c97c26)
 
 
 
-### コード
+## コード
 
 ```typescript
 // main.jsにて
@@ -33,7 +31,7 @@ Object.keys(components).forEach(key => {
 
 
 
-### 使用
+## 使用
 
 コンポーネント内でそのまま使えば大丈夫です！
 

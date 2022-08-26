@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: pinia的setup模式
+title: Pinia.js的setup模式
 ---
 
 # 用Setup API来写Pinia.js
@@ -9,9 +9,7 @@ title: pinia的setup模式
 
 
 
-::: tip
-用setup api来写Pinia.js。[思否](https://segmentfault.com/a/1190000042290316)也投了稿。
-:::
+📡[思否](https://segmentfault.com/a/1190000042290316)
 
 
 

@@ -1,20 +1,16 @@
 ---
 lang: ja-JP
-title: 配列値の有無
+title: JS配列値の有無
 ---
 
-# 配列にあれば削除なければ追加
+# JS配列にあれば削除なければ追加
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
 
 
-::: tip
-常用操作ですね。[Qiita](https://qiita.com/kensoz/items/14ed846ace6abfec4c77)にも投稿しました。
-:::
+📡  [Qiita](https://qiita.com/kensoz/items/14ed846ace6abfec4c77)
 
-
-
-### コード
+## コード
 
 🌐 [live demo](https://codepen.io/kensoz/pen/BawgZGr)
 

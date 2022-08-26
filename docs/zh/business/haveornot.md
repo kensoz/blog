@@ -8,13 +8,11 @@ title: 数组值有无
 
 
 
-::: tip
-常用操作了，在[思否](https://segmentfault.com/a/1190000042263065)也投了稿。
-:::
+📡  [思否](https://segmentfault.com/a/1190000042263065)
 
 
 
-### 代码
+## 代码
 
 🌐 [live demo](https://codepen.io/kensoz/pen/BawgZGr)
 

@@ -9,9 +9,9 @@ title: UI选定（Vue）
 
 
 
-::: tip
-Vue.js 3的UI库的简单介绍，同样投稿于[思否](https://segmentfault.com/a/1190000042335014)
-:::
+📡  [思否](https://segmentfault.com/a/1190000042335014)
+
+
 
 ## Vuetify
 

@@ -3,15 +3,15 @@ lang: zh-CN
 title: Vite新建Vue项目
 ---
 
-# 搭配vs code来用Vite3初始化Vue.js3的TS项目并配置ESLint和Prettier
+# 搭配VSCode来用Vite3初始化Vue.js3的TS项目并配置ESLint和Prettier
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)  ![](https://img.shields.io/badge/-Vue.js-9ca3af.svg?logo=vue.js&style=popout-square)  ![](https://img.shields.io/badge/-Vite-9ca3af.svg?logo=vite&style=popout-square)
 
 
 
-::: tip
-vite初始化Vue.js项目一条龙配置，同样发布于[掘金](https://juejin.cn/post/7129689902077181960)和[思否](https://segmentfault.com/a/1190000042289142)。
-:::
+📡  [掘金](https://juejin.cn/post/7129689902077181960) · [思否](https://segmentfault.com/a/1190000042289142)
+
+
 
 ## 0.事前准备
 

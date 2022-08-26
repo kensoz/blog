@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: bind,apply,call
+title: bind,apply,call整理
 ---
 
 # bind,apply,call

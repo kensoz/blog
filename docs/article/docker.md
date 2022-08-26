@@ -10,11 +10,7 @@ title: Dockerデプロイ
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)  ![](https://img.shields.io/badge/-Node.js-9ca3af.svg?logo=node.js&style=popout-square)  ![](https://img.shields.io/badge/-Docker-9ca3af.svg?logo=docker&style=popout-square)
 
 
-
-::: tip
-FEに向けてフルスタックのWeb AppをDockerコンテンツ化にするやり方についての記事です。  
-[Qiita](https://qiita.com/kensoz/items/2fc0b707e91e6ec8920e)にも投稿しました。
-:::
+📡  [Qiita](https://qiita.com/kensoz/items/2fc0b707e91e6ec8920e)
 
 
 

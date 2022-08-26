@@ -3,15 +3,21 @@ lang: ja-JP
 title: Vite初期化Vue
 ---
 
-# vs codeでVite3によってVue.js3のTS環境を作成ESLintとPrettierを追加
+# VSCodeでVite3によってVue.js3のTS環境を作成ESLintとPrettierを追加
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)  ![](https://img.shields.io/badge/-Vue.js-9ca3af.svg?logo=vue.js&style=popout-square)  ![](https://img.shields.io/badge/-Vite-9ca3af.svg?logo=vite&style=popout-square)
 
 
 
 ::: tip
-ViteのVue.jsプロジェクト1から環境作成、[Qiita](https://qiita.com/kensoz/items/053c7103cd073d09f81e)にも投稿しました。
+ViteのVue.jsプロジェクト1から環境作成。
 :::
+
+
+
+📡  [Qiita](https://qiita.com/kensoz/items/053c7103cd073d09f81e)
+
+
 
 ## 0.事前準備
 

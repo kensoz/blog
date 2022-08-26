@@ -50,7 +50,7 @@ module.exports = {
         "/zh/business/syllabary.md",
         "/zh/business/haveornot.md",
         "/zh/business/component.md",
-        "/zh/business/common.md",
+        // "/zh/business/common.md",
       ],
     },
     {
@@ -67,12 +67,12 @@ module.exports = {
       ],
     },
     {
-      text: "算法（日语）",
+      text: "算法",
       link: "/algorithm/leetcode.md",
       children: [
         "/algorithm/leetcode.md",
         "/algorithm/paiza.md",
-        "/algorithm/atcoder.md",
+        // "/algorithm/atcoder.md",
       ],
     },
   ],

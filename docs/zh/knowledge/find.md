@@ -1,16 +1,16 @@
 ---
 lang: zh-CN
-title: JS查找
+title: JS查找整理
 ---
 
-# JS查找总结
+# JS查找总结整理
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
 
 
 ::: tip
-常用Javascript，Typescript查找方法总结
+常用JavaScript查找方法总结整理
 :::
 
 

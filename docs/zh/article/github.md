@@ -1,6 +1,6 @@
 ---
 lang: ja-JP
-title: commit变更
+title: commitID变更
 ---
 
 # 变更Github上历史commit的用户名和邮箱的方法
@@ -9,11 +9,7 @@ title: commit变更
 
 
 
-::: tip
-变更Github上历史commit的用户名和邮箱的方法，[思否](https://segmentfault.com/a/1190000042339058)和[掘金](https://juejin.cn/post/7133086666012491784/)也投了稿
-:::
-
-
+📡  [思否](https://segmentfault.com/a/1190000042339058) · [掘金](https://juejin.cn/post/7133086666012491784/)
 
 ## 环境
 

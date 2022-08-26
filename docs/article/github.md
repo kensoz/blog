@@ -9,10 +9,7 @@ title: コミットID修正
 
 
 
-::: tip
-GitHub 上でコミットを別アカウントでPushした時の解決方法です、[Qiita](https://qiita.com/kensoz/items/b1f92b75ff0446ec6ed1)にも投稿しました。
-:::
-
+📡  [Qiita](https://qiita.com/kensoz/items/b1f92b75ff0446ec6ed1)
 
 
 ## 環境

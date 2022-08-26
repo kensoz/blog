@@ -1,21 +1,21 @@
 ---
 lang: zh-CN
-title: 异步
+title: JS常用异步整理
 ---
 
-# 异步总结
+# JS常用异步整理
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
 
 
 ::: tip
-常用Javascript，Typescrip异步总结。包括async，await，promise等。
+常用JavaScript异步总结整理。包括Async，Await，Promise等。
 :::
 
 
 
-## promise
+## Promise
 
 🌐 [live demo](https://codepen.io/kensoz/pen/QWgMMJN)
 
@@ -69,7 +69,7 @@ timeout(100).then((value) => {
 
 
 
-## async await
+## Async&Await
 
 🌐 [live demo](https://codepen.io/kensoz/pen/GREvONv)
 
@@ -110,7 +110,7 @@ console.log(2); // 因为async函数内有promise对象需要执行，所以他�
 
 
 
-## async的执行顺序
+## Async的执行顺序
 
 🌐 [live demo](https://codepen.io/kensoz/pen/QWqMzZP)
 

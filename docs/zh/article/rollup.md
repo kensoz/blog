@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: 压缩node项目
+title: 压缩Node.js项目
 ---
 
 # 使用Rollup.js来压缩打包Node.js/TS项目
@@ -9,9 +9,7 @@ title: 压缩node项目
 
 
 
-::: tip
-使用Rollup.js来压缩打包Node.js项目，同样发表于[思否](https://segmentfault.com/a/1190000042295273)和[掘金](https://juejin.cn/post/7130053864740356104/)
-:::
+📡  [思否](https://segmentfault.com/a/1190000042295273) · [掘金](https://juejin.cn/post/7130053864740356104/)
 
 
 

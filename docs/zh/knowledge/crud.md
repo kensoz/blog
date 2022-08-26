@@ -1,6 +1,6 @@
 ---
 lang: zh-CN
-title: JS增删改查
+title: JS增删改查整理
 ---
 
 # JS增删改查整理
@@ -10,7 +10,7 @@ title: JS增删改查
 
 
 ::: tip
-常用的Javascript，Typescript增删改查方法
+常用的JavaScript增删改查方法整理总结
 :::
 
 
