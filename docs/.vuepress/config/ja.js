@@ -72,7 +72,8 @@ module.exports = {
       children: [
         "/algorithm/leetcode.md",
         "/algorithm/paiza.md",
-        // "/algorithm/atcoder.md",
+        "/algorithm/atcoder.md",
+        "/algorithm/codility.md",
       ],
     },
   ],

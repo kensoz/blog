@@ -16,6 +16,12 @@ title: LeetCode
 
 
 
+## メモ
+
+- `return`解答、入力の処理が特に必要ない
+
+
+
 ## EASY
 
 ### 01. Two Sum

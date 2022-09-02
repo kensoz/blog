@@ -19,10 +19,17 @@ Paizaの回答と違っている回答はあります、ここは最適解です
 
 
 
-## POINT（常用メソッド）
+## メモ
 
+- `console.log(解答)`、入力の処理が必要
 - 改行：`"\n"`，
-- 文字列転換：`split(" ")`または`split(" ").join("")`
+- 文字列転換：
+
+  ```js
+  const str = "2 3"
+  console.log(str.split(" ")) // ["2","3"]
+  console.log(str.split(" ").join("")) // "23"
+  ```
 
 
 
@@ -328,10 +335,8 @@ tmp !== "No" && console.log('Yes')
 console.log(lines[0]*12);
 ```
 
-### D
+### D221:グループ
 
 ```js
-
+console.log(lines[0]/2);
 ```
-
-### D
