@@ -15,7 +15,8 @@ title: 五十音順判定
 🌐 [live demo](https://codepen.io/kensoz/pen/eYMMqbY)
 
 ```typescript
-  const handleNameCode = (str: string): string => {
+  const handleNameCode = (str: string): number => {
+    // カタカナ定義
     const kana: Map<number, string> = new Map([
       [1, 'アイウエオ'],
       [2, 'カキクケコガギグゲゴ'],
@@ -29,19 +30,19 @@ title: 五十音順判定
       [10, 'ワヲン'],
     ])
 
-    for (let i = 1; i < 11; i++) {
-      // パラメータカタカナの行を返す
-      if (kana.get(i)?.indexOf(str) !== -1) return i.toString()
+    for (let [key, value] of kana.entries()) {
+      // 存在の場合、カタカナの行数のkeyを返す
+      if (value.indexOf(str) !== -1) return key
     }
 
-    // 数字、ひらがなの場合
-    return '11'
+    // 存在しない場合、数字などの場合
+    return kana.size + 1
   }
 ```
 
 ## 使用
 
 ```typescript
-handleNameCode('ア')
-// 出力： '1'
+  console.log(handleNameCode('カ')) // 2
+  console.log(handleNameCode('a')) // 11
 ```

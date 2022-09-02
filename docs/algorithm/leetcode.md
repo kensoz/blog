@@ -161,3 +161,52 @@ var isValid = function(s) {
 };
 ```
 
+### 21.Merge Two Sorted Lists
+
+```js
+var mergeTwoLists = function (list1, list2) {
+  // 两个都是Null直接返回Null
+  // 如果链表啥都没有就是head指向了null，返回null
+  if (list1 === null && list2 === null) return null;
+
+  // 将链表转换为数组
+  const arr = [];
+  while (list1 !== null) {
+    arr.push(list1.val);
+    list1 = list1.next;
+  }
+  while (list2 !== null) {
+    arr.push(list2.val);
+    list2 = list2.next;
+  }
+
+  // 排序
+  arr.sort((a, b) => a - b);
+
+  // 将数组转换为链表
+  let LinkedList = new ListNode(arr[0]);
+  let pre = LinkedList;
+  for (let i = 1; i < arr.length; i++) {
+    pre.next = new ListNode(arr[i]);
+    pre = pre.next;
+  }
+  return LinkedList;
+};
+```
+
+### 26.Remove Duplicates from Sorted Array
+
+```js
+var removeDuplicates = function (nums) {
+  // 得到新的没有重复的数组，从单纯的数组去重来说到这就ok了
+  const newArr = [...new Set(nums)];
+  // 输入的nums数组，全他娘的给暴力清空
+  nums.splice(0);
+  // 得到新的数组，添加到nums数组的开头，注意这个方法必须是会改变原数组的方法才有效
+  // 系统在判定时会看这个nums数组
+  nums.unshift(...newArr);
+  // 返回新数组长度
+  return nums.length;
+};
+```
+

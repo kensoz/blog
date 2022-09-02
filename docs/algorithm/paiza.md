@@ -12,10 +12,17 @@ title: Paiza
 ::: tip
 メモとして自分の回答を整理します。  
 Paizaの回答と違っている回答はあります、ここは最適解です。  
-数字順番ではありません。  
+数字順も公式順でもはありません。  
 
 中文说明：算法题转职网站Paiza的答案，基本复制就可以用。
 :::
+
+
+
+## POINT（常用メソッド）
+
+- 改行：`"\n"`，
+- 文字列転換：`split(" ")`または`split(" ").join("")`
 
 
 
@@ -197,3 +204,134 @@ console.log(lines[0] === 'saru' ? 'No' : 'Yes');
 console.log(lines[0]*150);
 ```
 
+### D166:何日後になるか
+
+```js
+console.log(lines[0] * 7);
+```
+
+### D192:感嘆符の付与
+
+```js
+console.log(lines[0]+ "!");
+```
+
+### D032:充電時間
+
+```js
+console.log(100 - lines[0]);
+```
+
+### D151:お菓子のプレゼント
+
+```js
+  if(lines[0] === "chocolate"){
+      console.log(Number(lines[1]) * 2);
+  }else{
+      console.log(Number(lines[1]) * 5);
+  }
+```
+
+### D062:ひな祭り
+
+```js
+  　const arr = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"];
+    const lai = lines[0].split(" ");
+    const one = arr.splice(0,lai[0]).join("");
+    const two = arr.splice(0,lai[1]).join("");
+    console.log(one + "\n" + two + "\n" + arr.join(""));
+```
+
+### D194:カロリーの計算
+
+```js
+ console.log(lines[0]*540);
+```
+
+### D174:栄養の摂取
+
+```js
+console.log(lines[0] * 1500);
+```
+
+### D210:年間の料金
+
+```js
+console.log(lines[0]*12);
+```
+
+### D200:【銀の弾丸コラボ問題】電気代の計算
+
+```js
+console.log(lines[0]*25*24);
+```
+
+### D012:絶対値を求めよ
+
+```js
+console.log(Math.abs(lines[0]));
+```
+
+### D031:分から秒へ
+
+```js
+console.log(lines[0]*60);
+```
+
+### D110:3つの数字
+
+```js
+const arr = lines[0].split(" ")
+console.log(arr[0]*arr[1]*arr[2]);
+```
+
+### D038:試合の回数
+
+```js
+console.log(lines[0]*(lines[0]-1)/2);
+```
+
+### D008:奇数か偶数か
+
+```js
+console.log(lines[0]%2 === 0 ? "even" : "odd");
+```
+
+### D095:ジュースの分配
+
+```js
+console.log(parseInt(lines[0]/lines[1]))
+```
+
+### D109:ゾロ目の日付
+
+```js
+const arr = lines[0].split(" ").join("")
+let tmp = arr[0]
+
+for(let i = 1; i < arr.length; i++){
+  if(arr[i] === tmp){
+    tmp = arr[i]
+  }else{
+    tmp = 'No'
+    console.log(tmp)
+    break
+  }
+}
+
+tmp !== "No" && console.log('Yes')
+```
+
+### D120:鉛筆の数
+
+```js
+console.log(lines[0]*12);
+```
+
+### D
+
+```js
+
+```
+
+### D
