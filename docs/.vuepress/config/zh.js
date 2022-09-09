@@ -60,6 +60,7 @@ module.exports = {
         "/zh/article/vite.md",
         "/zh/article/docker.md",
         "/zh/article/pinia.md",
+        "/zh/article/indexed.md",
         "/zh/article/rollup.md",
         "/zh/article/vitest.md",
         "/zh/article/ui.md",

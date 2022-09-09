@@ -335,8 +335,69 @@ tmp !== "No" && console.log('Yes')
 console.log(lines[0]*12);
 ```
 
-### D221:グループ
+### D172:イヴの日付
 
 ```js
-console.log(lines[0]/2);
+console.log(lines[0] - 1);
 ```
+
+### D190:センチをミリに
+
+```js
+console.log(lines[0]*10);
+```
+
+### D164:区切りの良い日
+
+```js
+let res = "";
+for (let i = 1; i <= 8; i++) {
+  if (Math.pow(2, i) === Number(lines[0])) {
+    console.log("OK");
+    res = "";
+    break;
+  } else {
+    res = "NG";
+  }
+}
+
+res !== "" && console.log(res);
+```
+
+### D160:N合目の高さ
+
+```js
+console.log(lines[0]/10 * lines[1]);
+```
+
+### D217:キャラクターの名前
+
+```js
+console.log(lines[0].length);
+```
+
+### D218:【813の日2022】買い物
+
+```js
+console.log(lines[0] >= 1000 ? 'Yes' : 'No');
+```
+
+### D215:金庫のパスワード
+
+```js
+console.log(lines[0] === 'paiza' ? 'Yes' : 'No');
+```
+
+### D065:エラーコードの分類
+
+```js
+const lai = String(lines[0]);
+if (lai[0] === "2") {
+  console.log("ok");
+} else if (lai[0] === "4") {
+  console.log("error");
+} else {
+  console.log("unknown");
+}
+```
+

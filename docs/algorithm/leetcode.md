@@ -216,3 +216,43 @@ var removeDuplicates = function (nums) {
 };
 ```
 
+### 27.Remove Element
+
+```js
+var removeElement = function (nums, val) {
+  // 得到筛选后的符合要求的数组，从单纯的数组移除元素来说到这就ok了
+  const arr = nums.filter((i) => {
+    return i !== val;
+  });
+  // 输入的nums数组，全他娘的给暴力清空
+  nums.splice(0);
+  // 得到新的数组，添加到nums数组的开头，注意这个方法必须是会改变原数组的方法才有效
+  // 系统在判定时会看这个nums数组
+  nums.unshift(...arr);
+  // 返回数组长度
+  return nums.length;
+};
+```
+
+### 35. Search Insert Position
+
+```javascript
+var searchInsert = function (nums, target) {
+  if (!nums.includes(target)) {
+    nums.push(target);
+    nums.sort((a, b) => a - b);
+  }
+
+  return nums.findIndex((i) => i === target);
+};
+```
+
+### 58.Length of Last Word
+
+```js
+var lengthOfLastWord = function (s) {
+  const str = s.trim().split(" ");
+  return str[str.length - 1].length;
+};
+```
+
