@@ -2,7 +2,6 @@ const ja = require("./config/ja");
 const zh = require("./config/zh");
 const { defaultTheme } = require("vuepress");
 const { searchPlugin } = require("@vuepress/plugin-search");
-const { backToTopPlugin } = require("@vuepress/plugin-back-to-top");
 
 module.exports = {
   base: "/blog/",
@@ -12,7 +11,7 @@ module.exports = {
       { rel: "shortcut icon", type: "image/x-icon", href: "/logo.png?" },
     ],
   ],
-  plugins: [backToTopPlugin({}), searchPlugin({})],
+  plugins: [searchPlugin({})],
 
   locales: {
     "/": {
@@ -28,5 +27,7 @@ module.exports = {
   theme: defaultTheme({
     logo: "/logo.png",
     locales: { "/": ja, "/zh/": zh },
+    lastUpdated: false,
+    contributors: false,
   }),
 };

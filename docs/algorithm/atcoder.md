@@ -26,6 +26,8 @@ title: AtCoder
 
   ```js
   const input = require("fs").readFileSync("/dev/stdin", "utf8").split("\n");
+  const arr = input[0].split(" ");
+  // console.log(arr)
   // answer code...
   ```
   
@@ -106,5 +108,53 @@ title: AtCoder
   }
 
   console.log(res);
+```
+
+### ABC083B - Some Sums
+
+```js
+let num = [];
+let res = [];
+// 全数字配列を作成
+for (let i = 1; i < Number(arr[0]) + 1; i++) {
+  num.push(i.toString());
+}
+
+// ループで各数字の桁数合計を算出
+for (let e = 0; e < num.length; e++) {
+  let tmp = 0;
+
+  // 桁数足し算
+  for (let a = 0; a < num[e].length; a++) {
+    tmp = Number(num[e][a]) + tmp;
+  }
+
+  // 条件に合うかどうかを判断
+  if (tmp >= arr[1] && tmp <= arr[2]) {
+    res.push(Number(num[e]));
+  }
+}
+
+// 条件にあった数字の配列を加算
+console.log(res.reduce((prev, curr) => prev + curr));
+```
+
+### ABC088B - Card Game for Two
+
+```js
+let alice = 0;
+let bob = 0;
+const lai = Array.from(input[1].split(" "), Number);
+const sort = lai.sort((a, b) => b - a);
+
+for (const [i, e] of sort.entries()) {
+  if (i % 2 === 0) {
+    alice += e;
+    continue;
+  }
+  bob += e;
+}
+
+console.log(alice - bob);
 ```
 

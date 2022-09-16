@@ -9,6 +9,10 @@ module.exports = {
       text: "开源项目",
       children: [
         {
+          text: "FEC",
+          link: "https://github.com/kensoz/FEC",
+        },
+        {
           text: "Rrea-Client",
           link: "https://github.com/kensoz/Rrea-client",
         },

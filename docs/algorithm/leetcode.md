@@ -256,3 +256,13 @@ var lengthOfLastWord = function (s) {
 };
 ```
 
+### 59.Plus One
+
+```js
+var plusOne = function(digits) {
+  const num = BigInt(digits.join("")) + 1n;
+  const res = num.toString().split("");
+  return res;
+};
+```
+

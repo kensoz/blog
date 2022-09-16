@@ -22,6 +22,7 @@ Paizaの回答と違っている回答はあります、ここは最適解です
 ## メモ
 
 - `console.log(解答)`、入力の処理が必要
+- 入力の行数は配列のindex数
 - 改行：`"\n"`，
 - 文字列転換：
 
@@ -399,5 +400,106 @@ if (lai[0] === "2") {
 } else {
   console.log("unknown");
 }
+```
+
+### D222:どちらが沢山食べたか
+
+```js
+  const res = Number(lines[0]) > Number(lines[1]) ? lines[0] : lines[1]
+  console.log(res);
+```
+
+### D170:校庭マラソン
+
+```js
+console.log(lines[0]*lines[1]);
+```
+
+### D212:繋げた長さ
+
+```js
+console.log(lines[0]*10);
+```
+
+### D123:自動でチャージ
+
+```js
+const res = Number(lines[0]) >= 10000 ? Number(lines[0]) : Number(lines[0]) + 10000
+console.log(res);
+```
+
+### D171:数当てゲーム
+
+```js
+  const p = lines[0].split(" ")
+  const s = Number(lines[1])
+  console.log(Number(p[0]) -s, Number(p[1]) -s );
+```
+
+### D091:花粉の予報
+
+```js
+const arr = lines[0].split(" ")
+let res = 0
+for(let i = 0; i < arr.length; i++){
+   Number(arr[i]) <= 2 && res++
+}
+console.log(res)
+```
+
+### D045:通知票
+
+```js
+const obj = {5: 'A',3: 'C',2: 'D',4: 'B',1: 'E'};
+console.log(obj[lines[0]]);
+```
+
+### D046:不思議なタマゴ
+
+```js
+const arr = lines[0].split(" ")
+arr.sort((a, b) => a > b ? 1 : -1) 
+console.log(arr[arr.length-1]);
+```
+
+### D209:数字探し
+
+```js
+const lai = lines[0]
+let res = 0
+for(let i = 0; i < lines[1].length; i++){
+   lines[1][i] === lai && res++
+}
+console.log(res);
+```
+
+### D044:はじめまして
+
+```js
+const lai = lines[0].split(" ");
+const obj = {"F":"Ms.","M":"Mr."};
+console.log("Hi, " + obj[lai[1]] + " " + lai[0]);
+```
+
+### D051:衣替え
+
+```js
+const  arr  = lines[0].split(" ");
+let count = 0;
+for(let i in arr){
+    arr[i]=="W" && count++;
+    
+}
+count >= 5 ?  console.log("OK") : console.log("NG")
+```
+
+### D052:ピラミッドの作り方
+
+```js
+let res = 0;
+for(let i = 1; i <= Number(lines[0]); i++){
+   res+=i;
+}
+console.log(res);
 ```
 

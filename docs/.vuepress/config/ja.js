@@ -9,6 +9,10 @@ module.exports = {
       text: "OSS",
       children: [
         {
+          text: "FEC",
+          link: "https://github.com/kensoz/FEC",
+        },
+        {
           text: "Rrea-Client",
           link: "https://github.com/kensoz/Rrea-client",
         },
