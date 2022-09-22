@@ -266,3 +266,43 @@ var plusOne = function(digits) {
 };
 ```
 
+### 67.Add Binary
+
+```js
+var addBinary = function (a, b) {
+  // 比较两个字符串的长度，将较短的那个前面补足 0
+  if (a.length < b.length) {
+    a = "0".repeat(b.length - a.length) + a;
+  } else {
+    b = "0".repeat(a.length - b.length) + b;
+  }
+
+  // 将两个字符串转为倒序数组
+  a = a.split("").reverse();
+  b = b.split("").reverse();
+
+  // 将字符串中的数据两两相加，并加上上一个位置的进位
+  let sum = 0;
+  let carry = 0;
+  let res = [];
+  a.forEach((item, i) => {
+    sum = Number(item) + Number(b[i]) + carry;
+    if (sum > 1) {
+      res.push(sum % 2);
+      carry = parseInt(sum / 2);
+    } else {
+      res.push(sum);
+      carry = 0;
+    }
+  });
+
+  // 若最后一个进位大于0，则加入结果中
+  if (carry > 0) {
+    res.push(carry);
+  }
+
+  // 将求得的结果倒序，并转为字符串
+  return res.reverse().join("");
+};
+```
+

@@ -26,7 +26,7 @@ title: AtCoder
 
   ```js
   const input = require("fs").readFileSync("/dev/stdin", "utf8").split("\n");
-  const arr = input[0].split(" ");
+  // 入力が一行：const arr = input[0].split(" ");
   // console.log(arr)
   // answer code...
   ```
@@ -113,6 +113,7 @@ title: AtCoder
 ### ABC083B - Some Sums
 
 ```js
+const arr = input[0].split(" ");
 let num = [];
 let res = [];
 // 全数字配列を作成
@@ -156,5 +157,36 @@ for (const [i, e] of sort.entries()) {
 }
 
 console.log(alice - bob);
+```
+
+### ABC085B - Kagami Mochi
+
+```js
+// お題のタイプは少しおかしい気がします
+input.shift()
+console.log([ ... new Set(input)].length)
+```
+
+### ABC085C - Otoshidama
+
+```js
+const arr = input[0].split(" ");
+const count = Number(arr[0])
+const Otoshidama = Number(arr[1])
+let res = '-1 -1 -1';
+ 
+  for (let i = 0; i <= count; i++) {
+    for (let e = 0; e <= count; e++) {
+      if (i + e > count) {
+        continue;
+      }
+      if (10000 * i + 5000 * e + 1000 * (count - i - e) === Otoshidama) {
+        res = `${i} ${e} ${count - i - e}`;
+        break;
+      }
+    }
+  }
+ 
+console.log(res);
 ```
 

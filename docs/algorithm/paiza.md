@@ -503,3 +503,9 @@ for(let i = 1; i <= Number(lines[0]); i++){
 console.log(res);
 ```
 
+### D199:お餅の個数
+
+```js
+console.log(lines[0]*lines[1]);
+```
+
