@@ -39,7 +39,7 @@ module.exports = {
       link: "/knowledge/crud.md",
       children: [
         "/knowledge/crud.md",
-        "/knowledge/find.md",
+        //"/knowledge/find.md",
         "/knowledge/currying.md",
         "/knowledge/async.md",
         "/knowledge/bind.md",
@@ -79,6 +79,7 @@ module.exports = {
         "/algorithm/paiza.md",
         "/algorithm/atcoder.md",
         "/algorithm/codility.md",
+        "/algorithm/hackerrank.md",
       ],
     },
   ],

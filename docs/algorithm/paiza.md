@@ -34,6 +34,43 @@ Paizaの回答と違っている回答はあります、ここは最適解です
 
 
 
+## Bランク
+
+### B029:地価の予想
+
+```js
+const xy = {
+  x: Number(lines[0].split(" ")[0]),
+  y: Number(lines[0].split(" ")[1]),
+};
+const k = Number(lines[1]);
+const N = Number(lines[2]);
+const lai = new Array(N);
+const distance = (p, xy) => {
+  return Math.pow(Math.pow(p.x - xy.x, 2) + Math.pow(p.y - xy.y, 2), 0.5);
+};
+
+for (let i = 0; i < N; i++) {
+  lai[i] = {
+    x: Number(lines[3 + i].split(" ")[0]),
+    y: Number(lines[3 + i].split(" ")[1]),
+    price: Number(lines[3 + i].split(" ")[2]),
+  };
+}
+
+lai.sort((a, b) => {
+  return distance(a, xy) <= distance(b, xy) ? -1 : 1;
+});
+
+let total = 0;
+for (let i = 0; i < k; i++) {
+  total += lai[i].price;
+}
+console.log(Math.round(total / k));
+```
+
+
+
 ## Cランク
 
 ### C013:嫌いな数字 
@@ -507,5 +544,70 @@ console.log(res);
 
 ```js
 console.log(lines[0]*lines[1]);
+```
+
+### D223:新しい呪文
+
+```js
+console.log(lines[0]+lines[1]);
+```
+
+### D106:割った余り
+
+```js
+console.log(lines[0]%lines[1]);
+```
+
+### D156:密度の計算
+
+```js
+console.log(lines[0]*lines[1]);
+```
+
+### D154:画面の構成
+
+```js
+console.log(lines[0]*lines[0]-lines[1]);
+```
+
+### D077:計算機の表示
+
+```js
+const arr = lines[0].split(" ")
+console.log(Number(arr[0])*Number(arr[1]) > 9999 ? "NG" : Number(arr[0])*Number(arr[1]));
+```
+
+### D092:花見の準備
+
+```js
+const arr1 = lines[0].split(" ")
+const arr2 = lines[1].split(" ")
+if( Number(arr1[2])/(Number(arr1[0])*Number(arr1[1])) === Number(arr2[2])/(Number(arr2[0])*Number(arr2[1])) ){
+  console.log("DRAW")
+}else if(Number(arr1[2])/(Number(arr1[0])*Number(arr1[1])) > Number(arr2[2])/(Number(arr2[0])*Number(arr2[1])) ){
+  console.log(arr2.join(" "))
+}else{
+  console.log(arr1.join(" "))        
+}
+```
+
+### D034:どれにしようかな
+
+```js
+console.log(21%Number(lines[0]) === 0 ? lines[0] : 21%Number(lines[0]));
+```
+
+### D082:2つの単語
+
+```js
+const ff = lines[0][lines[0].length -1]
+const ss = lines[1][0]
+const sf = lines[1][lines[1].length -1]
+
+if(ss === ff && sf !== "n"){
+    console.log("OK");
+}else{
+    console.log("NG");   
+}
 ```
 

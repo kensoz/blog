@@ -162,7 +162,6 @@ console.log(alice - bob);
 ### ABC085B - Kagami Mochi
 
 ```js
-// お題のタイプは少しおかしい気がします
 input.shift()
 console.log([ ... new Set(input)].length)
 ```
@@ -188,5 +187,45 @@ let res = '-1 -1 -1';
   }
  
 console.log(res);
+```
+
+### ABC049C - 白昼夢
+
+```js
+console.log(input[0].match( /^(dream|dreamer|erase|eraser)*$/ ) ? "YES" : "NO")
+```
+
+### ABC086C - Traveling
+
+```js
+// tは時間、Nは観光したいポイントの総数、始めは(0,0)から
+const N = Number(input[0])
+let arr = [{t:0,x:0,y:0}]
+
+//　座標データをオブジェクトで格納、全データ配列にする
+for(let i = 1; i <= N; i++){
+  const tmp = input[i].split(" ")
+  arr.push({
+    t: Number(tmp[0]),
+    x: Number(tmp[1]),
+    y: Number(tmp[2]),
+  })
+}
+
+// スタートからポイント、ポイントから次のポイント...の各keyの差を算出
+let flg = true
+for(let d = 0; d < N; d++){
+  const Dt = arr[d + 1]["t"] - arr[d]["t"] //一回使う時間
+  // なぜabs？戻る場合はある
+  const Dx = Math.abs(arr[d + 1]["x"] - arr[d]["x"]); // 一回xの移動距離
+  const Dy = Math.abs(arr[d + 1]["y"] - arr[d]["y"]); // 一回yの移動距離
+  const move = Dx + Dy; // 一回移動の総距離 = 一回xの移動距離 + 一回yの移動距離
+
+  // 一回移動の総距離 > 一回使う時間：遠すぎて観光できない
+  // 一回移動の総距離と一回使う時間の偶奇が合わない：到着できなくて観光できない（最初はここで失敗した）
+  flg = (move > Dt || Dt % 2 !== move % 2) ? false : true
+}
+
+flg ? console.log("Yes") : console.log("No");
 ```
 

@@ -306,3 +306,72 @@ var addBinary = function (a, b) {
 };
 ```
 
+### 69.Sqrt(x)
+
+a.API
+
+```js
+var mySqrt = function (x) {
+    return Math.floor(Math.sqrt(x))
+};
+```
+
+b.二分探索
+
+```js
+var mySqrt = function (x) {
+  // 思路：一旦mid在调整后仍然取值不变，就返回mid。用mid2判断
+  // 注意这里用的是值来查
+  // 因为这个题是取整的，而不是要求与n最接近的整数，所以mid那块用的是floor而不是ceil。
+  // 最后,这个解法的bug是n=1时会返回0，所以再处理一下这个特殊输入值就行了。
+  if (x === 1) {
+    return 1;
+  }
+  let left = 0;
+  let right = x;
+  let mid;
+  while (1) {
+    mid = Math.floor((left + right) / 2);
+    if (mid ** 2 === x) {
+      return mid;
+    } else if (mid ** 2 > x) {
+      right = mid;
+    } else {
+      left = mid;
+    }
+    mid2 = Math.floor((left + right) / 2);
+    if (mid === mid2) {
+      return mid;
+    }
+  }
+};
+```
+
+### 70.Climbing Stairs
+
+a.フィボナッチ数一般項/斐波那契数列通项公式
+
+```js
+var climbStairs = function(n) {
+const sqrt_5 = Math.sqrt(5);
+const fn = Math.pow((1 + sqrt_5) / 2, n + 1) - Math.pow((1 - sqrt_5) / 2,　n + 1);
+return Math.round(fn / sqrt_5)
+};
+```
+
+b.フィボナッチ数漸化式/斐波那契数列递推公式
+
+```js
+var climbStairs = function(n) {
+    const dp = [];
+    dp[0] = 1;
+    dp[1] = 1;
+    for(let i = 2; i <= n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2];
+    }
+    return dp[n];
+};
+```
+
+
+
