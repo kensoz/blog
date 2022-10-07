@@ -10,7 +10,7 @@ title: LeetCode
 
 
 ::: tip
-メモとして自分の回答を整理します。難易度の順番です。  
+メモとして自分の回答を整理します。  
 メモしやすいため、一部のコメントは中国語です。
 :::
 
@@ -373,5 +373,105 @@ var climbStairs = function(n) {
 };
 ```
 
+### 704.Binary Search(二分探索学習)
 
+a.API
+
+```js
+var search = function(nums, target) {
+  return nums.indexOf(target)
+};
+```
+
+b.二分探索
+
+```js
+var search = function (nums, target) {
+  let left = 0;
+  let right = nums.length - 1;
+    
+  while (left <= right) {
+    let mid = left + ((right - left) >> 1);
+    if (nums[mid] > target) {
+      right = mid - 1;
+    } else if (nums[mid] < target) {
+      left = mid + 1;
+    } else {
+      return mid;
+    }
+  }
+
+  return -1;
+};
+```
+
+### 367.Valid Perfect Square(二分探索学習)
+
+a.API
+
+```js
+var isPerfectSquare = function(num) {
+    return Number.isInteger(Math.sqrt(num))
+};
+```
+
+b.二分探索
+
+```js
+var isPerfectSquare = function (num) {
+  let left = 0;
+  let right = num;
+
+  while (left <= right) {
+    let mid = left + ((right - left) >> 1);
+
+    if (mid * mid > num) {
+      right = mid - 1;
+    } else if (mid * mid < num) {
+      left = mid + 1;
+    } else {
+      return true;
+    }
+  }
+
+  return false;
+};
+```
+
+### 977.Squares of a Sorted Array(ダブルポインタ)
+
+a.API
+
+```js
+var sortedSquares = function(nums) {
+  const res = nums.map((e)=> e*e)
+  return res.sort((a,b)=> a-b)
+};
+```
+
+b.ダブルポインタ
+
+```js
+var sortedSquares = function(nums) {
+    let n = nums.length;
+    let res = new Array(n).fill(0);
+    let i = 0;
+    let j = n - 1; 
+    let k = n - 1;
+    while (i <= j) {
+        let left = nums[i] * nums[i],
+            right = nums[j] * nums[j];
+        if (left < right) {
+            res[k] = right;
+            k--;
+            j--;
+        } else {
+            res[k] = left;
+            k--;
+            i++;
+        }
+    }
+    return res;
+};
+```
 

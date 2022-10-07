@@ -1,5 +1,5 @@
 ---
-lang: ja-JP
+lang: zh-CN
 title: commitID变更
 ---
 

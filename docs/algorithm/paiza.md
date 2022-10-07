@@ -36,6 +36,126 @@ Paizaの回答と違っている回答はあります、ここは最適解です
 
 ## Bランク
 
+### B034:ロボットの歩行実験
+
+```js
+// 初期化
+const x = Number(lines[0].split(" ")[0]);
+const y = Number(lines[0].split(" ")[1]);
+const lai = lines[1].split(" ");
+const go = Number(lines[2]);
+const W = "West";
+const E = "East";
+const N = "North";
+const S = "South";
+const NESW = [N, E, S, W];
+
+// ロボット行為
+class Behavior {
+  constructor() {
+    this._way = 0;
+    this._move = 0;
+  }
+
+  turn(e) {
+    switch (e) {
+      case "R":
+        this._way = (this._way + 1) % 4;
+        return true;
+      case "B":
+        this._way = (this._way + 2) % 4;
+        return true;
+      case "L":
+        this._way = (this._way + 3) % 4;
+        return true;
+      case "F":
+        return true;
+      default:
+        return false;
+    }
+  }
+
+  move(e) {
+    switch (e) {
+      case "R":
+        this._move = (this._way + 1) % 4;
+        return [this._move, NESW[this._move]];
+      case "B":
+        this._move = (this._way + 2) % 4;
+        return [this._move, NESW[this._move]];
+      case "L":
+        this._move = (this._way + 3) % 4;
+        return [this._move, NESW[this._move]];
+      case "F":
+        this._move = this._way % 4;
+        return [this._move, NESW[this._move]];
+      default:
+        return false;
+    }
+  }
+}
+
+// ロボットクラス
+class Robot extends Behavior {
+  constructor(x, y, a) {
+    super();
+    this._x = x;
+    this._y = y;
+    this._arr = {
+      F: a[0],
+      R: a[1],
+      B: a[2],
+      L: a[3],
+    };
+  }
+
+  // 省略可能 
+  turn(e) {
+    super.turn(e);
+  }
+
+  move(e) {
+    switch (super.move(e)[1]) {
+      case W:
+        this._x -= this._arr[e];
+        return true;
+      case E:
+        this._x += this._arr[e];
+        return true;
+      case N:
+        this._y += this._arr[e];
+        return true;
+      case S:
+        this._y -= this._arr[e];
+        return true;
+      default:
+        return false;
+    }
+  }
+
+  get laiX() {
+    return this._x;
+  }
+
+  get laiY() {
+    return this._y;
+  }
+}
+
+// newロボット
+const robot = new Robot(x, y, lai.map(Number));
+
+// 移動
+for (let i = 1; i <= go; i++) {
+  lines[i + 2][0] === "m"
+    ? robot.move(lines[i + 2][2])
+    : robot.turn(lines[i + 2][2]);
+}
+
+// 結果
+console.log(robot.laiX + " " + robot.laiY);
+```
+
 ### B029:地価の予想
 
 ```js
@@ -609,5 +729,95 @@ if(ss === ff && sf !== "n"){
 }else{
     console.log("NG");   
 }
+```
+
+### D224:繰り返す
+
+```js
+console.log(lines[0]+lines[0]+lines[0]);
+```
+
+### D204:2にする
+
+```js
+console.log(222 - Number(lines[0]));
+```
+
+### D112:工場の生産力
+
+```js
+console.log(Number(lines[0]) * Number(lines[1]));
+```
+
+### D185:時給の計算
+
+```js
+console.log(lines[0]*lines[1]);
+```
+
+### D165:【キャンペーン問題】安全な数字
+
+```js
+const arr = lines[0].split("")
+
+for(let i = 0; i < arr.length; i++){
+    let tmp = arr.filter((e)=> e === arr[i])
+    if(tmp.length >= 2){
+    　 console.log('NG')
+     　return
+    }
+}
+
+console.log('OK')
+```
+
+### D153:食材選び
+
+```js
+const arr = lines[0].split(" ").map(Number)
+const res = arr.sort((a,b)=>a-b)
+console.log(res[1]);
+```
+
+### D113:初日の出
+
+```js
+const arr = lines[0].split(":")
+const h = Number(arr[0])
+const lai = h - 8 >= 0 ? h - 8 : (h-8) + 24
+
+console.log(String(lai) + ":" + arr[1])
+```
+
+### D186:暑さの基準
+
+```js
+const res = Number(lines[0])  >= 30 && Number(lines[0])  < 35 ? "M" : lines[0]
+console.log(res);
+```
+
+### D213:タイプ数の予想
+
+```js
+console.log(lines[0]*365);
+```
+
+### D127:座席番号のくじ
+
+```js
+const str = lines[0].split("").splice(1, 3).join("")
+const res = str[0] === str[1] && str[1] === str[2] ? "Yes" : "No"
+console.log(res)
+```
+
+### D040:連休の天気
+
+```js
+let res = 0
+for(let i = 0; i < lines.length; i++){
+  Number(lines[i]) <= 30 && res++
+}
+
+console.log(res)
 ```
 
