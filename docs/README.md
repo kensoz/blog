@@ -22,7 +22,7 @@ title: ホームページ
 - ⭐ [Wantedly](https://www.wantedly.com/id/kensoz)・[LinkedIn](https://jp.linkedin.com/in/kensoz)
 - 🌱 [GitHub](https://github.com/kensoz)
 - 💼 [職務経歴書](https://github.com/kensoz/resume)・[中文简历](https://github.com/kensoz/resume/tree/master/zh-CN)
-- 📡 [Qiita](https://qiita.com/kensoz)・[SegmentFault](https://segmentfault.com/u/kensoz/articles)・[掘金](https://juejin.cn/user/1029616691882653)
+- 📡 [Qiita](https://qiita.com/kensoz)・[SegmentFault](https://segmentfault.com/u/kensoz/articles)・[Juejin](https://juejin.cn/user/1029616691882653)
 - 💡 [個人サイト](http://renhou.starfree.jp/)
 
 <!-- ## 🌱 オープンソース
