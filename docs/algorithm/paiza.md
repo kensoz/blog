@@ -821,3 +821,67 @@ for(let i = 0; i < lines.length; i++){
 console.log(res)
 ```
 
+### D179:分け前の計算
+
+```js
+console.log(Number(lines[1])%Number(lines[0]));
+```
+
+### D100:区切り文字の統一
+
+```js
+let arr = lines[0].split("")
+const x_ = arr.filter((e)=> e === "_")
+const y =  arr.filter((e)=> e === "-")
+const change = (s, n) => {
+const lai = arr.map((i) => {
+  return i === s ? n : i
+})
+  return lai.join("")
+}
+
+console.log(x_.length >= y.length ? change("-","_")  : change("_", "-",))
+```
+
+### D119:円周率の日
+
+```js
+const pie = "141592653589793"
+const N = lines[0]
+console.log("3." + pie.slice(0, N));
+```
+
+### D133:株の利益
+
+```js
+const mon = Number(lines[0])
+const oldk = Number(lines[1])
+const newk = Number(lines[2])
+const lai = parseInt(mon / oldk) 
+const cao = newk > 0 ? newk - oldk :  newk + oldk
+console.log(lai * cao)
+```
+
+### D198:区切って出力
+
+```js
+console.log(lines[0] + "/" + lines[1]);
+```
+
+### D182:燃費の計算
+
+```js
+console.log(parseInt(Number(lines[0])/Number(lines[1])));
+```
+
+### D072:データのバックアップ
+
+```js
+const arr = lines[0].split(" ")
+const X = Number(arr[0])
+const Y = Number(arr[1])
+const P = Number(arr[2])
+
+console.log(Math.ceil(X/Y) * P)
+```
+

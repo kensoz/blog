@@ -167,7 +167,9 @@ var isValid = function(s) {
 };
 ```
 
-### 21.Merge Two Sorted Lists
+### 21.Merge Two Sorted Lists（連結リスト学習）
+
+配列方法
 
 ```js
 var mergeTwoLists = function (list1, list2) {
@@ -472,6 +474,65 @@ var sortedSquares = function(nums) {
         }
     }
     return res;
+};
+```
+
+### 203.Remove Linked List Elements（連結リスト学習）
+
+a.配列方法
+
+```js
+var removeElements = function(head, val) {
+// 先判断链表是不是空
+if (head === null) return null;
+
+// 把链表转换为数组
+let arr = [];
+while (head !== null) {
+  arr.push(head.val);
+  head = head.next;
+}
+
+// 数组筛选，注意这里要要判断一下都是一样数字的情况
+const lai = arr.filter((e) => e !== val);
+if (lai.length === 0) return null;
+
+// 把数组转换为链表
+let LinkedList = new ListNode(lai[0]);
+let pre = LinkedList;
+for (let i = 1; i < lai.length; i++) {
+  pre.next = new ListNode(lai[i]);
+  pre = pre.next;
+}
+
+return LinkedList;
+};
+```
+
+b.直接的に連結リストを操作
+
+```js
+var removeElements = function (head, val) {
+  // 虚拟头节点法
+  // 插入头节点
+  const ret = new ListNode(0, head);
+
+  // 获取当前节点
+  let cur = ret;
+
+  // 遍历链表
+  while (cur.next) {
+    if (cur.next.val === val) {
+      // 删除条件节点
+      cur.next = cur.next.next;
+      continue;
+    }
+    // 更新当前节点
+    cur = cur.next;
+  }
+
+  // 返回虚拟节点的排除头节点的部分
+  return ret.next;
 };
 ```
 
