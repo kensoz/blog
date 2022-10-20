@@ -26,18 +26,19 @@ title: LeetCode
 
 ### 01. Two Sum
 
+ハッシュテーブル
+
 ```js
 var twoSum = function(nums, target) {
-    
-var len = nums.length;
-    for (var i = 0; i < len - 1; i++) {
-      for (var j = i + 1; j < len; j++) {
-        if (nums[i] + nums[j] === target) {
-          return [i, j];
-        }
-      }
-    };
+  const map = new Map()
+  for(let i = 0; i < nums.length; i++){
+    if(map.has(target - nums[i])){
+      return [map.get(target - nums[i]), i]
+    }
+    map.set(nums[i] , i)
+  }
 };
+
 ```
 
 ### 09. Palindrome Number
@@ -533,6 +534,65 @@ var removeElements = function (head, val) {
 
   // 返回虚拟节点的排除头节点的部分
   return ret.next;
+};
+```
+
+### 206.Reverse Linked List（連結リスト学習）
+
+配列方法
+
+```js
+var reverseList = function (head) {
+  if (head === null) {
+    return null;
+  }
+
+  const arr = [];
+  while (head !== null) {
+    arr.push(head.val);
+    head = head.next;
+  }
+
+  const lai = arr.reverse();
+
+  let LinkedList = new ListNode(arr[0]);
+  let pre = LinkedList;
+  for (let i = 1; i < arr.length; i++) {
+    pre.next = new ListNode(arr[i]);
+    pre = pre.next;
+  }
+
+  return LinkedList;
+};
+```
+
+### 160.Intersection of Two Linked Lists（連結リスト学習）
+
+`set`方法
+
+```js
+var getIntersectionNode = function (headA, headB) {
+  const set = new Set();
+
+  while (headA) {
+    set.add(headA);
+    headA = headA.next;
+  }
+
+  while (headB) {
+    if (set.has(headB)) return headB;
+    headB = headB.next;
+  }
+
+  return null;
+};
+```
+
+### 242.Valid Anagram
+
+```js
+var isAnagram = function (s, t) {
+  return [...s].sort().join("") === [...t].sort().join("");
 };
 ```
 

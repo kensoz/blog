@@ -1,6 +1,6 @@
 ---
 lang: ja-JP
-title: CodeTestサイト
+title: コーディングサイト
 ---
 
 # 就活か転職ためのLeetCodeみたいなコーディングテスト/面接サイトまとめ

@@ -1,17 +1,11 @@
 ---
-lang: ja-JP
-title: JSの検索整理
+lang: zh-CN
+title: JS查找整理
 ---
 
-# JSの検索整理
+# JS查找总结整理
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
-
-
-
-::: tip
-常用JavaScript検索メソッドの整理
-:::
 
 
 
@@ -19,7 +13,7 @@ title: JSの検索整理
 
 
 
-## 1.配列/ルックアップテーブル検索
+## 1.表查找
 
 ```js
 const statusText = (num) => {
@@ -32,7 +26,7 @@ statusText(1)
 
 
 
-## 2.Map/辞書検索その1
+## 2.映射表1
 
 ```js
 const statusText2 = (num) => {
@@ -50,7 +44,7 @@ statusText2("xyz")
 
 
 
-## 3.Map/辞書検索その2(検索と計算)
+## 3.映射表2（查找并带入参数）
 
 ```js
 const statusText3 = (() => {
