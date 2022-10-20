@@ -1,37 +1,35 @@
 ---
-lang: ja-JP
-title: Tailwindのレイアウト
+lang: zh-CN
+title: Tailwind布局
 ---
 
 
 
-# デモ付！コピペ可！未経験大歓迎！FlexとGridによるTailwindCSSの基本レイアウトサンプル
+# TailwindCSS的基本布局Demo
 
 
 
-📡  [Qiita](https://qiita.com/kensoz/items/8ad254d3294792ae6073)
+📡 [掘金](https://juejin.cn/post/7156463594924670990/)
 
 
 
-## 環境
+## 环境
 
 + **TailwindCSS** 3
 + Chrome
 
 
 
-## はじめに
+## 开始
 
-#### 基本的に
+#### 思路
 
-- 具体的なサイズ（`100%,100px,100rem`など）を指定しなくて、自動幅調整を指定
-- **Flex**と**Grid**を中心
+- 基本的思路就是让元素自己撑满空间
+- 以**Flex**和**Grid**布局为中心
 
 
 
-#### ベースHTML
-
-とてもきれいなスタイルを追加（レイアウトによって変動、必須ではない）
+#### HTML模板
 
 ```html
 <!--index.html--> 
@@ -44,9 +42,7 @@ title: Tailwindのレイアウト
 
 
 
-#### ベースCSS
-
-`html,body`要素の高さを指定
+#### CSS模板
 
 ```css
 /*main.css*/
@@ -56,25 +52,14 @@ title: Tailwindのレイアウト
 
 @layer base {
     html,body {
-        /*ニーズによって指定、ここはフル画面*/
         @apply min-h-screen;
     }
 }
 ```
 
-**CodePen**を使う場合
-
-```css
-/* <script src="https://cdn.tailwindcss.com"></script> */
-html,
-body {
-	min-height: 100vh;
-}
-```
 
 
-
-## 1カラム
+## 1列
 
 #### Flex
 
@@ -104,7 +89,7 @@ body {
 
 
 
-## 2カラム
+## 2列
 
 #### Flex
 
@@ -138,7 +123,7 @@ body {
 
 
 
-## 2カラム（変種）
+## 2列（变种）
 
 #### Flex
 
@@ -174,7 +159,7 @@ body {
 
 
 
-## 2カラム（フルナビ）
+## 2列（长导航）
 
 #### Flex
 
@@ -208,7 +193,7 @@ body {
 
 
 
-## 3カラム/聖杯レイアウト
+## 3列/圣杯
 
 #### Flex
 
@@ -244,11 +229,9 @@ body {
 
 
 
-## カード
+## 卡片
 
 #### Flex
-
-まずはカードの`	flex-basis:25%；magrin:0.5rem`を指定しています
 
 🌐 [demo](https://codepen.io/kensoz/pen/xxjodqp)
 
@@ -288,7 +271,7 @@ body {
 
 
 
-## タイルレイアウト
+## 瀑布
 
 #### Columns
 
@@ -307,5 +290,4 @@ body {
     <img class="mb-4" src="https://source.unsplash.com/random/9" />
   </div>
 ```
-
 

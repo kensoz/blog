@@ -40,7 +40,7 @@ module.exports = {
       children: [
         "/zh/article/vite.md",
         "/zh/article/ui.md",
-        // "/zh/article/layout.md",
+        "/zh/article/layout.md",
         "/zh/article/docker.md",
         "/zh/article/pinia.md",
         "/zh/article/indexed.md",
