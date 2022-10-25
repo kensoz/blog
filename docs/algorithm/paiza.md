@@ -885,3 +885,60 @@ const P = Number(arr[2])
 console.log(Math.ceil(X/Y) * P)
 ```
 
+### D225:3つ買う
+
+```js
+console.log(lines[0]*3);
+```
+
+### D181:住所の表記
+
+```js
+console.log(lines[0] + "-" + lines[1] + "-" + lines[2]);
+```
+
+### D028:数字の桁数
+
+```js
+const str = String(lines[0])
+console.log(str.length);
+```
+
+### D016:N文字目まで出力
+
+```js
+console.log(lines[0].slice(0, lines[1]));
+```
+
+### D003:掛け算のリスト
+
+```js
+const n = lines[0];
+let res = [];
+for (let i = 1; i <= 9; i++) {
+	res.push(n * i, " ");
+}
+
+console.log(res.join("").trim());
+```
+
+### D187:【シュタゲコラボ問題】曲名の表記
+
+```js
+console.log(lines[0] + "/" + lines[1]);
+```
+
+### D014:小文字を大文字に
+
+```js
+console.log(lines[0].toUpperCase());
+```
+
+### D069:割り切れない平均点
+
+```js
+const arr = lines[0].split(" ").map(Number)
+const res = arr.reduce((prev, curr) => prev + curr) / 7
+console.log(res.toFixed(1))
+```
+

@@ -19,6 +19,7 @@ title: LeetCode
 ## メモ
 
 - `return`解答、入力の処理が特に必要ない
+- `return`しなくてそのまま解答の問題もあり
 
 
 
@@ -26,7 +27,7 @@ title: LeetCode
 
 ### 01. Two Sum
 
-ハッシュテーブル
+ハッシュテーブル（`map写像`）
 
 ```js
 var twoSum = function(nums, target) {
@@ -311,7 +312,7 @@ var addBinary = function (a, b) {
 
 ### 69.Sqrt(x)
 
-a.API
+a.標準ライブラリ
 
 ```js
 var mySqrt = function (x) {
@@ -378,7 +379,7 @@ var climbStairs = function(n) {
 
 ### 704.Binary Search(二分探索学習)
 
-a.API
+a.標準ライブラリ
 
 ```js
 var search = function(nums, target) {
@@ -410,7 +411,7 @@ var search = function (nums, target) {
 
 ### 367.Valid Perfect Square(二分探索学習)
 
-a.API
+a.標準ライブラリ
 
 ```js
 var isPerfectSquare = function(num) {
@@ -443,7 +444,7 @@ var isPerfectSquare = function (num) {
 
 ### 977.Squares of a Sorted Array(ダブルポインタ)
 
-a.API
+a.標準ライブラリ
 
 ```js
 var sortedSquares = function(nums) {
@@ -568,7 +569,7 @@ var reverseList = function (head) {
 
 ### 160.Intersection of Two Linked Lists（連結リスト学習）
 
-`set`方法
+`set集合`方法
 
 ```js
 var getIntersectionNode = function (headA, headB) {
@@ -593,6 +594,97 @@ var getIntersectionNode = function (headA, headB) {
 ```js
 var isAnagram = function (s, t) {
   return [...s].sort().join("") === [...t].sort().join("");
+};
+```
+
+### 349.Intersection of Two Arrays
+
+```js
+var intersection = function (nums1, nums2) {
+	let arr = [];
+	for (let i = 0; i < nums1.length; i++) {
+		if (nums2.includes(nums1[i])) {
+			arr.push(nums1[i]);
+		}
+	}
+
+	return [...new Set(arr)];
+};
+```
+
+### 202.Happy Number
+
+```js
+var isHappy = function (n) {
+    // 要点就是这个，如果重复了就说明会陷入无限循环，所以需要记录一下每次计算的总和
+    // 这道题之所以被分类为哈希，就是因为可以用set来记录，set可以判断是否重复，不过都一样
+	let match = [];
+	const lai = (num) => {
+		const arr = num.toString().split("").map(Number);
+		let count = 0;
+		for (let i = 0; i < arr.length; i++) {
+			count += arr[i] ** 2;
+		}
+
+		if (count === 1) {
+			return true;
+		} else {
+			if (!match.includes(count)) {
+				match.push(count);
+				return lai(count);
+			} else {
+				return false;
+			}
+		}
+	};
+
+	return lai(n);
+};
+
+```
+
+### 383.Ransom Note
+
+```js
+var canConstruct = function (ransomNote, magazine) {
+	const ran = ransomNote.split("");
+	const maga = magazine.split("");
+
+	let arr = [];
+	for (let i = 0; i < ran.length; i++) {
+		if (maga.includes(ran[i])) {
+			arr.push(ran[i]);
+			// 这里是关键，为了避免重复，要删除已经判定完的字母
+			maga.splice(
+				maga.findIndex((n) => n === ran[i]),
+				1
+			);
+		}
+	}
+
+	return arr.join("") === ransomNote ? true : false;
+};
+```
+
+### 344.Reverse String
+
+a.標準ライブラリ
+
+```js
+// Do not return anything, modify s in-place instead.
+var reverseString = function(s) {
+ 　s.reverse()
+};
+```
+
+b.二分探索
+
+```js
+// Do not return anything, modify s in-place instead.
+var reverseString = function(s) {
+    let l = -1, r = s.length;
+    // 注意这里把语句写在条件里了，可以，也可以写到外面
+    while(++l < --r) [s[l], s[r]] = [s[r], s[l]];
 };
 ```
 
