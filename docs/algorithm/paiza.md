@@ -942,3 +942,77 @@ const res = arr.reduce((prev, curr) => prev + curr) / 7
 console.log(res.toFixed(1))
 ```
 
+### D060:AボタンとBボタン
+
+```js
+  const arr = lines[0].split(" ").map(Number)
+  console.log(arr[0] - arr[1]);
+```
+
+### D079:同じ文字
+
+```js
+const str = lines[0];
+for (let i = 0; i < str.length - 1; i++) {
+	if (str[i] !== str[i + 1]) {
+		console.log("OK");
+		return;
+	}
+}
+
+console.log("NG");
+```
+
+### D102:運賃の計算
+
+```js
+console.log(100 + Number(lines[0])*10);
+```
+
+### D189:何周年の確認
+
+```js
+console.log(Number(lines[1]) - Number(lines[0]));
+```
+
+### D214:身長差
+
+```js
+console.log(Number(lines[0]) - Number(lines[1]));
+```
+
+### D087:文字をくっつける
+
+```js
+let str = lines.slice(1)
+console.log(str.join(""));
+```
+
+### D004:文字列の結合
+
+```js
+const arr = lines.slice(1)
+console.log("Hello " + arr.join(",") + ".");
+```
+
+### D006:単位の計算
+
+```js
+const arr = lines[0].split(" ");
+const num = Number(arr[0]);
+const str = arr[1];
+const lai = {
+	km: 1000000,
+	m: 1000,
+	cm: 10
+};
+
+console.log(num * lai[str]);
+```
+
+### D144:5桁の数字
+
+```js
+console.log(parseInt(lines[0],2));
+```
+

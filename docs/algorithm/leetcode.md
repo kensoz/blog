@@ -688,3 +688,39 @@ var reverseString = function(s) {
 };
 ```
 
+### 541.Reverse String II
+
+```js
+var reverseStr = function (s, k) {
+	const len = s.length;
+	let resArr = s.split("");
+	for (let i = 0; i < len; i += 2 * k) {
+		let l = i - 1,
+			r = i + k > len ? len : i + k;
+		while (++l < --r) [resArr[l], resArr[r]] = [resArr[r], resArr[l]];
+	}
+	return resArr.join("");
+};
+```
+
+### HZFE.Offer 05
+
+```js
+var replaceSpace = function(s) {
+  return s.replaceAll(' ','%20')
+};
+```
+
+### HZFE.Offer 58 
+
+```js
+var reverseLeftWords = function (s, n) {
+	let tmp = [];
+	for (let i = 0; i < n; i++) {
+		tmp.push(s[i]);
+	}
+	const old = s.split("").slice(n).join("");
+	return old + tmp.join("");
+};
+```
+
