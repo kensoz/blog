@@ -9,23 +9,23 @@ module.exports = {
       text: "开源项目",
       children: [
         {
-          text: "FEC",
+          text: "🍋 FEC",
           link: "https://github.com/kensoz/FEC",
         },
         {
-          text: "Rrea-Client",
+          text: "🟨 Rrea-Client",
           link: "https://github.com/kensoz/Rrea-client",
         },
         {
-          text: "Rrea-Admin",
+          text: "🔵 Rrea-Admin",
           link: "https://github.com/kensoz/Rrea-admin",
         },
         {
-          text: "Rrea-Server",
+          text: "🌞 Rrea-Server",
           link: "https://github.com/kensoz/Rrea-server",
         },
         {
-          text: "Portfolio",
+          text: "💡 Portfolio",
           link: "https://github.com/kensoz/portfolio",
         },
       ],
@@ -54,7 +54,7 @@ module.exports = {
       link: "/algorithm/leetcode.md",
       children: [
         "/algorithm/leetcode.md",
-        "/algorithm/paiza.md",
+        // "/algorithm/paiza.md",
         "/algorithm/atcoder.md",
         "/algorithm/common.md",
       ],
