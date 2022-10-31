@@ -8,7 +8,7 @@ module.exports = {
   head: [
     [
       "link",
-      { rel: "shortcut icon", type: "image/x-icon", href: "/logo.png?" },
+      { rel: "shortcut icon", type: "image/x-icon", href: "/blog/logo.png?" },
     ],
   ],
   plugins: [searchPlugin({})],
