@@ -23,6 +23,22 @@ title: LeetCode
 
 
 
+## Medium
+
+### 151.Reverse Words in a String
+
+```js
+var reverseWords = function (s) {
+	const arr = s
+		.split(" ")
+		.filter((e) => e !== "")
+		.map((e) => e.trim());
+	return arr.reverse().join(" ");
+};
+```
+
+
+
 ## EASY
 
 ### 01. Two Sum
@@ -721,6 +737,17 @@ var reverseLeftWords = function (s, n) {
 	}
 	const old = s.split("").slice(n).join("");
 	return old + tmp.join("");
+};
+```
+
+### 459.Repeated Substring Pattern
+
+```js
+var repeatedSubstringPattern = function (s) {
+    // 精髓就是相加
+	const ss = s + s;
+	const lai = ss.slice(1, ss.length - 1);
+	return lai.search(s) >= 0 ? true : false;
 };
 ```
 
