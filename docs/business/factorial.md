@@ -9,9 +9,20 @@ title: JS階乗
 
 
 
+📡  [Qiita](https://qiita.com/kensoz/items/223d40cab4b62a431626)
+
+
+
 ## コード
 
-🌐 [live demo]()
+🌐 [live demo](https://codepen.io/kensoz/pen/dyeEqMv)
+
+
+
+- パラメータ`n` : n の階乗
+- BigInt : `Number`で表すことができない大きな数を表現したり操作したりするために使用します
+
+
 
 ```js
 // bigInt

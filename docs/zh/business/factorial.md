@@ -11,7 +11,7 @@ title: JS階乗
 
 ## 代码
 
-🌐 [live demo]()
+🌐 [live demo](https://codepen.io/kensoz/pen/dyeEqMv)
 
 ```js
 // bigInt

@@ -1016,3 +1016,9 @@ console.log(num * lai[str]);
 console.log(parseInt(lines[0],2));
 ```
 
+### D216:夏休みの課題
+
+```js
+console.log(500 - Number(lines[0]) - Number(lines[1]));
+```
+
