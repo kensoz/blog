@@ -1022,3 +1022,68 @@ console.log(parseInt(lines[0],2));
 console.log(500 - Number(lines[0]) - Number(lines[1]));
 ```
 
+### D029:サイコロの裏面
+
+```js
+console.log(7- Number(lines[0]));
+```
+
+### D081:【キャンペーン問題】家族で分ける
+
+```js
+const N = Number(lines[0])
+const arr = lines[1].split(" ")
+const HW = Number(arr[0]) * Number(arr[1])
+console.log(HW%N);
+```
+
+### D202:価格の比較
+
+```js
+const Aarr = lines[0].split(" ").map(Number)
+const Barr = lines[1].split(" ").map(Number)
+const A = Aarr[0] + Aarr[1]
+const B = Barr[0] + Barr[1]
+A >= B ? console.log(B) : console.log(A)
+```
+
+### D068:雨と晴れの記録
+
+```js
+let A = 0;
+let B = 0;
+for (let i = 0; i < lines[1].length; i++) {
+	if (lines[1][i] === "S") {
+		A = A + 1;
+	} else {
+		B = B + 1;
+	}
+}
+
+console.log(A + " " + B);
+```
+
+### D142:【キャンペーン問題】イルミネーションの数
+
+```js
+const arr = lines[0].split(" ").map(Number)
+const lai = Math.ceil(arr[0]/arr[1])
+console.log(lai * arr[2]);
+```
+
+### D078:入学試験
+
+```js
+const arr = lines[0].split(" ").map(Number)
+const lai = arr.reduce((prev, curr) => prev + curr)
+console.log(lai/7 >= Number(lines[1]) ? "pass" : "failure");
+```
+
+### D017:最大と最小
+
+```js
+const arr = [lines[0], lines[1], lines[2], lines[3], lines[4]].map(Number)
+const sort = arr.sort((a,b) => a -　b )
+console.log(sort[4] + "\n" + sort[0])
+```
+
