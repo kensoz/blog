@@ -252,6 +252,45 @@ for (let a in arr) {
 }
 ```
 
+### C084:【キャンペーン問題】枠で囲む
+
+```js
+const jiajia = Array(lines[0].length + 2).fill("+").join("")
+const lai = "+" + lines[0]  + "+"
+console.log(jiajia + "\n" + lai + "\n" + jiajia);
+```
+
+### C120:花のリース
+
+```js
+const N = Number(lines[0])
+const A = lines[1]
+const B = lines[2].split("")
+let count = 0;
+
+const lai = () => {
+	count++;
+
+    // Queueで解決
+	const x = B.shift();
+	B.push(x);
+
+	if (B.join("") === A) {
+		console.log("Yes");
+		return;
+	}
+
+	if (count === N) {
+		console.log("No");
+		return;
+	}
+	
+	return lai()
+};
+
+lai()
+```
+
 
 
 ## Dランク
@@ -1087,3 +1126,46 @@ const sort = arr.sort((a,b) => a -　b )
 console.log(sort[4] + "\n" + sort[0])
 ```
 
+### D226:伸びる身長
+
+```js
+console.log(170 + Number(lines[0]));
+```
+
+### D139:少ない方の勝ち
+
+```js
+const arr = lines[1].split(" ")
+let G = 0
+let P = 0
+for(let i = 0; i < arr.length; i++){
+    arr[i] === "G" ? G++ : P++
+}
+if(G === P){
+    console.log("Draw")
+    return
+}
+
+G < P ? console.log("G") : console.log("P")
+```
+
+### D073:文字の反転
+
+```js
+console.log(lines[0].split("").reverse().join(""));
+```
+
+### D149:文字のだるま落とし
+
+```js
+const arr = lines[0].split("")
+const N = Number(lines[1]) - 1
+const res = arr.splice(N, 1)
+console.log(arr.join(""));
+```
+
+### D024:三角形の内角の和
+
+```js
+console.log(180 - Number(lines[0]) - Number(lines[1]));
+```

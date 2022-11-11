@@ -751,3 +751,105 @@ var repeatedSubstringPattern = function (s) {
 };
 ```
 
+### 232.Implement Queue using Stacks
+
+```js
+// 使用两个数组的栈方法（push, pop） 实现队列
+var MyQueue = function () {
+	this.stackIn = []; // IN栈,数据进入的栈
+	this.stackOut = []; // OUT栈,数据出去的栈
+};
+
+// ，添加数据，压入IN栈
+MyQueue.prototype.push = function (x) {
+	this.stackIn.push(x);
+};
+
+// 清除数据，在OUT栈清除
+MyQueue.prototype.pop = function () {
+	// 先判断OUT栈有没有东西，有东西直接删除
+	const size = this.stackOut.length;
+	if (size) {
+		return this.stackOut.pop();
+	}
+
+	// 没有就向OUT栈添加IN栈数据，注意要倒着添加
+	while (this.stackIn.length) {
+		// 这地方妙，添加的同时删除IN栈，添加的都是删除pop方法的返回值
+		this.stackOut.push(this.stackIn.pop());
+	}
+	// 在OUT栈清除
+	return this.stackOut.pop();
+};
+
+// 查询队列
+MyQueue.prototype.peek = function () {
+	// 直接pop取得返回值，操作的是OUT栈
+	const res = this.pop();
+	// 把删除的给加回来，操作的是OUT栈
+	this.stackOut.push(res);
+	return res;
+};
+
+// 查询队列是否为空
+MyQueue.prototype.empty = function () {
+	// 需要两个都为空
+	return !this.stackIn.length && !this.stackOut.length;
+};
+
+/**
+ * Your MyQueue object will be instantiated and called as such:
+ * var obj = new MyQueue()
+ * obj.push(x)
+ * var param_2 = obj.pop()
+ * var param_3 = obj.peek()
+ * var param_4 = obj.empty()
+ */
+```
+
+### 225.Implement Stack using Queues
+
+```js
+// 使用一个队列实现
+// 使用数组（push, shift）模拟队列
+var MyStack = function () {
+	this.queue = [];
+};
+
+// 进入队列
+MyStack.prototype.push = function (x) {
+	this.queue.push(x);
+};
+
+// 关键，栈是先入后出，队列是先进先出
+// 把先进去的队列的东西取出来，塞回队列，暴露最后一个然后弹出
+MyStack.prototype.pop = function () {
+	let size = this.queue.length;
+	while (size-- > 1) {
+		this.queue.push(this.queue.shift());
+	}
+	return this.queue.shift();
+};
+
+// 重复一遍pop然后取值
+MyStack.prototype.top = function () {
+	const x = this.pop();
+	this.queue.push(x);
+	return x;
+};
+
+// 查看是否为空
+MyStack.prototype.empty = function () {
+	return !this.queue.length;
+};
+
+/**
+ * Your MyStack object will be instantiated and called as such:
+ * var obj = new MyStack()
+ * obj.push(x)
+ * var param_2 = obj.pop()
+ * var param_3 = obj.top()
+ * var param_4 = obj.empty()
+ */
+```
+
