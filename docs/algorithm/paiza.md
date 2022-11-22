@@ -291,6 +291,27 @@ const lai = () => {
 lai()
 ```
 
+### C097:プレゼント応募企画の実施
+
+```js
+const arr = lines[0].split(" ").map(Number)
+const res = Array(arr[0]).fill("");
+
+for (let i = 1; i <= arr[0]; i++) {
+	if (i % arr[1] === 0) {
+		res[i - 1] = res[i - 1] + "A";
+	}
+	if (i % arr[2] === 0) {
+		res[i - 1] = res[i - 1] + "B";
+	}
+	if (res[i - 1] === "") {
+		res[i - 1] = "N";
+	}
+}
+
+console.log(res.join("\n"));
+```
+
 
 
 ## Dランク
@@ -1169,3 +1190,18 @@ console.log(arr.join(""));
 ```js
 console.log(180 - Number(lines[0]) - Number(lines[1]));
 ```
+
+### D076:禁止ワード
+
+```js
+const ng = new RegExp(lines[0])
+const word = lines[1]
+console.log(ng.test(word) ? "NG" : word);
+```
+
+### D055:ワインのキャッチコピー
+
+```js
+console.log("Best in " + lines[0]);
+```
+

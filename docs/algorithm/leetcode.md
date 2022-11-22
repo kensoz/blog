@@ -37,6 +37,40 @@ var reverseWords = function (s) {
 };
 ```
 
+### 739.Daily Temperatures
+
+単調スタック
+
+```js
+var dailyTemperatures = function(temperatures) {
+    const n = temperatures.length;
+    const res = Array(n).fill(0);
+    // 递增栈：用于存储元素右面第一个比他大的元素下标
+    const stack = [];  
+    stack.push(0);
+    for (let i = 1; i < n; i++) {
+        // 栈顶，就是栈出口的元素
+        const top = stack[stack.length - 1];
+        // 循环比较两个天气的气温，一个是根据天气数组，一个是根据栈
+        // 如果小于直接加入栈
+        if (temperatures[i] < temperatures[top]) {
+            stack.push(i);
+        // 如果等于也直接加入栈
+        } else if (temperatures[i] === temperatures[top]) {
+            stack.push(i);
+        } else {
+        // 如果大于也加入栈，不过要判断一下栈内所有的元素，并且删除栈内小于它的元素，并且把它加入栈
+            while (stack.length && temperatures[i] > temperatures[stack[stack.length - 1]]) {
+                const top = stack.pop();
+                res[top] = i - top;
+            }
+            stack.push(i);
+        }
+    }
+    return res;
+};
+```
+
 
 
 ## EASY
@@ -276,7 +310,7 @@ var lengthOfLastWord = function (s) {
 };
 ```
 
-### 59.Plus One
+### 66.Plus One
 
 ```js
 var plusOne = function(digits) {
@@ -851,5 +885,121 @@ MyStack.prototype.empty = function () {
  * var param_3 = obj.top()
  * var param_4 = obj.empty()
  */
+```
+
+### 1047.Remove All Adjacent Duplicates In String
+
+a.`for...of`方法
+
+```js
+var removeDuplicates = function(s) {
+    const stack = [];
+    for(const x of s) {
+        let c = null;
+        if(stack.length && x === (c = stack.pop())) continue;
+        c && stack.push(c);
+        stack.push(x);
+    }
+    return stack.join("");
+};
+```
+
+b.再帰方法（プログラムは問題ないですが、時間オーバーでおすすめしません）
+
+```js
+var removeDuplicates = function (s) {
+	let arr = s.split("");
+	let stack = [];
+
+	const lai = () => {
+		if (arr.length === 0) {
+			return;
+		}
+
+		if (stack[stack.length - 1] === arr[0]) {
+			stack.pop();
+		} else {
+			stack.push(arr[0]);
+		}
+
+		arr.splice(0, 1);
+		return lai();
+	};
+
+	lai();
+	return stack.join("");
+};
+```
+
+### 496.Next Greater Element I
+
+a.Brute-Force
+
+```js
+var nextGreaterElement = function (nums1, nums2) {
+	const len1 = nums1.length;
+	const len2 = nums2.length;
+	const res = new Array(len1).fill(-1);
+    // 这个地方注意，我本是想要用slice截取右侧数组，但是他的方法是直接取得对应下标并使用
+	for (let i = 0; i < len1; i++) {
+		let index = nums2.indexOf(nums1[i]);
+		while (index < len2) {
+			if (nums2[index] > nums1[i]) {
+				res[i] = nums2[index];
+				break;
+			}
+			index++;
+		}
+	}
+	return res;
+};
+```
+
+## 455.Assign Cookies
+
+```js
+var findContentChildren = function (g, s) {
+    // 需要先排序
+	g.sort((a, b) => a - b);
+	s.sort((a, b) => a - b);
+	
+	let res = 0;
+	let index = s.length - 1;
+
+    // 这里是可以用两层循环的，但是用了两个指针
+	for (let i = g.length - 1; i >= 0; i--) {
+		if (index && s[index] >= g[i]) {
+			res++;
+			index--;
+		}
+	}
+
+	return res;
+};
+```
+
+### 1005.Maximize Sum Of Array After K Negations
+
+```js
+var largestSumAfterKNegations = function (nums, k) {
+	nums = nums.sort((a, b) => a - b);
+	let index = 0;
+
+	while (k) {
+		if (nums[index] === 0) break;
+
+		if (nums[index] < 0) {
+			nums[index] = -nums[index];
+			index++;
+		} else {
+			index = 0;
+			nums = nums.sort((a, b) => a - b);
+			nums[index] = -nums[index];
+		}
+
+		k--;
+	}
+	return nums.reduce((p, c) => p + c);
+};
 ```
 
