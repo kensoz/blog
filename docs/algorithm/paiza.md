@@ -312,6 +312,42 @@ for (let i = 1; i <= arr[0]; i++) {
 console.log(res.join("\n"));
 ```
 
+### C115:渋滞の距離
+
+```js
+const config = lines[0].split(" ");
+let res = 0;
+for (let i = 1; i < Number(config[0]); i++) {
+	if (Number(lines[i]) <= Number(config[1])) {
+		res = res + Number(lines[i]);
+	}
+}
+
+console.log(res);
+```
+
+### C121:レストランの人気メニュー
+
+```js
+const config = lines[0].split(" ").map(Number);
+let conut = 0;
+let kaluli = 0;
+for (let i = 1; i < config[0]; i++) {
+	const arr = lines[i].split(" ").map(Number);
+	if (kaluli + arr[1] <= Number(config[1])) {
+		kaluli = kaluli + arr[1];
+
+		if (arr[0] <= 10) {
+			conut++;
+		}
+	} else {
+		break;
+	}
+}
+
+console.log(conut < 10 ? conut : "Yes");
+```
+
 
 
 ## Dランク
@@ -1203,5 +1239,17 @@ console.log(ng.test(word) ? "NG" : word);
 
 ```js
 console.log("Best in " + lines[0]);
+```
+
+### D227:引き落としの手数料
+
+```js
+console.log(Number(lines[0]) -120);
+```
+
+### D167:買い物袋
+
+```js
+console.log(Number(lines[0]) > 1000 ? Number(lines[0]) + 3 : Number(lines[0]));
 ```
 
