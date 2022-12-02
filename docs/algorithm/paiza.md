@@ -193,6 +193,29 @@ console.log(Math.round(total / k));
 
 ## Cランク
 
+### C086:ハンドルネームの生成
+
+```js
+const reg = /a|e|i|o|u|A|E|I|O|U/ig
+const lai = lines[0].replace(reg, "")
+console.log(lai)
+```
+
+### C049:【ぱいじょ！コラボ問題】エレベーター
+
+```js
+const N = Number(lines[0])
+let res = 0
+let pre = 1
+for (let i = 1; i <= N; i++) {
+	const big = Number(lines[i]) > pre ? Number(lines[i]) : pre;
+	const small = Number(lines[i]) > pre ? pre : Number(lines[i]);
+	res = res + big - small
+	pre = Number(lines[i]);
+}
+console.log(res);
+```
+
 ### C013:嫌いな数字 
 
 ```js
@@ -1251,5 +1274,23 @@ console.log(Number(lines[0]) -120);
 
 ```js
 console.log(Number(lines[0]) > 1000 ? Number(lines[0]) + 3 : Number(lines[0]));
+```
+
+### D228:【2022年Xmas問題】クリスマスの時間
+
+```js
+const sunset = lines[0].split(" ").map(Number)
+const now = lines[1].split(" ").map(Number)
+if (now[0] > sunset[0]) {
+	console.log("No");
+} else if (now[0] === sunset[0]) {
+	if (now[1] > sunset[1]) {
+		console.log("No");
+	} else {
+		console.log("Yes");
+	}
+} else {
+	console.log("Yes");
+}
 ```
 

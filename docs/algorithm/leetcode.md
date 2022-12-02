@@ -955,7 +955,7 @@ var nextGreaterElement = function (nums1, nums2) {
 };
 ```
 
-## 455.Assign Cookies
+### 455.Assign Cookies
 
 ```js
 var findContentChildren = function (g, s) {
@@ -1033,6 +1033,73 @@ var lemonadeChange = function (bills) {
 		}
 	}
 	return true;
+};
+```
+
+### 94.Binary Tree Inorder Traversal
+
+```js
+// 中序
+var inorderTraversal = function(root) {
+    let res = []
+    const dfs=function(node){
+        if(node===null){
+            return ;
+        }
+        dfs(node.left);
+        res.push(node.val);
+        dfs(node.right);
+    }
+    dfs(root);
+    return res;
+};
+```
+
+### 145.Binary Tree Postorder Traversal
+
+```js
+// 后序
+var postorderTraversal = function(root) {
+    let res = []
+    const dfs = (node) => {
+        if(node === null) return
+
+        dfs(node.left)
+        dfs(node.right)
+        res.push(node.val)
+    }
+    dfs(root)
+    return res
+};
+```
+
+### 144.Binary Tree Inorder Traversal
+
+```js
+// 前序
+var preorderTraversal = function (root) {
+	// 结果数组
+	let res = [];
+	
+	// 递归函数，传入节点
+	const dfs = function (node) {
+		// 如果节点为null就返回，可能性1：原本就是null，可能性2：到头了
+		if (node === null) return;
+		
+		// 把节点的值放入结果
+		res.push(node.val);
+		
+		// 继续递归节点的左子树
+		dfs(node.left);
+		
+		// 继续递归节点递归右子树
+		dfs(node.right);
+	};
+	
+	// 执行递归
+	dfs(root);
+
+	return res;
 };
 ```
 
