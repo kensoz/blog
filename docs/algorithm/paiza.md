@@ -254,7 +254,7 @@ console.log(arr.join(""));
 
 ```js
 let arr = [];
-let lai = lines[0].split(" ")[0];
+let lai = lines[0].split(" ").map(Number);
 
 for (let i = 0; i < lai; i++) {
   let roopArr = lines[i + 1].split(" ");
@@ -369,6 +369,30 @@ for (let i = 1; i < config[0]; i++) {
 }
 
 console.log(conut < 10 ? conut : "Yes");
+```
+
+### C122:【2022年Xmas問題】プレゼントのセール
+
+```js
+let arr = [];
+const [N, X, Y] = lines[0].split(" ").map(Number);
+for (let i = 1; i <= N; i++) {
+	arr.push(Number(lines[i]));
+}
+
+if (X <= N) arr.sort((a, b) => a - b).splice(0, Y);
+console.log(arr.reduce((prev, curr) => prev + curr));
+```
+
+### C020:残り物の量
+
+```js
+const arr = lines[0].split(" ").map(Number)
+const m = arr[0]
+const p = arr[1]/100
+const q = arr[2]/100
+const tmp = m - m*p
+console.log(tmp - tmp*q);
 ```
 
 

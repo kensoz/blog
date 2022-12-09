@@ -1,10 +1,9 @@
 # 📒 Blog
 
-![Node](https://img.shields.io/badge/Node.js-v18.0.0-fb7185.svg?logo=&style=flat-square)  ![npm](https://img.shields.io/badge/npm-v1.0.0-84CC16.svg?style=flat-square)  ![License](https://img.shields.io/badge/License-MIT-0284C7.svg?logo=&style=flat-square)
+![github](https://github.com/kensoz/blog/actions/workflows/main.yml/badge.svg)  ![Node](https://img.shields.io/badge/Node.js-v18.0.0-fb7185.svg?logo=&style=flat-square)  ![npm](https://img.shields.io/badge/npm-v1.0.0-84CC16.svg?style=flat-square)  ![License](https://img.shields.io/badge/License-MIT-0284C7.svg?logo=&style=flat-square)
 
-サイト:  **[Link](https://kensoz.github.io/blog/)**
-
-個人技術、学習まとめブログです。
+個人用の技術と学習をまとめるブログです。  
+📒  **[Site](https://kensoz.github.io/blog/)**
 
 
 
@@ -14,7 +13,6 @@
 - ⚙️ JavaScript
 - 🔩 GitHub Actions
 - 📦 Yarn
-- 🉑 日本語&简体中文
 
 
 

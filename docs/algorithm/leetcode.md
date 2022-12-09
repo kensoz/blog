@@ -71,6 +71,65 @@ var dailyTemperatures = function(temperatures) {
 };
 ```
 
+### 102.Binary Tree Level Order Traversal
+
+```js
+var levelOrder = function (root) {
+	//二叉树的层序遍历
+	let res = [];
+	let queue = [];
+	
+	queue.push(root);
+	if (root === null) return res;
+
+    // 如果还有没处理的层级节点就还需要继续
+	while (queue.length !== 0) {
+		// 记录当前层级节点数
+		let length = queue.length;
+		//存放每一层的节点
+		let curLevel = [];
+        
+        // 遍历层级节点
+		for (let i = 0; i < length; i++) {
+			let node = queue.shift();
+			curLevel.push(node.val);
+			// 存放当前层下一层的节点
+			node.left && queue.push(node.left);
+			node.right && queue.push(node.right);
+		}
+		//把每一层的结果放到结果数组
+		res.push(curLevel);
+	}
+	return res;
+};
+```
+
+### 107.Binary Tree Level Order Traversal II
+
+```js
+var levelOrderBottom = function(root) {
+    let res=[],queue=[];
+    queue.push(root);
+    while(queue.length&&root!==null){
+        // 存放当前层级节点数组
+        let curLevel=[];
+        // 计算当前层级节点数量
+        let length=queue.length;
+        while(length--){
+            let node=queue.shift();
+            // 把当前层节点存入curLevel数组
+            curLevel.push(node.val);
+            // 把下一层级的左右节点存入queue队列
+            node.left&&queue.push(node.left);
+            node.right&&queue.push(node.right);
+        }
+	// 从数组前头插入值，避免最后反转数组，减少运算时间
+        res.unshift(curLevel);
+    }
+    return res;
+};
+```
+
 
 
 ## EASY
@@ -1038,6 +1097,8 @@ var lemonadeChange = function (bills) {
 
 ### 94.Binary Tree Inorder Traversal
 
+a.再帰
+
 ```js
 // 中序
 var inorderTraversal = function(root) {
@@ -1055,7 +1116,34 @@ var inorderTraversal = function(root) {
 };
 ```
 
+b.とイテレータ
+
+```js
+var inorderTraversal = function (root) {
+	let res = [];
+	const stack = [];
+	let cur = root;
+	// 左中右
+	while (stack.length || cur) {
+		if (cur) {
+			stack.push(cur);
+			// 左
+			cur = cur.left;
+		} else {
+			// --> 弹出 中
+			cur = stack.pop();
+			res.push(cur.val);
+			// 右
+			cur = cur.right;
+		}
+	}
+	return res;
+};
+```
+
 ### 145.Binary Tree Postorder Traversal
+
+a.再帰
 
 ```js
 // 后序
@@ -1073,7 +1161,31 @@ var postorderTraversal = function(root) {
 };
 ```
 
+b.とイテレータ
+
+```js
+var postorderTraversal = function (root) {
+	let res = [];
+	if (!root) return res;
+
+	const stack = [root];
+	let cur = null;
+
+	while (stack.length) {
+		cur = stack.pop();
+		res.push(cur.val);
+		// 左右中
+		cur.left && stack.push(cur.left);
+		cur.right && stack.push(cur.right);
+	}
+	// 需要反转
+	return res.reverse();
+};
+```
+
 ### 144.Binary Tree Inorder Traversal
+
+a.再帰
 
 ```js
 // 前序
@@ -1085,13 +1197,10 @@ var preorderTraversal = function (root) {
 	const dfs = function (node) {
 		// 如果节点为null就返回，可能性1：原本就是null，可能性2：到头了
 		if (node === null) return;
-		
 		// 把节点的值放入结果
 		res.push(node.val);
-		
 		// 继续递归节点的左子树
 		dfs(node.left);
-		
 		// 继续递归节点递归右子树
 		dfs(node.right);
 	};
@@ -1100,6 +1209,132 @@ var preorderTraversal = function (root) {
 	dfs(root);
 
 	return res;
+};
+```
+
+b.とイテレータ
+
+```js
+var preorderTraversal = function (root) {
+	let res = []
+	if (!root) return res;
+	
+	const stack = [root];
+	let cur = null;
+	while (stack.length) {
+		cur = stack.pop();
+		res.push(cur.val);
+        // 中左右，考虑到栈的特性，先放右后放左
+		cur.right && stack.push(cur.right);
+		cur.left && stack.push(cur.left);
+	}
+	return res;
+};
+```
+
+### 637.Average of Levels in Binary Tree
+
+```js
+var averageOfLevels = function (root) {
+    if (root === null) return res;
+	let res = [];
+	let queue = [root];
+
+	while (queue.length !== 0) {
+		let length = queue.length;
+		let level = [];
+
+		for (let i = 0; i < length; i++) {
+			let node = queue.shift();
+			level.push(node.val);
+
+			node.left && queue.push(node.left);
+			node.right && queue.push(node.right);
+		}
+
+		let ave = level.reduce((x, y) => x + y) / level.length;
+		res.push(ave);
+	}
+
+	return res;
+};
+```
+
+### 226.Invert Binary Tree
+
+```js
+var invertTree = function (root) {
+	if (!root) return null;
+
+	const rightNode = root.right;
+	root.right = invertTree(root.left);
+	root.left = invertTree(rightNode);
+	return root;
+};
+```
+
+### 101.Symmetric Tree
+
+```js
+// 有点难，看的答案，如果有时间需要再看
+var isSymmetric = function (root) {
+	//使用递归遍历左右子树 递归三部曲
+	// 1. 确定递归的参数 root.left root.right和返回值true false
+	const compareNode = function (left, right) {
+		//2. 确定终止条件 空的情况
+		if ((left === null && right !== null) || (left !== null && right === null)) {
+			return false;
+		} else if (left === null && right === null) {
+			return true;
+		} else if (left.val !== right.val) {
+			return false;
+		}
+		//3. 确定单层递归逻辑
+		let outSide = compareNode(left.left, right.right);
+		let inSide = compareNode(left.right, right.left);
+		return outSide && inSide;
+	};
+	if (root === null) return true;
+
+	return compareNode(root.left, root.right);
+};
+```
+
+### 104.Maximum Depth of Binary Tree
+
+```js
+var maxDepth = function (root) {
+	if (root === null) return 0;
+	let count = 0;
+	let queue = [root];
+
+	while (queue.length !== 0) {
+		let size = queue.length;
+		count++;
+
+		while (size--) {
+			let node = queue.shift();
+			node.left && queue.push(node.left);
+			node.right && queue.push(node.right);
+		}
+	}
+
+	return count;
+};
+```
+
+### 111.Minimum Depth of Binary Tree
+
+```js
+var minDepth = function(root) {
+    if(!root) return 0;
+    // 到叶子节点 返回 1
+    if(!root.left && !root.right) return 1;
+    // 只有右节点时 递归右节点
+    if(!root.left) return 1 + minDepth(root.right);
+    // 只有左节点时 递归左节点
+    if(!root.right) return 1 + minDepth(root.left);
+    return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
 };
 ```
 
