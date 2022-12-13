@@ -9,16 +9,10 @@ title: AtCoder
 
 
 
-::: tip
-出題範囲と問題のタイプを把握するため、AtCoderを始めました。  
-メモとして自分の回答を整理します。
-:::
-
-
-
 ## メモ
 
 - [AtCoder Problems](https://kenkoooo.com/atcoder/)
+- **AtCoder Beginners Selection**だけやりました
 - `console.log(解答)`、入力の処理が必要
 - 配列化input：`input.split("\n")`，
 - 文字列配列化：`split(" ")`
@@ -30,7 +24,6 @@ title: AtCoder
   // console.log(arr)
   // answer code...
   ```
-  
   
 
 

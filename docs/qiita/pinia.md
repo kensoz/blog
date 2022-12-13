@@ -9,12 +9,6 @@ title: setupで🍍Piniaを使う
 
 
 
-::: tip
-よくOptions APIでPinia.jsを使っていますが、本記事はVue3 Composition APIに合わせて、🍍Pinia.jsのSetup書き方を紹介します。
-:::
-
-
-
 📡  [Qiita](https://qiita.com/kensoz/items/f1d4204f218651d2b6f9)
 
 

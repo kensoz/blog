@@ -9,12 +9,6 @@ title: Vite初期化Vue
 
 
 
-::: tip
-ViteのVue.jsプロジェクト1から環境作成。
-:::
-
-
-
 📡  [Qiita](https://qiita.com/kensoz/items/053c7103cd073d09f81e)
 
 

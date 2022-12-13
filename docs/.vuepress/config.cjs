@@ -10,17 +10,24 @@ module.exports = {
       "link",
       { rel: "shortcut icon", type: "image/x-icon", href: "/blog/logo.png?" },
     ],
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Murecho:wght@100;300;400;500;700;800;900&display=swap",
+      },
+    ],
   ],
   plugins: [searchPlugin({})],
 
   locales: {
     "/": {
       lang: "ja-JP",
-      title: "れんほうのブログ",
+      title: "RenHou BLOG",
     },
     "/zh/": {
       lang: "zh-CN",
-      title: "拿来吧你",
+      title: "RenHou BLOG",
     },
   },
 

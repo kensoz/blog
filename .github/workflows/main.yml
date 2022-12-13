@@ -1,9 +1,9 @@
 # ----- Github Action -----
 name: Build and Deploy
-# 実行のタイミング
+
 on: workflow_dispatch
 # on: [push]
-# 実行の流れ
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest

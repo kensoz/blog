@@ -3,24 +3,7 @@ lang: ja-JP
 title: ホームページ
 ---
 
-<img src="/logo.png" width=60 height=60 style="margin-top:40px;margin-bottom:20px;" />
+<img src="/top.jpg" style="margin-top:50px;margin-bottom:50px;" />
 
-### 📒 ブログについて
-
----
-
-ブログへようこそ！  
-初めまして、連萌（れんほう）と申します。東京で働いている中国人の FE です。  
-このブログは、個人の学習と開発を整理し、まとめる場所です。 VuePress による開発（[GitHub](https://github.com/kensoz/blog)）  
-[Qiita](https://qiita.com/kensoz)の記事も一部をここへ転記します。  
-よろしくお願いいたします！🍅
-
-### 📫 連絡と発信
-
----
-
-- ⭐ [Wantedly](https://www.wantedly.com/id/kensoz)・[LinkedIn](https://jp.linkedin.com/in/kensoz)
-- 🌱 [GitHub](https://github.com/kensoz)
-- 💼 [職務経歴書](https://github.com/kensoz/resume)・[中文简历](https://github.com/kensoz/resume/tree/master/zh-CN)
-- 📡 [Qiita](https://qiita.com/kensoz)・[SegmentFault](https://segmentfault.com/u/kensoz/articles)・[Juejin](https://juejin.cn/user/1029616691882653)
-- 💡 [個人サイト](http://renhou.starfree.jp/)
+人只要努力就会犯错，永恒之女性，引我们飞升  
+BLOGへようこそ !

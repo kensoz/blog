@@ -33,7 +33,7 @@ module.exports = {
   ],
 
   sidebar: [
-    { text: "首页", link: "/zh/" },
+    { text: "Home", link: "/zh/" },
     {
       text: "教程",
       link: "/zh/article/vite.md",

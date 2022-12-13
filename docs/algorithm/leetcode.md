@@ -5,19 +5,13 @@ title: LeetCode
 
 # LeetCode
 
-![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
-
-
-
-::: tip
-メモとして自分の回答を整理します。  
-メモしやすいため、一部のコメントは中国語です。
-:::
+![](https://img.shields.io/badge/-LeetCode-9ca3af.svg?logo=leetcode&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
 
 
 ## メモ
 
+- メモしやすいため、一部のコメントは中国語です
 - `return`解答、入力の処理が特に必要ない
 - `return`しなくてそのまま解答の問題もあり
 
@@ -1335,6 +1329,15 @@ var minDepth = function(root) {
     // 只有左节点时 递归左节点
     if(!root.right) return 1 + minDepth(root.left);
     return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
+};
+```
+
+### 88.Merge Sorted Array
+
+```js
+var merge = function(nums1, m, nums2, n) {
+    nums1.splice(m,n,...nums2);
+    return nums1.sort((a,b) => a - b);
 };
 ```
 

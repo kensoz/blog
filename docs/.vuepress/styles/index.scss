@@ -1,9 +1,13 @@
 :root {
-  --c-brand: #9ca3af;
-  --c-brand-light: #d1d5db;
+  --c-brand: #60a5fa;
+  --c-brand-light: #bfdbfe;
 }
 
 html.dark {
-  --c-brand: #9ca3af;
-  --c-brand-light: #d1d5db;
+  --c-brand: #60a5fa;
+  --c-brand-light: #bfdbfe;
+}
+
+body{
+  font-family: "Murecho", "メイリオ", "游ゴシック", "Microsoft YaHei", "微软雅黑", "Helvetica", "sans-serif"
 }
