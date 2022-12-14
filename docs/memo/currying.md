@@ -1,17 +1,11 @@
 ---
 lang: ja-JP
-title: 関数カリー化学習
+title: 関数カリー化
 ---
 
-# 関数カリー化学習
+# 関数カリー化
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
-
-
-
-::: tip
-JavaScript関数カリー化学習と整理
-:::
 
 
 
@@ -40,7 +34,7 @@ currying(mul, add)(2)
 
 
 
-## 2.thunk
+## 2.Thunk
 
 ```js
 // カリー化に似ているもの

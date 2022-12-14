@@ -31,14 +31,9 @@ module.exports = {
   sidebar: [
     { text: "Home", link: "/" },
     {
-      text: "学習メモ",
-      link: "/memo/crud.md",
-      children: [
-        "/memo/crud.md",
-        "/memo/currying.md",
-        "/memo/async.md",
-        "/memo/bind.md",
-      ],
+      text: "メモ",
+      link: "/memo/index.md",
+      children: ["/memo/crud.md", "/memo/async.md", "/memo/currying.md"],
     },
     {
       text: "アルゴリズム",

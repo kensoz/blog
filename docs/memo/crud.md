@@ -1,21 +1,15 @@
 ---
 lang: ja-JP
-title: JSのCRUD整理
+title: JavaScriptCRUD整理
 ---
 
-# JSのCRUD整理
+# JavaScriptCRUD整理
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
 
 
-::: tip
-常用JavaScriptCRUDメソッドと処理の整理
-:::
-
-
-
-## 1.JSONのCRUD
+## 1.JSON配列のCRUD
 
 ##### 0.サンプルデータ
 

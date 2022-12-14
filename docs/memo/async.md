@@ -1,17 +1,11 @@
 ---
 lang: ja-JP
-title: 非同期整理
+title: 非同期の実行順番
 ---
 
-# 非同期整理
+# JS非同期関数の実行順番
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
-
-
-
-::: tip
-常用JavaScript非同期メソッドの整理。Async，Await，Promiseなど含めています
-:::
 
 
 
@@ -68,10 +62,9 @@ timeout(100).then((value) => {
 
 ## Async&Await
 
-🌐 [live demo](https://codepen.io/kensoz/pen/GREvONv)
+###### Sample.1
 
-- `async`はなに？非同期領域が宣言されて、全体的な戻り値が`promise`オブジェクト
-- `await`はなに？`async`で実行するもの
+🌐 [live demo](https://codepen.io/kensoz/pen/GREvONv)
 
 ```js
 // awaitに続く関数または値がpromiseでない場合は、すぐに実行
@@ -109,7 +102,7 @@ console.log(2);
 
 
 
-## Async実行の順番
+###### Sample.2
 
 🌐 [live demo](https://codepen.io/kensoz/pen/QWqMzZP)
 

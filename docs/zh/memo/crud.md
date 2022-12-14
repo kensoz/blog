@@ -1,21 +1,15 @@
 ---
 lang: zh-CN
-title: JS增删改查整理
+title: Javascript增删改查整理
 ---
 
-# JS增删改查整理
+# Javascript增删改查整理
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
 
 
-::: tip
-常用的JavaScript增删改查方法整理总结
-:::
-
-
-
-## 1.JSON增删改查篇
+## 1.JSON数组增删改查篇
 
 ##### 0.示例JSON数据（常规型）
 

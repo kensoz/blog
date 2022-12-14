@@ -9,12 +9,6 @@ title: 函数柯里化整理
 
 
 
-::: tip
-函数柯里化学习与总结
-:::
-
-
-
 🌐 [live demo](https://codepen.io/kensoz/pen/KKaJjpp)
 
 
@@ -40,7 +34,7 @@ currying(mul, add)(2)
 
 
 
-## 2.thunk
+## 2.Thunk
 
 ```js
 // 约等于函数柯里化

@@ -1,17 +1,11 @@
 ---
 lang: zh-CN
-title: JS常用异步整理
+title: 异步函数的执行顺序
 ---
 
-# JS常用异步整理
+# JS异步函数的执行顺序
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
-
-
-
-::: tip
-常用JavaScript异步总结整理。包括Async，Await，Promise等。
-:::
 
 
 
@@ -71,6 +65,8 @@ timeout(100).then((value) => {
 
 ## Async&Await
 
+###### Sample.1
+
 🌐 [live demo](https://codepen.io/kensoz/pen/GREvONv)
 
 ```js
@@ -110,7 +106,7 @@ console.log(2); // 因为async函数内有promise对象需要执行，所以他�
 
 
 
-## Async的执行顺序
+###### Sample.2
 
 🌐 [live demo](https://codepen.io/kensoz/pen/QWqMzZP)
 

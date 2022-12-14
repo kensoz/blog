@@ -32,12 +32,11 @@ module.exports = {
     { text: "Home", link: "/zh/" },
     {
       text: "笔记",
-      link: "/zh/memo/crud.md",
+      link: "/zh/memo/index.md",
       children: [
         "/zh/memo/crud.md",
-        "/zh/memo/currying.md",
         "/zh/memo/async.md",
-        "/zh/memo/bind.md",
+        "/zh/memo/currying.md",
       ],
     },
     {
