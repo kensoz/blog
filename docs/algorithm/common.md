@@ -1,9 +1,9 @@
 ---
 lang: ja-JP
-title: アルゴリズムまとめ
+title: 簡易アルゴリズムまとめ
 ---
 
-# アルゴリズムまとめ
+# 簡易アルゴリズムまとめ
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 

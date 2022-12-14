@@ -17,6 +17,31 @@ title: LeetCode
 
 
 
+## Offer
+
+### HZFE.Offer 05
+
+```js
+var replaceSpace = function(s) {
+  return s.replaceAll(' ','%20')
+};
+```
+
+### HZFE.Offer 58 
+
+```js
+var reverseLeftWords = function (s, n) {
+	let tmp = [];
+	for (let i = 0; i < n; i++) {
+		tmp.push(s[i]);
+	}
+	const old = s.split("").slice(n).join("");
+	return old + tmp.join("");
+};
+```
+
+
+
 ## Medium
 
 ### 151.Reverse Words in a String
@@ -803,27 +828,6 @@ var reverseStr = function (s, k) {
 		while (++l < --r) [resArr[l], resArr[r]] = [resArr[r], resArr[l]];
 	}
 	return resArr.join("");
-};
-```
-
-### HZFE.Offer 05
-
-```js
-var replaceSpace = function(s) {
-  return s.replaceAll(' ','%20')
-};
-```
-
-### HZFE.Offer 58 
-
-```js
-var reverseLeftWords = function (s, n) {
-	let tmp = [];
-	for (let i = 0; i < n; i++) {
-		tmp.push(s[i]);
-	}
-	const old = s.split("").slice(n).join("");
-	return old + tmp.join("");
 };
 ```
 

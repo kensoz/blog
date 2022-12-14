@@ -3,7 +3,7 @@ module.exports = {
   navbar: [
     {
       text: "GitHub",
-      link: "https://github.com/kensoz/kensoz",
+      link: "https://github.com/kensoz/blog",
     },
     {
       text: "开源项目",
@@ -24,10 +24,6 @@ module.exports = {
           text: "🌞 Rrea-Server",
           link: "https://github.com/kensoz/Rrea-server",
         },
-        {
-          text: "💡 Portfolio",
-          link: "https://github.com/kensoz/portfolio",
-        },
       ],
     },
   ],
@@ -35,54 +31,49 @@ module.exports = {
   sidebar: [
     { text: "Home", link: "/zh/" },
     {
-      text: "教程",
-      link: "/zh/article/vite.md",
+      text: "笔记",
+      link: "/zh/memo/crud.md",
+      children: [
+        "/zh/memo/crud.md",
+        "/zh/memo/currying.md",
+        "/zh/memo/async.md",
+        "/zh/memo/bind.md",
+      ],
+    },
+    {
+      text: "算法",
+      link: "/zh/algorithm/index.md",
+      children: [
+        "/algorithm/leetcode.md",
+        "/algorithm/atcoder.md",
+        "/algorithm/other.md",
+        "/algorithm/common.md",
+        // "/algorithm/paiza.md",
+      ],
+    },
+    {
+      text: "网络记事",
+      link: "/zh/article/index.md",
       children: [
         "/zh/article/vite.md",
         "/zh/article/ui.md",
         "/zh/article/layout.md",
+        "/zh/article/factorial.md",
         "/zh/article/docker.md",
         "/zh/article/pinia.md",
         "/zh/article/indexed.md",
         "/zh/article/rollup.md",
         "/zh/article/vitest.md",
         "/zh/article/github.md",
+        "/zh/article/syllabary.md",
+        "/zh/article/haveornot.md",
+        "/zh/article/component.md",
+        "/zh/article/compare.md",
       ],
     },
     {
-      text: "算法",
-      link: "/algorithm/leetcode.md",
-      children: [
-        "/algorithm/leetcode.md",
-        // "/algorithm/paiza.md",
-        "/algorithm/atcoder.md",
-        "/algorithm/common.md",
-      ],
-    },
-    {
-      text: "代码段",
-      link: "/zh/business/syllabary.md",
-      children: [
-        "/zh/business/syllabary.md",
-        "/zh/business/haveornot.md",
-        "/zh/business/component.md",
-        "/zh/business/find.md",
-        "/zh/business/prime.md",
-        "/zh/business/factorial.md",
-      ],
-    },
-    {
-      text: "学习与整理",
-      link: "/zh/knowledge/crud.md",
-      children: [
-        "/zh/knowledge/crud.md",
-        "/zh/knowledge/currying.md",
-        "/zh/knowledge/async.md",
-        "/zh/knowledge/bind.md",
-        "/zh/knowledge/compare.md",
-        "/zh/knowledge/nginx.md",
-        "/zh/knowledge/code.md",
-      ],
+      text: "关于",
+      link: "/zh/other/index.md",
     },
   ],
 };

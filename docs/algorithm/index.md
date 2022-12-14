@@ -5,8 +5,22 @@ title: アルゴリズム
 
 # アルゴリズム
 
-アルゴリズムというのはコーディングテストのことです。自分の回答を記録するため、BLOGに投稿します。一番やったのは**Paiza**ですが、**Paiza**は解答の投稿禁止なので、残念です。**LeetCode**もやります、一番自信があるのは配列関連のお題です。
+アルゴリズムというのはコーディングテストのことです。自分の回答を記録するため、BLOGに投稿しています。ここで投稿した解答コメントはメモしやすいため、一部のコメントは中国語のみで、ご了承ください。
 
 
 
-ここで投稿したコメントは中国語や日本語の両方ありますので、ご了承ください。
+## コーディングテストサイトコレクション
+
+📡  [Qiita](https://qiita.com/kensoz/items/931483d42974ba2f183d)
+
++ [AtCoder](https://atcoder.jp/?lang=ja)
++ [LeetCode](https://leetcode.com/problemset/all/)
++ [Paiza](https://paiza.jp/)
++ [Codewars](https://www.codewars.com/dashboard)
++ [Hackerrank](https://www.hackerrank.com/dashboard)
++ [Codility](https://app.codility.com/programmers/)
++ [Project Euler](https://projecteuler.net/)
++ [LintCode](https://www.lintcode.com/)
++ [BEF](https://bigfrontend.dev/)
++ [ACM](https://acm.timus.ru/)
+

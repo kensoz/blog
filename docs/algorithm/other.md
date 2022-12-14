@@ -1,6 +1,6 @@
 ---
 lang: ja-JP
-title: コーディングテストサイト
+title: その他のサイト
 ---
 
 # その他のコーディングテストサイト
@@ -9,7 +9,9 @@ title: コーディングテストサイト
 
 
 
-## paiza
+## Paiza
+
+- [URL](https://paiza.jp/)
 
 - `console.log(解答)`、入力の処理が必要
 
@@ -25,12 +27,13 @@ title: コーディングテストサイト
   console.log(str.split(" ").join("")) // "23"
   ```
 
-  
+- 解答は公開しません
 
 
 
 ## Codility
 
+- [URL](https://app.codility.com/programmers/lessons/1-iterations/)
 - `return`解答、入力の処理が特に必要ない
 
 
@@ -65,6 +68,7 @@ function solution (N) {
 
 ## HackerRank
 
+- [URL](https://www.hackerrank.com/dashboard)
 - 題名の関数で`return`解答、入力の処理が特に必要ない、`main`関数でシステム判定
 - 操作やや重い
 
@@ -82,6 +86,7 @@ function solveMeFirst(a, b) {
 
 ## Codewars
 
+- [URL](https://www.codewars.com/)
 - `return`解答、入力の処理が特に必要ない
 
 

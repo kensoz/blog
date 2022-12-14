@@ -9,13 +9,6 @@ title: JSフレームワーク比較
 
 
 
-::: warning
-三つのjsフレームワークのAPI比較表です。  
-あくまでの比較です。場合によって使い方が違うことがあります。
-:::
-
-
-
 📡  [Qiita](https://qiita.com/kensoz/items/79ccf7d5b718d2dd0249)
 
 
