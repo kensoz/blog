@@ -9,7 +9,7 @@ title: Pinia.js的setup模式
 
 
 
-📡[思否](https://segmentfault.com/a/1190000042290316)
+📡 [思否](https://segmentfault.com/a/1190000042290316)
 
 
 

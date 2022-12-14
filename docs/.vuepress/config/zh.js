@@ -46,7 +46,6 @@ module.exports = {
         "/algorithm/leetcode.md",
         "/algorithm/atcoder.md",
         "/algorithm/other.md",
-        "/algorithm/common.md",
         // "/algorithm/paiza.md",
       ],
     },
@@ -57,6 +56,7 @@ module.exports = {
         "/zh/article/vite.md",
         "/zh/article/ui.md",
         "/zh/article/layout.md",
+        "/zh/article/tailwindbreak.md",
         "/zh/article/factorial.md",
         "/zh/article/docker.md",
         "/zh/article/pinia.md",
@@ -68,6 +68,7 @@ module.exports = {
         "/zh/article/haveornot.md",
         "/zh/article/component.md",
         "/zh/article/compare.md",
+        "/zh/article/prime.md",
       ],
     },
     {

@@ -1,15 +1,19 @@
 ---
 lang: ja-JP
-title: 簡易アルゴリズムまとめ
+title: JavaScript素数判定
 ---
 
-# 簡易アルゴリズムまとめ
+# JavaScript素数判定
 
 ![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
 
 
 
-## JavaScript素数判定
+📡  [Qiita](https://qiita.com/kensoz/items/32f97989f2fd412a3d15)
+
+
+
+## コード
 
 🌐 [live demo](https://codepen.io/kensoz/pen/zYjQJOY)
 
