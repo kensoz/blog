@@ -3,6 +3,10 @@ lang: ja-JP
 title: アルゴリズム
 ---
 
+<img src="/algorithm.jpg" width=500 style="margin-top:50px;margin-bottom:20px;" />
+
+
+
 # アルゴリズム
 
 アルゴリズムというのはコーディングテストのことです。自分の回答を記録するため、BLOGに投稿しています。ここで投稿した解答コメントはメモしやすいため、一部のコメントは中国語のみとなりますので、ご了承ください。

@@ -386,6 +386,53 @@ const tmp = m - m*p
 console.log(tmp - tmp*q);
 ```
 
+### C039:古代の数式
+
+```js
+const arr = lines[0].split("+");
+
+let res = [];
+let size = arr.length;
+while (size--) {
+	const tmp = arr[size].split("");
+	for (let i = 0; i < tmp.length; i++) {
+		if (tmp[i] === "<") {
+			res.push(10);
+		} else {
+			res.push(1);
+		}
+	}
+}
+
+console.log(res.reduce((p, c) => p + c));
+```
+
+### C101:【2021年Xmas問題】ラッキーデイ
+
+```js
+const N = Number(lines[0])
+const reg = new RegExp(N);
+
+let year = 366;
+let res = 0;
+while (year--) {
+  if (reg.test(year)) res++;
+}
+
+console.log(res);
+```
+
+### C052:ゲームの画面
+
+```js
+const arr = [lines[0].split(" "), lines[1].split(" ")].flat().map(Number)
+const Y = arr[0]
+const X = arr[1]
+const dy = Math.abs(arr[2])
+const dx = Math.abs(arr[3])
+console.log((Y*dx) + (X*dy) - (dx*dy));
+```
+
 
 
 ## Dランク

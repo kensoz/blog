@@ -3,6 +3,10 @@ lang: zh-CN
 title: 算法
 ---
 
+<img src="/algorithm.jpg" width=500 style="margin-top:50px;margin-bottom:20px;" />
+
+
+
 # 算法
 
 在这里记录自己的刷题解答，这个板块不区分多语言，可能出现日语和中文混在的情况，网页也会被定向到日语链接。
