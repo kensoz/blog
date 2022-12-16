@@ -7,6 +7,5 @@ title: Home
 
 # RenHou BLOG
 
-人只要努力就会犯错，永恒之女性，引我们飞升  
-欢迎来到我的BLOG !
+欢迎来到我的技术BLOG !
 
