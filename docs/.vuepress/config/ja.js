@@ -33,7 +33,13 @@ module.exports = {
     {
       text: "メモ",
       link: "/memo/index.md",
-      children: ["/memo/crud.md", "/memo/async.md", "/memo/currying.md"],
+      children: [
+        "/memo/array.md",
+        "/memo/jsinago.md",
+        "/memo/crud.md",
+        "/memo/async.md",
+        "/memo/currying.md",
+      ],
     },
     {
       text: "アルゴリズム",
@@ -44,6 +50,11 @@ module.exports = {
         "/algorithm/other.md",
         // "/algorithm/paiza.md",
       ],
+    },
+    {
+      text: "コードスニペット",
+      link: "/snippet/index.md",
+      children: ["/snippet/carousel.md"],
     },
     {
       text: "ネット記事",

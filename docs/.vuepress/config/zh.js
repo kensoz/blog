@@ -34,6 +34,8 @@ module.exports = {
       text: "笔记",
       link: "/zh/memo/index.md",
       children: [
+        "/zh/memo/array.md",
+        "/zh/memo/jsinago.md",
         "/zh/memo/crud.md",
         "/zh/memo/async.md",
         "/zh/memo/currying.md",
@@ -48,6 +50,11 @@ module.exports = {
         "/algorithm/other.md",
         // "/algorithm/paiza.md",
       ],
+    },
+    {
+      text: "代码段",
+      link: "/zh/snippet/index.md",
+      children: ["/zh/snippet/carousel.md"],
     },
     {
       text: "网络记事",

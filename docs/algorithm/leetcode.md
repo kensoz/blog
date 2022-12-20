@@ -491,17 +491,15 @@ return Math.round(fn / sqrt_5)
 };
 ```
 
-b.フィボナッチ数漸化式/斐波那契数列递推公式
+b.動的計画法
 
 ```js
 var climbStairs = function(n) {
-    const dp = [];
-    dp[0] = 1;
-    dp[1] = 1;
-    for(let i = 2; i <= n; i++) {
-        dp[i] = dp[i - 1] + dp[i - 2];
+    let dp = [1 , 2]
+    for(let i = 2; i < n; i++) {
+        dp[i] = dp[i - 1] + dp[i - 2]
     }
-    return dp[n];
+    return dp[n - 1]
 };
 ```
 
@@ -1342,6 +1340,16 @@ var minDepth = function(root) {
 var merge = function(nums1, m, nums2, n) {
     nums1.splice(m,n,...nums2);
     return nums1.sort((a,b) => a - b);
+};
+```
+
+### 509.Fibonacci Number
+
+```js
+var fib = function (n) {
+	if (n === 0) return 0;
+	if (n === 1) return 1;
+	return fib(n - 1) + fib(n - 2);
 };
 ```
 
