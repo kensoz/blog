@@ -54,7 +54,11 @@ module.exports = {
     {
       text: "コードスニペット",
       link: "/snippet/index.md",
-      children: ["/snippet/carousel.md"],
+      children: [
+        "/snippet/carousel.md",
+        "/snippet/prime.md",
+        "/snippet/syllabary.md",
+      ],
     },
     {
       text: "ネット記事",
@@ -71,11 +75,9 @@ module.exports = {
         "/article/rollup.md",
         "/article/vitest.md",
         "/article/github.md",
-        "/article/syllabary.md",
         "/article/haveornot.md",
         "/article/component.md",
         "/article/compare.md",
-        "/article/prime.md",
       ],
     },
     {

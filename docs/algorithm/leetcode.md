@@ -17,7 +17,7 @@ title: LeetCode
 
 
 
-## Offer
+## HZFE
 
 ### HZFE.Offer 05
 
@@ -1350,6 +1350,21 @@ var fib = function (n) {
 	if (n === 0) return 0;
 	if (n === 1) return 1;
 	return fib(n - 1) + fib(n - 2);
+};
+```
+
+### 746. Min Cost Climbing Stairs
+
+```js
+var minCostClimbingStairs = function(cost) {
+    const dp = [];
+    const length = cost.length;
+    dp[0] = 0;
+    dp[1] = 0;
+    for (let i = 2; i <= length; i++) {
+        dp[i] = Math.min(dp[i - 1] + cost[i - 1], dp[i - 2] + cost[i - 2]);
+    }
+    return dp[length];
 };
 ```
 

@@ -54,7 +54,11 @@ module.exports = {
     {
       text: "代码段",
       link: "/zh/snippet/index.md",
-      children: ["/zh/snippet/carousel.md"],
+      children: [
+        "/zh/snippet/carousel.md",
+        "/zh/snippet/prime.md",
+        "/zh/snippet/syllabary.md",
+      ],
     },
     {
       text: "网络记事",
@@ -71,11 +75,9 @@ module.exports = {
         "/zh/article/rollup.md",
         "/zh/article/vitest.md",
         "/zh/article/github.md",
-        "/zh/article/syllabary.md",
         "/zh/article/haveornot.md",
         "/zh/article/component.md",
         "/zh/article/compare.md",
-        "/zh/article/prime.md",
       ],
     },
     {
