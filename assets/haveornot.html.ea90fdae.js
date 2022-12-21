@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-6e246d92","path":"/zh/article/haveornot.html","title":"\u6570\u7EC4\u503C\u6709\u65E0","lang":"zh-CN","frontmatter":{"lang":"zh-CN","title":"\u6570\u7EC4\u503C\u6709\u65E0"},"excerpt":"","headers":[{"level":2,"title":"\u4EE3\u7801","slug":"\u4EE3\u7801","children":[]}],"git":{},"filePathRelative":"zh/article/haveornot.md"}');export{e as data};
