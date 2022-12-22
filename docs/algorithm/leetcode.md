@@ -1368,3 +1368,32 @@ var minCostClimbingStairs = function(cost) {
 };
 ```
 
+### 136.Single Number
+
+a.includes
+
+```js
+var singleNumber = function (nums) {
+	for (let i = 0; i < nums.length; i++) {
+		const tmp = nums.shift();
+		if (!nums.includes(tmp)) {
+			return tmp;
+		} else {
+			nums.push(tmp);
+		}
+	}
+};
+```
+
+b.ビット演算
+
+```js
+var singleNumber = function(nums) {
+    let res = 0;
+    for(let i = 0; i < nums.length ; ++i ){
+        res ^= nums[i];
+    }
+    return res
+};
+```
+
