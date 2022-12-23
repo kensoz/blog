@@ -432,9 +432,38 @@ const dx = Math.abs(arr[3])
 console.log((Y*dx) + (X*dy) - (dx*dy));
 ```
 
+### C099:折り紙の貼り合わせ
+
+```js
+const [N, D] = lines[0].split(" ").map(Number)
+let arr = []
+for(let i = 1; i < N; i++){
+    arr.push(Number(lines[i]))
+}
+const tmp = N*D - arr.reduce((x, y) => x + y)
+console.log(tmp * D);
+```
+
+### C090:【40万人記念問題】黒電話
+
+```js
+const tel = lines[0].replaceAll("-", "").split("").map(Number);
+let res = 0;
+for (let i of tel) {
+	res += i === 0 ? 24 : (i + 2) * 2;
+}
+console.log(res);
+```
+
 
 
 ## Dランク
+
+### D229:どれだけ増えた
+
+```js
+console.log(Number(lines[0]) - 10);
+```
 
 ### D053:トリック・オア・トリート
 
