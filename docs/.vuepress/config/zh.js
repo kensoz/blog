@@ -36,6 +36,7 @@ module.exports = {
       children: [
         "/zh/memo/array.md",
         "/zh/memo/jsinago.md",
+        "/zh/memo/data.md",
         "/zh/memo/crud.md",
         "/zh/memo/async.md",
         "/zh/memo/currying.md",

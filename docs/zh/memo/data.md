@@ -1,0 +1,156 @@
+---
+lang: zh-CN
+title: 数据结构
+---
+
+# 数据结构笔记
+
+![](https://img.shields.io/badge/-Typescript-9ca3af.svg?logo=typescript&style=popout-square)  ![](https://img.shields.io/badge/-Javascript-9ca3af.svg?logo=javascript&style=popout-square)
+
+
+
+## 一、哈希表
+
+#### 1.数组
+
+```js
+const arr = [1, 2, 3]
+```
+
+#### 2.集合
+
+```js
+const set = new Set([1, 2, 3]);
+```
+
+#### 3.映射
+
+```js
+const map = new Map([
+  ['name', 'renhou'],
+  ['title', 'Author']
+]);
+```
+
+
+
+## 二、栈
+
+```js
+function Stack(){
+    // 栈
+    this.items = [];
+    // 追加
+    Stack.prototype.push = function(element){
+       this.items.push(element);
+    }
+     // 削除
+    Stack.prototype.pop = function(){
+        return this.items.pop();
+    }
+    // 取得
+    Stack.prototype.peek = function(){
+        return this.items[this.items.length-1];
+    }
+}
+
+// 使用
+const stack = new Stack();
+```
+
+
+
+## 三、队列
+
+```js
+function Queue() {
+	// 队列
+	this.dataStore = [];
+	// 追加
+	Queue.prototype.enqueue = function (element) {
+		this.dataStore.push(element);
+	};
+	// 削除
+	Queue.prototype.dequeue = function () {
+		this.dataStore.shift();
+	};
+	// 取得
+	Queue.prototype.theFront = function () {
+		return this.dataStore[0];
+	};
+}
+
+// 使用
+const queue = new Queue();
+```
+
+
+
+## 四、链表
+
+```js
+function ListNode(val, next) {
+  this.val = val === undefined ? 0 : val;
+  this.next = next === undefined ? null : next;
+}
+
+const makeList = (protoArr) => {
+  let list = new ListNode(protoArr[0]);
+  let pre = list;
+  for (let i = 1; i < protoArr.length; i++) {
+    pre.next = new ListNode(protoArr[i]);
+    pre = pre.next;
+  }
+  return list;
+};
+
+// 使用
+const list = makeList([1, 2, 6, 3, 4, 5, 6])
+```
+
+
+
+## 五、二叉树
+
+```js
+function TreeNode(val, left, right) {
+	this.val = val === undefined ? 0 : val;
+	this.left = left === undefined ? null : left;
+	this.right = right === undefined ? null : right;
+}
+
+const tree = (arr) => {
+	if (!arr || arr.length === 0) return null;
+
+	let root = new TreeNode(arr.shift());
+	let nodeQueue = [root];
+
+	while (arr.length > 0) {
+		let node = nodeQueue.shift();
+		if (arr.length === 0 || node === undefined) break;
+    
+		const leftArr = arr.shift();
+		if (leftArr !== null) {
+			let left = new TreeNode(leftArr);
+			node.left = left;
+			nodeQueue.push(left);
+		}
+
+
+		if (arr.length === 0) break;
+
+		const rightArr = arr.shift();
+		if (rightArr !== null) {
+			let right = new TreeNode(rightArr);
+			node.right = right;
+			nodeQueue.push(right);
+		}
+	}
+
+	return root;
+};
+
+// 使用
+tree([1, 2, 3, 4, 5, 6, 7, 8, 9])
+```
+

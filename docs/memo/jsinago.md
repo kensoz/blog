@@ -156,7 +156,7 @@ const big = (str) => str.charAt(0).toUpperCase() + str.slice(1)
 console.log(big("asd")); // "Asd"
 ```
 
-#### 8.逆転
+#### 8.反転
 
 ```js
 const str = "lai"
@@ -167,7 +167,7 @@ console.log(str.split("").reverse().join("")) // "ial"
 
 ## 配列
 
-#### 1.逆転
+#### 1.反転
 
 ```js
 const arr = [1,2,3]
