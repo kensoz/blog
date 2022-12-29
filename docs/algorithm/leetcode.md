@@ -149,6 +149,23 @@ var levelOrderBottom = function(root) {
 };
 ```
 
+### 198. House Robber
+
+```js
+var rob = function (nums) {
+  // 数组长度
+  const length = nums.length;
+  // dp数组初始化
+  const dp = [nums[0], Math.max(nums[0], nums[1])];
+  // 从下标2开始遍历
+  for (let i = 2; i < length; i++) {
+    dp[i] = Math.max(dp[i - 2] + nums[i], dp[i - 1]);
+  }
+  return dp[length - 1];
+};
+// 213环，有时间看一下
+```
+
 
 
 ## EASY
@@ -1394,6 +1411,23 @@ var singleNumber = function(nums) {
         res ^= nums[i];
     }
     return res
+};
+```
+
+### 121.Best Time to Buy and Sell Stock
+
+```js
+var maxProfit = function (prices) {
+  let min = 10000;
+  let p = 0;
+  for (let i = 0; i < prices.length; i++) {
+    if (prices[i] < min) {
+      min = prices[i];
+    } else if (prices[i] - min > p) {
+      p = prices[i] - min;
+    }
+  }
+  return p;
 };
 ```
 

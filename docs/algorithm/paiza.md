@@ -24,6 +24,65 @@ title: Paiza
 
 
 
+## Aランク
+
+### A052:階段登り
+
+```js
+const n = Number(lines[0])
+const arr = lines[1].split(" ").map(Number)
+const A = arr[0];
+const B = arr[1];
+
+let dp = [];
+for (let i = 1; i <= B; i++) {
+  i % A === 0 ? dp.push(1) : dp.push(0);
+  i === B && dp[B - 1]++;
+}
+
+for (let i = B; i < n; i++) {
+  dp[i] = dp[i - A] + dp[i - B];
+}
+
+let res = dp.slice(0, n - 1);
+console.log(res.filter((i) => i === 0).length);
+```
+
+### A066:連勤記録
+
+```js
+const n = Number(lines[0])
+let arr = [];
+for (let i = 1; i <= n; i++) {
+	arr.push(Number(lines[i].split(" ")[0]));
+	arr.push(Number(lines[i].split(" ")[1]));
+}
+
+let res = 0;
+let start = arr.shift();
+let end = arr.shift();
+
+for (let i = 1; i < n; i++) {
+	let a = arr.shift();
+	let b = arr.shift();
+	if (a < start) {
+		start = a;
+	}
+	if (a <= end + 1) {
+		end = Math.max(end, b);
+	} else {
+		res = end + 1 - start;
+		start = a;
+		end = b;
+		res = Math.max(res, end + 1 - start);
+	}
+}
+res = Math.max(res, end + 1 - start);
+console.log(res);
+```
+
+
+
 ## Bランク
 
 ### B034:ロボットの歩行実験
@@ -451,6 +510,20 @@ const tel = lines[0].replaceAll("-", "").split("").map(Number);
 let res = 0;
 for (let i of tel) {
 	res += i === 0 ? 24 : (i + 2) * 2;
+}
+console.log(res);
+```
+
+### C062:回転寿司のメロン
+
+```js
+const t = Number(lines[0]);
+let res = 0;
+for (let i = 1; i <= t; i++) {
+  if (lines[i] === "melon") {
+    res++;
+    i += 10;
+  }
 }
 console.log(res);
 ```
