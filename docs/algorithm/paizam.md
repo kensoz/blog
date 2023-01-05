@@ -80,9 +80,7 @@ title: Paiza
 
 ## D ランク
 
-🚩 D ランクの結果ページは省略
-
-
+[D031:分から秒へ](https://paiza.jp/challenges/share/FsWGlILVuD-71IgxVC_hB5YcbuwfMgadJJGIzWdHP0o?source=social)  🏅 第 2 位
 
 D229:どれだけ増えた
 
@@ -133,8 +131,6 @@ D210:年間の料金
 [D200:【銀の弾丸コラボ問題】電気代の計算](https://paiza.jp/challenges/share/v6gOA71hCn_5xYf_onkmOoyOIH32XK5WL4SGq3gGmlw?source=social)  🏅 第 1 位
 
 D012:絶対値を求めよ
-
-[D031:分から秒へ](https://paiza.jp/challenges/share/FsWGlILVuD-71IgxVC_hB5YcbuwfMgadJJGIzWdHP0o?source=social)  🏅 第 2 位
 
 D110:3 つの数字
 

@@ -47,6 +47,7 @@ module.exports = {
       link: "/zh/algorithm/index.md",
       children: [
         "/algorithm/leetcode.md",
+        "/algorithm/paizam.md",
         "/algorithm/atcoder.md",
         "/algorithm/other.md",
         // "/algorithm/paiza.md",
