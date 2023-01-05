@@ -9,26 +9,6 @@ title: その他のサイト
 
 
 
-## Paiza
-
-- [URL](https://paiza.jp/)
-
-- `console.log(解答)`、入力の処理が必要
-
-- 改行：`"\n"`
-
-- 文字列転換：
-
-  ```js
-  const str = "2 3"
-  console.log(str.split(" ")) // ["2","3"]
-  console.log(str.split(" ").join("")) // "23"
-  ```
-
-- 提出率**25％**、解答は公開しません
-
-
-
 ## Codility
 
 - [URL](https://app.codility.com/programmers/lessons/1-iterations/)

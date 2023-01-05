@@ -1457,3 +1457,9 @@ if (now[0] > sunset[0]) {
 }
 ```
 
+### D230:鞄の合計代金
+
+```js
+console.log(Number(lines[0]) * Number(lines[1]))
+```
+
