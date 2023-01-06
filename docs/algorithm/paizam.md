@@ -14,7 +14,7 @@ title: Paiza
 - `console.log(解答)`、入力の処理が必要
 - ランク：**A**
 
-- 提出率：**25％**
+- 提出率：**26％**
 
 - 順位更新時間：2023-01-07
 
@@ -76,6 +76,12 @@ title: Paiza
 
 [C062:回転寿司のメロン](https://paiza.jp/challenges/share/4fgkCk3O5198OHirOKJuS6fmhpTZPXjJkHgz6yyyyhI?source=social) 🏅 第 9 位
 
+[C117:大量出店](https://paiza.jp/challenges/share/6foNexvPLoHvxXfMouvtknalhFNLsdhYJMh_Ltn9PZc?source=social)
+
+[C035:試験の合格判定](https://paiza.jp/challenges/share/4bP0rezMccSn5VBaAt-o8R2m468YmwyVSAKH4EUGlLc?source=social)
+
+[C123:節分ロボット](https://paiza.jp/challenges/share/nyFxaVL1h3XB7DiqmMsW9RDq0bHr7WbxLkEHZetKw4Q?source=social)
+
 
 
 ## D ランク
@@ -95,6 +101,8 @@ D002:数の比較
 D049:◯◯ の秋
 
 D037:花粉症でつらい
+
+[D221:グループ](https://paiza.jp/challenges/share/L4B1hVGJfX5wLW6RP9FNkuxuNKNRkfm07-DAKk0wvCA?source=social)  🏅 第 2 位
 
 D043:天気の表示
 

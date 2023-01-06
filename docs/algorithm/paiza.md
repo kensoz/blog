@@ -528,6 +528,92 @@ for (let i = 1; i <= t; i++) {
 console.log(res);
 ```
 
+### C117:大量出店
+
+```js
+const [N, M] = lines[0].split(" ").map(Number);
+const [A, B, C] = lines[1].split(" ").map(Number);
+let res = 0;
+for (let i = 2; i < N + 2; i++) {
+  const tmp = Number(lines[i]);
+  if (tmp * C - A - M * B < 0) {
+    res++;
+  }
+}
+console.log(res);
+```
+
+### C035:試験の合格判定
+
+```js
+const fuc = (e) => {
+  const arr = e.split(" ");
+  const total = arr.slice(1, 6).reduce((prev, curn) => prev - 0 + (curn - 0));
+
+  if (total < 350) {
+    return false;
+  }
+
+  switch (arr[0]) {
+    case "s":
+      return (
+        arr.slice(2, 4).reduce((prev, curn) => prev - 0 + (curn - 0)) >= 160
+      );
+      break;
+
+    case "l":
+      return (
+        arr.slice(4, 6).reduce((prev, curn) => prev - 0 + (curn - 0)) >= 160
+      );
+      break;
+
+    default:
+      break;
+  }
+};
+
+const N = Number(lines[0]);
+let res = 0;
+for (let i = 1; i <= N; i++) {
+  fuc(lines[i]) && res++;
+}
+console.log(res);
+```
+
+### C123:節分ロボット
+
+```js
+let age = [];
+const N = Number(lines[0]);
+for (let i = 1; i <= N; i++) {
+  age.push(Number(lines[i]));
+}
+
+let bean = Array(N).fill(0);
+let M = Number(lines[N + 1]);
+let index = N + 2;
+const lai = (arr) => {
+  const [s, e, count] = arr.split(" ").map(Number);
+  for (let i = 0; i < age.length; i++) {
+    if (s - 1 <= i && e - 1 >= i) {
+      bean[i] += count;
+    }
+
+    if (bean[i] > age[i]) {
+      bean[i] = age[i];
+    }
+  }
+};
+
+while (M > 0) {
+  lai(lines[index]);
+  index++;
+  M--;
+}
+
+console.log(bean.join("\n"));
+```
+
 
 
 ## Dランク
