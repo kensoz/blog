@@ -614,6 +614,31 @@ while (M > 0) {
 console.log(bean.join("\n"));
 ```
 
+### C021:暴風域にいますか？
+
+这个很迷不知道为啥运行时错误，结果肯定没错，推测是因为while
+
+```js
+const [xc, yc, r_1, r_2] = lines[0].split(" ").map(Number);
+let res = [];
+let n = Number(lines[1]);
+let index = n - 1;
+while (n-- > 0) {
+  const [x, y] = lines[index].split(" ").map(Number);
+  index++;
+  if (
+    r_1 * r_1 <= (x - xc) * (x - xc) + (y - yc) * (y - yc) &&
+    (x - xc) * (x - xc) + (y - yc) * (y - yc) <= r_2 * r_2
+  ) {
+    res.push("yes");
+  } else {
+    res.push("no");
+  }
+}
+
+console.log(res.join("\n"));
+```
+
 
 
 ## Dランク
@@ -1547,5 +1572,12 @@ if (now[0] > sunset[0]) {
 
 ```js
 console.log(Number(lines[0]) * Number(lines[1]))
+```
+
+### D135:多角形の調査
+
+```js
+const lai = Number(lines[0])
+console.log(lai/180 + 2);
 ```
 

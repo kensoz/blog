@@ -78,7 +78,7 @@ title: Paiza
 
 [C117:大量出店](https://paiza.jp/challenges/share/6foNexvPLoHvxXfMouvtknalhFNLsdhYJMh_Ltn9PZc?source=social)
 
-[C035:試験の合格判定](https://paiza.jp/challenges/share/4bP0rezMccSn5VBaAt-o8R2m468YmwyVSAKH4EUGlLc?source=social)
+[C035:試験の合格判定](https://paiza.jp/challenges/share/4bP0rezMccSn5VBaAt-o8R2m468YmwyVSAKH4EUGlLc?source=social) 🏅 第 1 位
 
 [C123:節分ロボット](https://paiza.jp/challenges/share/nyFxaVL1h3XB7DiqmMsW9RDq0bHr7WbxLkEHZetKw4Q?source=social)
 
@@ -317,3 +317,5 @@ D167:買い物袋
 D228:【2022 年 Xmas 問題】クリスマスの時間
 
 D230:鞄の合計代金
+
+D135:多角形の調査
