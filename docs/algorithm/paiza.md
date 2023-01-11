@@ -242,6 +242,32 @@ console.log(Math.round(total / k));
 
 ## Cランク
 
+### C102:行きたいライブのスケジュール
+
+```js
+const An = Number(lines[0]);
+const Bn = Number(lines[An + 1]);
+const Aarr = lines.slice(1, An + 1).map(Number);
+const Barr = lines.slice(An + 2).map(Number);
+
+let res = [];
+let flg = true;
+for (let i = 1; i <= 31; i++) {
+  if (!Aarr.includes(i) && !Barr.includes(i)) {
+    res.push("x");
+  } else if (Aarr.includes(i) && !Barr.includes(i)) {
+    res.push("A");
+  } else if (!Aarr.includes(i) && Barr.includes(i)) {
+    res.push("B");
+  } else {
+    res.push(flg ? "A" : "B");
+    flg = !flg;
+  }
+}
+
+console.log(res.join("\n"));
+```
+
 ### C086:ハンドルネームの生成
 
 ```js
@@ -637,6 +663,19 @@ while (n-- > 0) {
 }
 
 console.log(res.join("\n"));
+```
+
+### C112:時差ボケ
+
+```js
+const n = Number(lines[0]);
+let res = [];
+for (let i = 1; i <= n; i++) {
+  const [s, f, b] = lines[i].split(" ").map(Number);
+  res.push(s + f + (24 - b));
+}
+
+console.log(Math.min(...res) + "\n" + Math.max(...res));
 ```
 
 

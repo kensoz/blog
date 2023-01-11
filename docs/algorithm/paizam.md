@@ -40,6 +40,8 @@ title: Paiza
 
 ## C ランク
 
+[C102:行きたいライブのスケジュール](https://paiza.jp/challenges/share/yPtXExqD8UaQ5u920m4563pf7xcQAXfSmrJEsKnifCk?source=social)
+
 [C086:ハンドルネームの生成](https://paiza.jp/challenges/share/OWk66oi2UM6HFU0MPs5ZAx4KIB9yem2pWQyY86l7LSg?source=social)
 
 [C049:【ぱいじょ！コラボ問題】エレベーター](https://paiza.jp/challenges/share/H2oDoB4QF9b2zpC7p_IZZC_BSyFm3xV_qa894l3oKNA?source=social)
@@ -81,6 +83,8 @@ title: Paiza
 [C035:試験の合格判定](https://paiza.jp/challenges/share/4bP0rezMccSn5VBaAt-o8R2m468YmwyVSAKH4EUGlLc?source=social) 🏅 第 1 位
 
 [C123:節分ロボット](https://paiza.jp/challenges/share/nyFxaVL1h3XB7DiqmMsW9RDq0bHr7WbxLkEHZetKw4Q?source=social)
+
+[C112:時差ボケ](https://paiza.jp/challenges/share/3-E4eqH_p_L4rW1OEhFE32NUpC9jCUfPTrcctsByqp8?source=social)
 
 
 
