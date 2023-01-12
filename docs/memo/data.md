@@ -44,7 +44,7 @@ function Stack(){
     Stack.prototype.push = function(element){
        this.items.push(element);
     }
-     // 削除
+    // 削除
     Stack.prototype.pop = function(){
         return this.items.pop();
     }
