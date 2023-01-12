@@ -100,7 +100,9 @@ var dailyTemperatures = function(temperatures) {
 
 ### 102.Binary Tree Level Order Traversal
 
-[EN](https://leetcode.com/problems/binary-tree-level-order-traversal/) · [CN](https://leetcode.cn/problems/binary-tree-level-order-traversal/)  二叉树
+[EN](https://leetcode.com/problems/binary-tree-level-order-traversal/) · [CN](https://leetcode.cn/problems/binary-tree-level-order-traversal/) 
+
+ 二分木
 
 ```js
 var levelOrder = function (root) {
@@ -135,7 +137,9 @@ var levelOrder = function (root) {
 
 ### 107.Binary Tree Level Order Traversal II
 
-[EN](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) · [CN](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) 二叉树
+[EN](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/) · [CN](https://leetcode.cn/problems/binary-tree-level-order-traversal-ii/) 
+
+二分木
 
 ```js
 var levelOrderBottom = function(root) {
@@ -163,7 +167,9 @@ var levelOrderBottom = function(root) {
 
 ### 198. House Robber
 
-[EN](https://leetcode.cn/problems/house-robber/) · [CN](https://leetcode.cn/problems/house-robber/) 动态规划
+[EN](https://leetcode.cn/problems/house-robber/) · [CN](https://leetcode.cn/problems/house-robber/) 
+
+動的計画法
 
 ```js
 var rob = function (nums) {
@@ -788,7 +794,9 @@ var getIntersectionNode = function (headA, headB) {
 
 ### 242.Valid Anagram
 
-[EN](https://leetcode.com/problems/valid-anagram/) · [CN](https://leetcode.cn/problems/valid-anagram/)  哈希表
+[EN](https://leetcode.com/problems/valid-anagram/) · [CN](https://leetcode.cn/problems/valid-anagram/)  
+
+ハッシュテーブル
 
 ```js
 var isAnagram = function (s, t) {
@@ -798,7 +806,9 @@ var isAnagram = function (s, t) {
 
 ### 349.Intersection of Two Arrays
 
-[EN](https://leetcode.com/problems/intersection-of-two-arrays/) · [CN](https://leetcode.cn/problems/intersection-of-two-arrays/)  哈希表
+[EN](https://leetcode.com/problems/intersection-of-two-arrays/) · [CN](https://leetcode.cn/problems/intersection-of-two-arrays/)  
+
+ハッシュテーブル
 
 ```js
 var intersection = function (nums1, nums2) {
@@ -815,7 +825,9 @@ var intersection = function (nums1, nums2) {
 
 ### 202.Happy Number
 
-[EN](https://leetcode.com/problems/happy-number/) · [CN](https://leetcode.cn/problems/happy-number/)  哈希表
+[EN](https://leetcode.com/problems/happy-number/) · [CN](https://leetcode.cn/problems/happy-number/)  
+
+ハッシュテーブル
 
 ```js
 var isHappy = function (n) {
@@ -848,7 +860,9 @@ var isHappy = function (n) {
 
 ### 383.Ransom Note
 
-[EN](https://leetcode.com/problems/ransom-note/) · [CN](https://leetcode.cn/problems/ransom-note/)  贪心
+[EN](https://leetcode.com/problems/ransom-note/) · [CN](https://leetcode.cn/problems/ransom-note/)  
+
+貪欲法
 
 ```js
 var canConstruct = function (ransomNote, magazine) {
@@ -897,7 +911,9 @@ var reverseString = function(s) {
 
 ### 541.Reverse String II
 
-[EN](https://leetcode.com/problems/reverse-string-ii/) · [CN](https://leetcode.cn/problems/reverse-string-ii/)  双指针
+[EN](https://leetcode.com/problems/reverse-string-ii/) · [CN](https://leetcode.cn/problems/reverse-string-ii/)  
+
+Two Pointers
 
 ```js
 var reverseStr = function (s, k) {
@@ -927,7 +943,9 @@ var repeatedSubstringPattern = function (s) {
 
 ### 232.Implement Queue using Stacks
 
-[EN](https://leetcode.cn/problems/implement-queue-using-stacks/) · [CN](https://leetcode.cn/problems/implement-queue-using-stacks/)  队列
+[EN](https://leetcode.cn/problems/implement-queue-using-stacks/) · [CN](https://leetcode.cn/problems/implement-queue-using-stacks/)  
+
+キュー
 
 ```js
 // 使用两个数组的栈方法（push, pop） 实现队列
@@ -985,7 +1003,9 @@ MyQueue.prototype.empty = function () {
 
 ### 225.Implement Stack using Queues
 
-[EN](https://leetcode.com/problems/implement-stack-using-queues/) · [CN](https://leetcode.cn/problems/implement-stack-using-queues/)  栈
+[EN](https://leetcode.com/problems/implement-stack-using-queues/) · [CN](https://leetcode.cn/problems/implement-stack-using-queues/)  
+
+スタック
 
 ```js
 // 使用一个队列实现
@@ -1105,7 +1125,9 @@ var nextGreaterElement = function (nums1, nums2) {
 
 ### 455.Assign Cookies
 
-[EN](https://leetcode.com/problems/assign-cookies/) · [CN](https://leetcode.cn/problems/assign-cookies/)  贪心
+[EN](https://leetcode.com/problems/assign-cookies/) · [CN](https://leetcode.cn/problems/assign-cookies/)  
+
+貪欲法
 
 ```js
 var findContentChildren = function (g, s) {
@@ -1130,7 +1152,9 @@ var findContentChildren = function (g, s) {
 
 ### 1005.Maximize Sum Of Array After K Negations
 
-[EN](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/) · [CN](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/)  贪心
+[EN](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/) · [CN](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/)  
+
+貪欲法
 
 ```js
 var largestSumAfterKNegations = function (nums, k) {
@@ -1157,7 +1181,9 @@ var largestSumAfterKNegations = function (nums, k) {
 
 ### 860.Lemonade Change
 
-[EN](https://leetcode.com/problems/lemonade-change/) · [CN](https://leetcode.cn/problems/lemonade-change/)  贪心
+[EN](https://leetcode.com/problems/lemonade-change/) · [CN](https://leetcode.cn/problems/lemonade-change/)  
+
+貪欲法
 
 ```js
 var lemonadeChange = function (bills) {
@@ -1192,7 +1218,9 @@ var lemonadeChange = function (bills) {
 
 ### 94.Binary Tree Inorder Traversal
 
-[EN](https://leetcode.com/problems/binary-tree-inorder-traversal/) · [CN](https://leetcode.cn/problems/binary-tree-inorder-traversal/)  二叉树
+[EN](https://leetcode.com/problems/binary-tree-inorder-traversal/) · [CN](https://leetcode.cn/problems/binary-tree-inorder-traversal/)  
+
+二分木
 
 a.再帰
 
@@ -1240,7 +1268,9 @@ var inorderTraversal = function (root) {
 
 ### 145.Binary Tree Postorder Traversal
 
-[EN](https://leetcode.com/problems/binary-tree-postorder-traversal/) · [CN](https://leetcode.cn/problems/binary-tree-postorder-traversal/)  二叉树
+[EN](https://leetcode.com/problems/binary-tree-postorder-traversal/) · [CN](https://leetcode.cn/problems/binary-tree-postorder-traversal/)  
+
+二分木
 
 a.再帰
 
@@ -1284,7 +1314,9 @@ var postorderTraversal = function (root) {
 
 ### 144.Binary Tree Inorder Traversal
 
-[EN](https://leetcode.com/problemset/all/?difficulty=EASY&page=1&search=144) · [CN](https://leetcode.cn/problemset/all/?difficulty=EASY&page=1&search=144)  二叉树
+[EN](https://leetcode.com/problemset/all/?difficulty=EASY&page=1&search=144) · [CN](https://leetcode.cn/problemset/all/?difficulty=EASY&page=1&search=144)  
+
+二分木
 
 a.再帰
 
@@ -1335,7 +1367,9 @@ var preorderTraversal = function (root) {
 
 ### 637.Average of Levels in Binary Tree
 
-[EN](https://leetcode.com/problems/average-of-levels-in-binary-tree/) · [CN](https://leetcode.cn/problems/average-of-levels-in-binary-tree/)  二叉树
+[EN](https://leetcode.com/problems/average-of-levels-in-binary-tree/) · [CN](https://leetcode.cn/problems/average-of-levels-in-binary-tree/)  
+
+二分木
 
 ```js
 var averageOfLevels = function (root) {
@@ -1365,7 +1399,9 @@ var averageOfLevels = function (root) {
 
 ### 226.Invert Binary Tree
 
-[EN](https://leetcode.com/problems/invert-binary-tree/) · [CN](https://leetcode.cn/problems/invert-binary-tree/)  二叉树
+[EN](https://leetcode.com/problems/invert-binary-tree/) · [CN](https://leetcode.cn/problems/invert-binary-tree/)  
+
+二分木
 
 ```js
 var invertTree = function (root) {
@@ -1380,7 +1416,9 @@ var invertTree = function (root) {
 
 ### 101.Symmetric Tree
 
-[EN](https://leetcode.com/problems/symmetric-tree/) · [CN](https://leetcode.cn/problems/symmetric-tree/)  二叉树
+[EN](https://leetcode.com/problems/symmetric-tree/) · [CN](https://leetcode.cn/problems/symmetric-tree/)  
+
+二分木
 
 ```js
 // 有点难，看的答案，如果有时间需要再看
@@ -1409,7 +1447,9 @@ var isSymmetric = function (root) {
 
 ### 104.Maximum Depth of Binary Tree
 
-[EN](https://leetcode.com/problems/maximum-depth-of-binary-tree/) · [CN](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)  二叉树
+[EN](https://leetcode.com/problems/maximum-depth-of-binary-tree/) · [CN](https://leetcode.cn/problems/maximum-depth-of-binary-tree/)  
+
+二分木
 
 ```js
 var maxDepth = function (root) {
@@ -1434,7 +1474,9 @@ var maxDepth = function (root) {
 
 ### 111.Minimum Depth of Binary Tree
 
-[EN](https://leetcode.com/problems/minimum-depth-of-binary-tree/) · [CN](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)  二叉树
+[EN](https://leetcode.com/problems/minimum-depth-of-binary-tree/) · [CN](https://leetcode.cn/problems/minimum-depth-of-binary-tree/)  
+
+二分木
 
 ```js
 var minDepth = function(root) {
@@ -1541,7 +1583,7 @@ var maxProfit = function (prices) {
 
 ### 141.Linked List Cycle（連結リスト学習）
 
-[EN](https://leetcode.com/problems/linked-list-cycle/) · [CN](https://leetcode.cn/problems/linked-list-cycle/)  链表
+[EN](https://leetcode.com/problems/linked-list-cycle/) · [CN](https://leetcode.cn/problems/linked-list-cycle/) 
 
 ```js
 // 这个东西如果相交一定是在环内相交，题意有些复杂
@@ -1560,7 +1602,7 @@ var hasCycle = function(head) {
 
 ### 160.Intersection of Two Linked Lists（連結リスト学習）
 
-[EN](https://leetcode.com/problems/intersection-of-two-linked-lists/) · [CN](https://leetcode.cn/problems/intersection-of-two-linked-lists/)  链表
+[EN](https://leetcode.com/problems/intersection-of-two-linked-lists/) · [CN](https://leetcode.cn/problems/intersection-of-two-linked-lists/)  
 
 ```js
 // 这道题就是典型的不能切换成数组的题
@@ -1603,6 +1645,21 @@ var getIntersectionNode = function(headA, headB) {
 var majorityElement = function(nums) {
     const arr = nums.sort()
     return arr[parseInt(arr.length/2)]
+};
+```
+
+### 283. Move Zeroes
+
+[EN](https://leetcode.com/problems/move-zeroes/description/) · [CN](https://leetcode.cn/problems/move-zeroes/description/)
+
+```js
+var moveZeroes = function (nums) {
+  for (let i = 0; i < nums.length; i++) {
+    if (nums[i] === 0) {
+      nums.push(nums.splice(i, 1));
+      i--;
+    }
+  }
 };
 ```
 
