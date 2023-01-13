@@ -678,6 +678,32 @@ for (let i = 1; i <= n; i++) {
 console.log(Math.min(...res) + "\n" + Math.max(...res));
 ```
 
+### C096:夏休み
+
+这题也坑了，应该固定一个人日程，然后让每个人的日程和他比较，傻逼了
+
+```js
+const n = Number(lines[0]);
+let flg = [];
+
+let k = 1;
+for (let i = 2; i <= n; i++) {
+  const arr1 = lines[i].split(" ").map(Number);
+  const arr2 = lines[k].split(" ").map(Number);
+  const start = [Math.min(...arr1), Math.min(...arr2)];
+  const end = [Math.max(...arr1), Math.max(...arr2)];
+  flg.push(Math.max(...start) <= Math.min(...end));
+  k++;
+}
+
+const res = new Set(flg);
+if (res.has(true) && res.size === 1) {
+  console.log("OK");
+} else {
+  console.log("NG");
+}
+```
+
 
 
 ## Dランク
@@ -1618,5 +1644,11 @@ console.log(Number(lines[0]) * Number(lines[1]))
 ```js
 const lai = Number(lines[0])
 console.log(lai/180 + 2);
+```
+
+### D231:文字列の 2 番目
+
+```js
+ console.log(lines[0][1]);
 ```
 
