@@ -2,7 +2,7 @@
 
 ![github](https://github.com/kensoz/blog/actions/workflows/main.yml/badge.svg)  ![Node](https://img.shields.io/badge/Node.js-v18.7.0-fb7185.svg?logo=&style=flat-square)  ![npm](https://img.shields.io/badge/npm-v1.0.0-84CC16.svg?style=flat-square)  ![License](https://img.shields.io/badge/License-MIT-0284C7.svg?logo=&style=flat-square)
 
-個人用の技術と学習をまとめる技術ブログです。  
+個人用のアルゴリズムと学習をまとめる技術ブログです。  
 📒  **[Site](https://kensoz.github.io/blog/)**
 
 
