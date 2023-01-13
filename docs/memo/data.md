@@ -11,19 +11,19 @@ title: コーディングテスト中のデータ構造
 
 ## 一、ハッシュテーブル
 
-#### 1.配列
+#### 1.配列Array
 
 ```js
 const arr = [1, 2, 3]
 ```
 
-#### 2.集合
+#### 2.集合Set
 
 ```js
 const set = new Set([1, 2, 3]);
 ```
 
-#### 3.写像
+#### 3.写像Map
 
 ```js
 const map = new Map([
@@ -105,12 +105,12 @@ const makeList = (protoArr) => {
 };
 
 // 使用
-const list = makeList([1, 2, 6, 3, 4, 5, 6])
+const list = makeList([1, 2, 3, 4, 5, 6])
 ```
 
 
 
-## 五、ツリー
+## 五、二分木
 
 ```js
 function TreeNode(val, left, right) {
