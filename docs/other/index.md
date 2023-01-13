@@ -11,9 +11,9 @@ title: その他
 
 ## 📫 連絡
 
-- 🎯  [Wantedly](https://www.wantedly.com/id/kensoz) ・ [Linkedin](https://jp.linkedin.com/in/kensoz)
+<!-- - 🎯  [Wantedly](https://www.wantedly.com/id/kensoz) ・ [Linkedin](https://jp.linkedin.com/in/kensoz) -->
 
-- 📧  [renhoujob@gmail.com](mailto:renhoujob@gmail.com)
+- 🎯  [Linkedin](https://jp.linkedin.com/in/kensoz) ・ 📧  [renhoujob@gmail.com](mailto:renhoujob@gmail.com)
 - 📡  [Qiita](https://qiita.com/kensoz)・[SegmentFault](https://segmentfault.com/u/kensoz/articles)・[Juejin](https://juejin.cn/user/1029616691882653)
 - 🌱  [GitHub](https://github.com/kensoz)
 
