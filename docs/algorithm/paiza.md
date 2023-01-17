@@ -704,6 +704,40 @@ if (res.has(true) && res.size === 1) {
 }
 ```
 
+### C014:ボールが入る箱
+
+```js
+const [n, r] = lines[0].split(" ").map(Number);
+const l = r * 2;
+let res = [];
+for (let i = 1; i <= n; i++) {
+	const [a, b, c] = lines[i].split(" ").map(Number);
+	if (a >= l && b >= l && c >= l) {
+		res.push(i);
+	}
+}
+console.log(res.join("\n"));
+```
+
+### C023:クジの当選番号
+
+```js
+const arr = lines[0].split(" ").map(Number);
+const n = Number(lines[1]);
+let res = [];
+for (let i = 2; i <= n + 1; i++) {
+	let count = 0;
+	const tmp = lines[i].split(" ").map(Number);
+	for (let j = 0; j < arr.length; j++) {
+		if (tmp.includes(arr[j])) {
+			count++;
+		}
+	}
+	res.push(count);
+}
+console.log(res.join("\n"));
+```
+
 
 
 ## Dランク

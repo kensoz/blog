@@ -1,5 +1,5 @@
 node_modules
 .temp
 .cache
-doc.code-workspace
+blog.code-workspace
 dist

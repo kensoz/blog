@@ -14,9 +14,9 @@ title: Paiza
 - `console.log(解答)`、入力の処理が必要
 - ランク：**A**
 
-- 提出率：**27％**
+- 提出率：**150問提出／全543問（提出率27％）**
 
-- 順位更新時間：2023-01-15
+- 順位更新時間：2023-01-17
 
 - 解答は公開しません
 
@@ -85,6 +85,10 @@ title: Paiza
 [C123:節分ロボット](https://paiza.jp/challenges/share/nyFxaVL1h3XB7DiqmMsW9RDq0bHr7WbxLkEHZetKw4Q?source=social)
 
 [C112:時差ボケ](https://paiza.jp/challenges/share/3-E4eqH_p_L4rW1OEhFE32NUpC9jCUfPTrcctsByqp8?source=social)
+
+[C014:ボールが入る箱](https://paiza.jp/challenges/share/9zDpj30XbvtkKfLO4Sh__hPagSgYLyzbHOosZ73k2cY?source=social)
+
+[C023:クジの当選番号](https://paiza.jp/challenges/share/klfMx9zJrfuABI0Aq4AUCeS0XPl-93Z48LHJeOMUJ_s?source=social)
 
 
 
