@@ -738,6 +738,40 @@ for (let i = 2; i <= n + 1; i++) {
 console.log(res.join("\n"));
 ```
 
+### C124:インターンへの応募
+有点难度啊这题，有两个没整出来
+
+```js
+const n = Number(lines[0]);
+let index = 1;
+let count = 0;
+let res = 0;
+let arr = [];
+
+for (let i = 1; i < lines.length; i++) {
+  if (index === i && index < lines.length) {
+    count = Number(lines[i]);
+    index = index + count + 1;
+    tmp = false;
+  } else {
+    let [s, e] = lines[i].split(" ").map(Number);
+    if (!arr.includes(s) && !arr.includes(s + e - 1)) {
+      while (e--) {
+        arr.push(s);
+        s++;
+      }
+
+      if (!tmp) {
+        tmp = true;
+        res++;
+      }
+    }
+  }
+}
+
+console.log(res);
+```
+
 
 
 ## Dランク
