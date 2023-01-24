@@ -1680,3 +1680,19 @@ var findDisappearedNumbers = function (nums) {
 };
 ```
 
+### 338. Counting Bits
+
+[EN](https://leetcode.com/problems/counting-bits/description/) · [CN](https://leetcode.cn/problems/counting-bits/description/)
+
+標準ライブラリ
+
+```js
+var countBits = function (n) {
+	let res = [];
+	for (let i = 0; i <= n; i++) {
+		res.push(i.toString(2).replace(/0/g, "").length);
+	}
+	return res;
+};
+```
+
