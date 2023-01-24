@@ -772,6 +772,23 @@ for (let i = 1; i < lines.length; i++) {
 console.log(res);
 ```
 
+### C055:ログのフィルター
+
+```js
+let res = [];
+let n = Number(lines[0]);
+const reg = new RegExp(lines[1]);
+
+let index = 2;
+while (n--) {
+	if (reg.test(lines[index])) res.push(lines[index]);
+	index++;
+}
+
+console.log(res.length === 0 ? "None" : res.join("\n"));
+```
+
+
 
 
 ## Dランク
