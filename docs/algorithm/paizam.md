@@ -90,6 +90,9 @@ title: Paiza
 
 [C023:クジの当選番号](https://paiza.jp/challenges/share/klfMx9zJrfuABI0Aq4AUCeS0XPl-93Z48LHJeOMUJ_s?source=social)
 
+[C124:インターンへの応募](https://paiza.jp/challenges/share/k902_tg6TTzlxZnKJhL08p_YlEMuRx2HDn-HAjSr1i4?source=social)：Cランクで初めてのwa、配列で解けるのに考えすぎてSetで複雑にしてしまう
+
+[C055:ログのフィルター](https://paiza.jp/challenges/share/hKm4oPP4jWMcWAIOLQmnqVWOaICzYwuzDYmEQ2ZaT6A?source=social)
 
 
 ## D ランク
