@@ -94,6 +94,8 @@ title: Paiza
 
 [C055:ログのフィルター](https://paiza.jp/challenges/share/hKm4oPP4jWMcWAIOLQmnqVWOaICzYwuzDYmEQ2ZaT6A?source=social)
 
+[C056:テストの採点](https://paiza.jp/challenges/share/CkoOiW9FWQW-gHfkkXuS1u5hX9HApetdD_y03Dl-v6o?campaign=137&source=social)
+
 
 ## D ランク
 
@@ -332,3 +334,5 @@ D230:鞄の合計代金
 D135:多角形の調査
 
 D231:文字列の 2 番目
+
+D232:【IT謎解き2コラボ問題】問題集
