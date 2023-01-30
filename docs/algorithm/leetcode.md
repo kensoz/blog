@@ -1696,3 +1696,18 @@ var countBits = function (n) {
 };
 ```
 
+### 461. Hamming Distance
+
+[EN](https://leetcode.com/problems/hamming-distance/?favorite=2cktkvj) · [CN](https://leetcode.cn/problems/hamming-distance/?favorite=2cktkvj)
+
+```js
+var hammingDistance = function(x, y) {
+    let xor = x ^ y;
+    let res = 0;
+    while(xor) {
+        xor &= (xor - 1);
+        res++;
+    }
+    return res;
+};
+```
