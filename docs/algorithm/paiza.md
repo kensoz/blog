@@ -1737,3 +1737,8 @@ console.log(lai/180 + 2);
  console.log(lines[0][1]);
 ```
 
+### D232:【IT謎解き2コラボ問題】問題集
+
+```js
+ console.log(Number(lines[0]) * 100);
+```
