@@ -788,7 +788,17 @@ while (n--) {
 console.log(res.length === 0 ? "None" : res.join("\n"));
 ```
 
-
+### C056:テストの採点
+```js
+const [n, pass] = lines[0].split(" ").map(Number);
+let res = [];
+for (let i = 1; i <= n; i++) {
+	const [s, b] = lines[i].split(" ").map(Number);
+	let tmp = s - 5 * b >= 0 ? s - 5 * b : 0;
+	tmp >= pass && res.push(i);
+}
+console.log(res.join("\n"));
+```
 
 
 ## Dランク
