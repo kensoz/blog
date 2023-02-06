@@ -96,6 +96,8 @@ title: Paiza
 
 [C056:テストの採点](https://paiza.jp/challenges/share/CkoOiW9FWQW-gHfkkXuS1u5hX9HApetdD_y03Dl-v6o?campaign=137&source=social)
 
+[C075:ポイント払い](https://paiza.jp/challenges/share/SaFBiW1itIQAuGpkSVmO_-b7RXz4-tG3uwTeauSyYvc?campaign=137&source=social)
+
 
 ## D ランク
 
