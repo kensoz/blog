@@ -800,6 +800,30 @@ for (let i = 1; i <= n; i++) {
 console.log(res.join("\n"));
 ```
 
+### C075:ポイント払い
+
+
+```js
+let [cash, n] = lines[0].split(" ").map(Number);
+let res = [];
+let point = 0;
+
+for (let i = 1; i <= n; i++) {
+  const tmp = Number(lines[i]);
+
+  if (point >= tmp) {
+    point -= tmp;
+  } else if (point < tmp && cash >= tmp) {
+    cash -= tmp;
+    point += 0.1 * tmp;
+  }
+
+  res.push(`${cash} ${point}`);
+}
+
+console.log(res.join("\n"));
+```
+
 
 ## Dランク
 
