@@ -1752,3 +1752,9 @@ console.log(lai/180 + 2);
 ```js
  console.log(Number(lines[0]) * 100);
 ```
+
+### D233:3人の経験値
+
+```js
+ console.log(Number(lines[0]) + Number(lines[1]) + Number(lines[2]));
+```
