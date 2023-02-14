@@ -1782,3 +1782,10 @@ console.log(lai/180 + 2);
 ```js
  console.log(Number(lines[0]) + Number(lines[1]) + Number(lines[2]));
 ```
+
+### D234:10文字制限のゲームID
+
+```js
+console.log(10 - lines[0].length);
+```
+
