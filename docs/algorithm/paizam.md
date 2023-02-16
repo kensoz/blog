@@ -98,6 +98,10 @@ title: Paiza
 
 [C075:ポイント払い](https://paiza.jp/challenges/share/SaFBiW1itIQAuGpkSVmO_-b7RXz4-tG3uwTeauSyYvc?campaign=137&source=social)
 
+[C114:しりとりの判定](https://paiza.jp/challenges/share/yI5DqH2lexgAnMxT6CzYZxXp_aMeiXsb0FKOUTXUFE0?source=social)
+
+
+
 
 ## D ランク
 

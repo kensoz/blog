@@ -824,6 +824,30 @@ for (let i = 1; i <= n; i++) {
 console.log(res.join("\n"));
 ```
 
+### C114:しりとりの判定
+
+```js
+const n = Number(lines[0]);
+let res = false;
+let tmp = [];
+
+for (let i = 1; i < n; i++) {
+	const s = lines[i];
+	const e = lines[i + 1];
+
+	if (s[s.length - 1] === e[0]) {
+		res = true;
+	} else {
+		res = false;
+		tmp.push(s[s.length - 1], e[0]);
+		break;
+	}
+}
+
+res ? console.log("Yes") : console.log(tmp.join(" "));
+```
+
+
 
 ## Dランク
 
