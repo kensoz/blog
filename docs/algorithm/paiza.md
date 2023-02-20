@@ -847,6 +847,30 @@ for (let i = 1; i < n; i++) {
 res ? console.log("Yes") : console.log(tmp.join(" "));
 ```
 
+### C017:ハイアンドロー・カードゲーム
+
+```js
+const [a, b] = lines[0].split(" ").map(Number)
+const n = Number(lines[1])
+let res = []
+
+for (let i = 2; i <= n + 1; i++) {
+	const [ak, bk] = lines[i].split(" ").map(Number);
+	if (a > ak) {
+		res.push("High");
+	} else if (a < ak) {
+		res.push("Low");
+	} else {
+		if (b < bk) {
+			res.push("High");
+		} else {
+			res.push("Low");
+		}
+	}
+}
+  console.log(res.join("\n"));
+```
+
 
 
 ## Dランク

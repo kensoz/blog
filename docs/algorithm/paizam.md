@@ -14,9 +14,9 @@ title: Paiza
 - `console.log(解答)`、入力の処理が必要
 - ランク：**A**
 
-- 提出率：**156問提出／全548問（提出率28％）**
+- 提出率：**159問提出／全552問（提出率28％）**
 
-- 順位更新時間：2023-02-06
+- 順位更新時間：2023-02-20
 
 - 解答は公開しません
 
@@ -99,6 +99,8 @@ title: Paiza
 [C075:ポイント払い](https://paiza.jp/challenges/share/SaFBiW1itIQAuGpkSVmO_-b7RXz4-tG3uwTeauSyYvc?campaign=137&source=social)
 
 [C114:しりとりの判定](https://paiza.jp/challenges/share/yI5DqH2lexgAnMxT6CzYZxXp_aMeiXsb0FKOUTXUFE0?source=social)
+
+[C017:ハイアンドロー・カードゲーム](https://paiza.jp/challenges/share/YClQs8hZSibr3TM8oY3TeEaMjA0c_dAv2-CFa1jTw-c?source=social)
 
 
 
