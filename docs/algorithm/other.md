@@ -57,6 +57,33 @@ function simpleArraySum(ar) {
 }
 ```
 
+### New Year Chaos
+
+[LINK](https://www.hackerrank.com/challenges/new-year-chaos/problem)
+
+```typescript
+function minimumBribes(q: number[]): void {
+	let bribes: number = 0;
+
+	for (let i = q.length - 1; i >= 0; i--) {
+		const originalPosition: number = q[i] - 1;
+
+		if (originalPosition - i > 2) {
+			console.log("Too chaotic");
+			return;
+		}
+
+		for (let j = Math.max(0, originalPosition - 1); j < i; j++) {
+			if (q[j] > q[i]) {
+				bribes++;
+			}
+		}
+	}
+
+	console.log(bribes);
+}
+```
+
 
 
 ## Codewars
