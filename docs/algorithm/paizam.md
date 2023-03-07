@@ -28,6 +28,8 @@ title: Paiza
 
 [A066:連勤記録](https://paiza.jp/challenges/share/Iol-W2b0XbbIyuQ8h7omnn8C3rCD36GcBy1WC4ocuJM?source=social)
 
+[A051:板たおし](https://paiza.jp/challenges/share/3DsVwbJ_dGjakL_j3U40mS46kvsey-XSuhAhjzAFZUM?campaign=138&source=social)
+
 
 
 ## B ランク

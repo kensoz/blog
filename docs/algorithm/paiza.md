@@ -21,6 +21,26 @@ title: Paiza
   console.log(str.split(" ")) // ["2","3"]
   console.log(str.split(" ").join("")) // "23"
   ```
+  
+- new input
+
+  ```js
+  const readFromStdin = async () => {
+    let data = ''
+    process.stdin.resume()
+    process.stdin.setEncoding('utf8')
+    for await (const chunk of process.stdin) {
+      data += chunk
+    }
+    return data.split('\n')
+  }
+  
+  const solution = (lines) => {
+   // ここでコードを書いてください
+  }
+  
+  readFromStdin().then(solution)
+  ```
 
 
 
@@ -79,6 +99,56 @@ for (let i = 1; i < n; i++) {
 }
 res = Math.max(res, end + 1 - start);
 console.log(res);
+```
+
+### A051:板たおし
+
+new input
+
+```js
+const solution = (lines) => {
+  const [h, w] = lines[0].split(' ').map(Number)
+  const s = []
+  for (let i = 1; i <= h; i++) {
+    s.push(lines[i].split(' ').map(Number))
+  }
+
+  const dp = Array.from({ length: h }, () => new Array(w).fill(0))
+  for (let j = 0; j < w; j++) {
+    dp[h - 1][j] = s[h - 1][j]
+  }
+  for (let i = h - 2; i >= 0; i--) {
+    for (let j = 0; j < w; j++) {
+      dp[i][j] = Math.max(
+        j - 1 >= 0 ? dp[i + 1][j - 1] : 0,
+        dp[i + 1][j],
+        j + 1 < w ? dp[i + 1][j + 1] : 0
+      ) + s[i][j]
+    }
+  }
+  console.log(Math.max(...dp[0]))
+}
+```
+
+### A059:金魚の美しさ
+
+new input
+
+```js
+const solution = (lines) => {
+  const [n, x] = lines[0].split(' ').map(Number)
+  const fish = lines.slice(1).map(line => line.split(' ').map(Number))
+  const dp = new Array(x + 1).fill(0)
+
+  for (let i = 0; i < n; i++) {
+    const [w, r] = fish[i]
+    for (let j = x; j >= w; j--) {
+      dp[j] = Math.max(dp[j], dp[j - w] + r)
+    }
+  }
+
+  console.log(dp[x])
+}
 ```
 
 
