@@ -118,3 +118,44 @@ function sameCase(a, b) {
 }
 ```
 
+
+
+## Track
+
++ `console.log(解答)`、入力の処理が必要
++ 標準入力（数据都是一行一行的，读取之后放到lines数组里面，一行就是一个数组元素，有点像paiza）
++ 以下は入力修正、`X`は`lines`のタイプ、`lines`追加必要
+
+```typescript
+// ---------- Q1 ----------
+
+/**
+ * 標準入力処理
+ * @return { X } lines
+ */
+const readFromStdin = async (): Promise<X> => {
+  let data: string = ''
+
+  process.stdin.resume()
+  process.stdin.setEncoding('utf8')
+
+  for await (const chunk of process.stdin) {
+    data += chunk
+  }
+
+  return data.split('\n')
+}
+
+/**
+ * ソリューション関数
+ * @param { X } lines
+ * @return { void }
+ */
+const solution = (): void => {
+  // console.log()
+}
+
+// 実行
+readFromStdin().then(solution)
+```
+

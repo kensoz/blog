@@ -1837,3 +1837,9 @@ console.log(lai/180 + 2);
 console.log(10 - lines[0].length);
 ```
 
+### D235:5人兄弟
+
+```js
+console.log(Number(lines[0]) * 5);
+```
+
