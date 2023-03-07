@@ -131,9 +131,9 @@ function sameCase(a, b) {
 
 /**
  * 標準入力処理関数
- * @return { X } lines
+ * @return { Promise<string[]> } lines
  */
-const readFromStdin = async (): Promise<X> => {
+const readFromStdin = async (): Promise<string[]> => {
   let data: string = ''
 
   process.stdin.resume()
@@ -148,10 +148,10 @@ const readFromStdin = async (): Promise<X> => {
 
 /**
  * ソリューション関数
- * @param { X } lines
+ * @param { string[] } lines
  * @return { void }
  */
-const solution = (lines: X): void => {
+const solution = (lines: string[]): void => {
   // console.log()
 }
 
